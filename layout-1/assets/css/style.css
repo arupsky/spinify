@@ -1,0 +1,332 @@
+@font-face {
+    font-family: 'InterRegular';
+    src: url('../fonts/InterRegular.eot');
+    src: url('../fonts/InterRegular.eot') format('embedded-opentype'),
+         url('../fonts/InterRegular.woff2') format('woff2'),
+         url('../fonts/InterRegular.woff') format('woff'),
+         url('../fonts/InterRegular.ttf') format('truetype'),
+         url('../fonts/InterRegular.svg#InterRegular') format('svg');
+}
+@font-face {
+    font-family: 'InterBlack';
+    src: url('../fonts/InterBlack.eot');
+    src: url('../fonts/InterBlack.eot') format('embedded-opentype'),
+         url('../fonts/InterBlack.woff2') format('woff2'),
+         url('../fonts/InterBlack.woff') format('woff'),
+         url('../fonts/InterBlack.ttf') format('truetype'),
+         url('../fonts/InterBlack.svg#InterBlack') format('svg');
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    background-image: url(../images/outer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.layout1{
+    width: 1520px;
+    height: 785px;
+    margin: 0 auto;
+    background-image: url(../images/inner-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.layout1 figure {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 310px;
+}
+.layout1 figure:after {
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/profile-border.svg);
+    background-repeat: no-repeat;
+    background-size: 109%;
+    border-radius: 50%;
+    position: absolute;
+    content: '';
+    left: -62px;
+    top: -63px;
+}
+.layout1 figure img {
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+}
+.layout1 figcaption{
+    font-size: 51px;
+    font-family: 'InterRegular';
+    color: #FFF;
+    margin-top: 20px;
+}
+.points {
+    position: relative;
+}
+.points:before {
+    width: 130px;
+    height: 100px;
+    background-image: url(../images/star-left.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    content: '';
+    left: -55px;
+    top: -65px;
+}
+.points:after {
+    width: 130px;
+    height: 100px;
+    background-image: url(../images/star-right.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    content: '';
+    right: -75px;
+    top: 113px;
+}
+.points span {
+    font-size: 119px;
+    font-family: 'InterBlack';
+    color: #073449;
+    position: relative;
+    display: block;
+    padding-top: 10px;
+}
+.points span:before {
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/line-left.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    content: '';
+    left: -85px;
+    top: 90px;
+}
+.points span:after {
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/line-right.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    content: '';
+    right: -80px;
+    top: -40px;
+}
+.points p {
+    font-size: 58px;
+    font-family: 'InterBlack';
+    color: #ffffff;
+    position: relative;
+    display: block;
+    padding-top: 50px;
+    margin: 0;
+    position: relative;
+}
+.points p::before {
+    width: 170px;
+    height: 10px;
+    background-image: url(../images/points-line.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    content: '';
+    right: 130px;
+    bottom: -15px;
+}
+.points p img {
+    width: 52px;
+    margin-right: 12px;
+}
+/*===================================
+Animation CSS
+====================================*/
+@keyframes name {
+    0%   {left:400px; top:0px;}
+    50%  {left:200px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+span.total-numbers{
+    position: relative;
+    animation-name: totalNumber;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes totalNumber {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+
+.points p{
+    position: relative;
+    animation-name: pointsLabel;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes pointsLabel {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1550px) {
+    .layout1 {
+        width: 70%;
+        height: 785px;
+        background-size: contain;
+    }
+    .layout1 figure img {
+        width: 130px;
+        height: 130px;
+    }
+    .layout1 figure:after {
+        width: 210px;
+        height: 210px;
+        background-size: 89%;
+        left: 62px;
+        top: -28px;
+    }
+    .layout1 figcaption {
+        font-size: 26px;
+        color: #FFF;
+        margin-top: 10px;
+    }
+    .points span {
+        font-size: 48px;
+    }
+    .points p {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .points p img {
+        width: 24px;
+        margin-right: 8px;
+    }
+    .points p::before {
+        width: 80px;
+        height: 5px;
+        right: 40px;
+        bottom: -10px;
+    }
+    .points:before {
+        width: 50px;
+        height: 50px;
+        left: -30px;
+        top: -15px;
+    }
+    .points:after {
+        width: 50px;
+        height: 50px;
+        right: -30px;
+        top: 55px;
+    }
+    .points span:before {
+        width: 50px;
+        height: 50px;
+        left: -40px;
+        top: 45px;
+    }
+    .points span:after {
+        width: 50px;
+        height: 55px;
+        right: -40px;
+        top: -8px;
+    }
+}
+figcaption{
+    position: relative;
+    animation-name: name;
+    animation-duration: 1s;
+    animation-delay: -.5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@media screen and (max-width: 991px) {
+    .layout1 {
+        width: 90%;
+        height: 500px;
+        background-size: contain;
+    }
+}
+@media screen and (max-width: 768px) {
+    .layout1 {
+        width: 90%;
+        height: auto;
+        background-size: cover;
+        background-image: none;
+        background-color: #9CE6FE;
+        padding: 50px 10px;
+        border-radius: 8px;
+    }
+    .layout1 figure {
+        width: 100%;
+        margin-top: -100px;
+    }
+    .layout1 figure:after {
+        display: none;
+    }
+    .layout1 figure img {
+        border: 4px solid #72efce;
+    }
+    .points span {
+        font-size: 40px;
+    }
+    .points:before {
+        width: 30px;
+        height: 30px;
+        left: -20px;
+        top: 0px;
+    }
+    .points:after {
+        width: 30px;
+        height: 30px;
+        right: -20px;
+        top: 50px;
+    }
+    .points span:before {
+        width: 30px;
+        height: 30px;
+        left: -25px;
+        top: 40px;
+    }
+    .points span:after {
+        width: 30px;
+        height: 30px;
+        right: -30px;
+        top: 0px;
+    }
+    .points p {
+        font-size: 24px;
+        padding-top: 30px;
+    }
+    .points p img {
+        width: 20px;
+    }
+}
