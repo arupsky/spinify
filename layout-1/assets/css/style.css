@@ -122,7 +122,7 @@ body {
 }
 .points span:after {
     width: 100px;
-    height: 100px;
+    height: 110px;
     background-image: url(../images/line-right.svg);
     background-repeat: no-repeat;
     background-size: 100%;
