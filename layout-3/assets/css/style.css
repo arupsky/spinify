@@ -28,7 +28,6 @@ html {
     background-repeat: no-repeat;
     padding: 0;
     margin: 0;
-    height: 100%;
 }
 body {
     padding: 0;
@@ -37,11 +36,7 @@ body {
 }
 .layout-3{
     width: 1520px;
-    height: 785px;
     margin: 0 auto;
-    background-image: url(../images/inner-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
     margin-top: 160px;
 }
 .row-1 {
@@ -106,8 +101,7 @@ p.vs {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin: 0 90px 0 0;
-    margin-left: 70px;
+    margin: 0 90px 0 70px;
 }
 .card p {
     overflow: hidden;
@@ -235,13 +229,184 @@ span.total-numbers{
 Responsive CSS
 ==================================*/
 
-@media screen and (max-width: 1550px) {
-
+@media screen and (max-width: 1800px) {
+    .layout-3 {
+        width: 900px;
+    }
+    .row-1 {
+        margin-left: 0px;
+    }
+    .card.card-1 {
+        margin-top: 370px;
+    }
+    p.vs {
+        width: 150px;
+        height: 150px;
+        font-size: 80px;
+        margin: 0 20px 0 0px;
+    }
+    .title-section {
+        right: inherit;
+        left: auto;
+    }
 }
 
-@media screen and (max-width: 991px) {
-
+@media screen and (max-width: 1024px) {
+    .row-1 {
+        margin-left: 0px;
+        flex-direction: column-reverse;
+    }
+    .card.card-1 {
+        margin-top: 100px;
+    }
+    .layout-3 {
+        width: 100%;
+    }
+    .title-section {
+        right: inherit;
+        left: auto;
+    }
+    .title-section {
+        right: inherit;
+        left: auto;
+        width: 100%;
+        background: none;
+        padding: 40px 20px 0 20px;
+        position: relative;
+    }
+    .title-section h2 {
+        font-size: 80px;
+        padding: 15px
+    }
+    .title-section h3 {
+        font-size: 35px;
+        padding: 0px 0px 10px 0px;
+    }
+    .title-section p {
+        font-size: 32px;
+    }
+    .card {
+        margin-top: 25px;
+        padding: 0;
+        max-width: 480px;
+        margin: 0 auto;
+        background-position: inherit;
+        background-size: 100%;
+        min-height: 260px;
+        position: relative;
+    }
+    .card figure {
+        position: relative;
+        margin: 0 auto;
+        top: inherit;
+    }
+    .card figure img {
+        width: 140px;
+        height: 140px;
+        object-position: center;
+        margin-top: -90px;
+    }
+    p.name {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-right: 50px;
+        padding-left: 20px;
+        margin-left: 30px;
+    }
+    p.closed-deals {
+        font-size: 40px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 50px;
+        margin-left: 30px;
+        padding-left: 20px;
+    }
+    span.progress-bar {
+        width: 80%;
+        height: 5px;
+        max-width: 290px;
+        margin-left: 30px;
+        position: absolute;
+    }
+    span.progress-bar:after {
+        height: 5px;
+    }
+    p.closed-deals span {
+        color: #C8301E;
+        font-size: 50px;
+        margin-right: 8px;
+    }
+    p.target {
+        font-size: 20px;
+        margin-top: 7px;
+        margin-right: 50px;
+        padding-left: 50px;
+    }
+    .row-2 {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    p.vs {
+        margin: 0 20px 20px 0px;
+    }
+    .card.card-2 {
+        background-position: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        flex-direction: column-reverse;
+        margin-top: 100px;
+        padding-bottom: 40px;
+    }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
+    .title-section h2 {
+        font-size: 50px;
+        padding: 10px;
+    }
+    .title-section h3 {
+        font-size: 28px;
+    }
+    .title-section p {
+        font-size: 24px;
+    }
+    .card figure img {
+        width: 120px;
+        height: 120px;
+        margin-top: -90px;
+    }
+    p.vs {
+        width: 120px;
+        height: 120px;
+        font-size: 50px;
+        margin: 0 20px 0 0px;
+    }
+    p.name {
+        font-size: 22px;
+        margin-top: 6px;
+        margin-right: 30px;
+        border-bottom: 2px solid #E7C26E;
+    }
+    p.closed-deals {
+        font-size: 26px;
+    }
+    p.closed-deals {
+        font-size: 26px;
+    }
+    p.target {
+        font-size: 14px;
+    }
+    p.closed-deals span {
+        font-size: 32px;
+    }
+    .card {
+        width: 100%;
+        min-height: 230px;
+    }
+    .card.card-2 {
+        padding-bottom: 85px;
+    }
 
 }
