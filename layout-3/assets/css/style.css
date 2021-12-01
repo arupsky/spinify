@@ -194,33 +194,26 @@ p.target {
 /*===================================
 Animation CSS
 ====================================*/
-@keyframes name {
-    0%   {left:400px; top:0px;}
-    50%  {left:200px; top:0px;}
-    100% {left:0px; top:0px;}
-}
-
-span.total-numbers{
-    position: relative;
-    animation-name: totalNumber;
+span.progress-bar:after{
+    position: absolute;
+    animation-name: progress;
     animation-duration: .5s;
     animation-timing-function: linear;
     animation-direction: alternate;
 }
-@keyframes totalNumber {
-    0%   {transform: scale(.4)}
-    50%  {transform: scale(.6)}
-    100% {transform: scale(1)}
+@keyframes progress {
+    0%   {width: 0%;}
+    50%  {width: 50%;}
+    100% {width: 100%;}
 }
-
-.points p{
+p.closed-deals span{
     position: relative;
-    animation-name: pointsLabel;
+    animation-name: totalDeal;
     animation-duration: .5s;
     animation-timing-function: linear;
     animation-direction: alternate;
 }
-@keyframes pointsLabel {
+@keyframes totalDeal {
     0%   {transform: scale(.4)}
     50%  {transform: scale(.6)}
     100% {transform: scale(1)}
