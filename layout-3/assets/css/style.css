@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'CheddarGothicSerif';
+    src: url('../fonts/CheddarGothicSerif.eot');
+    src: url('../fonts/CheddarGothicSerif.eot') format('embedded-opentype'),
+         url('../fonts/CheddarGothicSerif.woff2') format('woff2'),
+         url('../fonts/CheddarGothicSerif.woff') format('woff'),
+         url('../fonts/CheddarGothicSerif.ttf') format('truetype'),
+         url('../fonts/CheddarGothicSerif.svg#CheddarGothicSerif') format('svg');
+}
+@font-face {
+    font-family: 'CheddarGothicSlab';
+    src: url('../fonts/CheddarGothicSlab.eot');
+    src: url('../fonts/CheddarGothicSlab.eot') format('embedded-opentype'),
+         url('../fonts/CheddarGothicSlab.woff2') format('woff2'),
+         url('../fonts/CheddarGothicSlab.woff') format('woff'),
+         url('../fonts/CheddarGothicSlab.ttf') format('truetype'),
+         url('../fonts/CheddarGothicSlab.svg#CheddarGothicSlab') format('svg');
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    background-image: url(../images/body-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'CheddarGothicSlab';
+}
+.layout-3{
+    width: 1520px;
+    height: 785px;
+    margin: 0 auto;
+    background-image: url(../images/inner-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 160px;
+}
+.row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
+    margin-left: -50px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 280px;
+    width: 810px;
+    background-image: url(../images/card-bg.png);
+    background-position: 67px;
+    background-repeat: no-repeat;
+    min-height: 410px;
+    background-size: 92%;
+}
+.card figure {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    padding: 0;
+    margin: 0;
+}
+.card figure img {
+    width: 240px;
+    height: 240px;
+    object-fit: none;
+    object-position: center;
+    border: 5px solid black;
+    border-radius: 50%;
+    display: block;
+    padding: 5px;
+}
+.row-2 {
+    display: flex;
+    margin-top: 41px;
+}
+.row-2 .card figure {
+    left: inherit;
+    right: 0;
+}
+.card.card-2 {
+    background-position: 10px;
+    padding-left: 50px;
+    padding-right: 200px;
+}
+p.vs {
+    font-family: 'CheddarGothicSerif';
+    width: 240px;
+    height: 240px;
+    background: #000000;
+    color: #FFF;
+    font-size: 110px;
+    text-align: center;
+    line-height: 1.1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 90px 0 0;
+    margin-left: 70px;
+}
+.card p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;    
+}
+p.name {
+    font-size: 45px;
+    border-bottom: 4px solid #E7C26E;
+    margin-top: 60px;
+    margin-right: 50px;
+    padding-left: 30px;
+}
+p.closed-deals {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 60px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    padding-left: 30px;
+}
+p.closed-deals span {
+    color: #C8301E;
+    font-size: 86px;
+    margin-right: 12px;
+}
+span.progress-bar {
+    width: 85%;
+    height: 10px;
+    background: #000;
+    border-radius: 10px;
+    position: relative;
+    max-width: 460px;
+}
+span.progress-bar:after {
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 97%;
+    background: #C8301E;
+    border-radius: 10px;
+}
+p.target {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-right: 50px;
+    padding-left: 30px;
+}
+.title-section {
+    width: 768px;
+    position: absolute;
+    right: 100px;
+    background: url(../images/head-to-head-bg.png);
+    top: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 -140px;
+    padding-top: 130px;
+    text-align: center;
+}
+.title-section h2 {
+    font-size: 112px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    text-align: center;
+    padding: 13px 90px 50px 110px;
+}
+.title-section h3 {
+    font-size: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+.title-section p {
+    font-size: 44px;
+    margin: 0;
+    color: #C8301E;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*===================================
+Animation CSS
+====================================*/
+@keyframes name {
+    0%   {left:400px; top:0px;}
+    50%  {left:200px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+span.total-numbers{
+    position: relative;
+    animation-name: totalNumber;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes totalNumber {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+
+.points p{
+    position: relative;
+    animation-name: pointsLabel;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes pointsLabel {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1550px) {
+
+}
+
+@media screen and (max-width: 991px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
