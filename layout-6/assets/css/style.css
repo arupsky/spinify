@@ -157,14 +157,16 @@ p.target {
 .title-section {
     width: 660px;
     text-align: center;
-    padding-top: 70px;
+    padding-bottom: 100px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .title-section h2 {
     font-size: 133px;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    max-height: 475px;
     margin: 0;
     text-align: center;
     padding: 0;
@@ -173,6 +175,8 @@ p.target {
     -webkit-text-fill-color: #ff84f5;
     text-shadow: -17px 17px 0px #000000;
     font-weight: 100;
+    z-index: 1;
+    position: relative;
 }
 .title-section h3 {
     font-size: 48px;
@@ -264,6 +268,8 @@ Responsive CSS
     }
     .title-section {
         width: 100%;
+        padding-bottom: 0;
+        padding-top: 80px;
     }
 }
 
@@ -357,6 +363,7 @@ Responsive CSS
         font-size: 70px;
         text-shadow: -12px 8px 0px #000000;
         font-weight: 100;
+        max-height: auto;
     }
     .star span {
         width: 30px;
