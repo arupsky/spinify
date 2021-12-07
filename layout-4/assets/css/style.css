@@ -1,0 +1,361 @@
+@font-face {
+    font-family: 'LilitaOneRegular';
+    src: url('../fonts/LilitaOneRegular.eot');
+    src: url('../fonts/LilitaOneRegular.eot') format('embedded-opentype'),
+         url('../fonts/LilitaOneRegular.woff2') format('woff2'),
+         url('../fonts/LilitaOneRegular.woff') format('woff'),
+         url('../fonts/LilitaOneRegular.ttf') format('truetype'),
+         url('../fonts/LilitaOneRegular.svg#LilitaOneRegular') format('svg');
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    background-image: url(../images/body-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'LilitaOneRegular';
+}
+.layout-4{
+    width: 1520px;
+    margin: 0 auto;
+    margin-top: 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2.headline {
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    width: 675px;
+    margin: 0px auto 0 auto;
+    color: #503204;
+    background-image: url(../images/title.png);
+    background-repeat: no-repeat;
+    padding: 87px 20px 28px 20px;
+}
+h2.headline span {
+    max-height: 114px!important;
+    overflow: hidden;
+    display: flex;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 60px;
+}
+
+
+
+
+/*************Card Section************/
+.card {
+    flex: 1;
+    display: flex;
+}
+.card-inner {
+    min-height: 550px;
+    background-image: url(../images/card.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card figure {
+    margin: 0;
+    padding: 0;
+}
+.card figure img {
+    width: 270px;
+    height: 270px;
+    object-fit: none;
+    object-position: center;
+    border: 4px solid #503204;
+    border-radius: 50%;
+    display: block;
+    padding: 6px;
+}
+.card p {
+    font-size: 30px;
+    max-width: 350px;
+    margin: 25px auto 0 auto;
+    color: #503204;
+    max-height: 105px;
+    overflow: hidden;
+}
+
+
+/*************Revenue Section************/
+.revenue {
+    flex: 2;
+    max-width: 675px;
+    min-height: 550px;
+    background-image: url(../images/revenue.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.revenue h2 {
+    font-size: 90px;
+    font-weight: 100;
+    padding: 40px 0;
+    margin: 40px 0;
+    color: #503204;
+    border-top: 3px solid #503204;
+    border-bottom: 3px solid #503204;
+    display: block;
+    width: 95%;
+}
+.revenue p {
+    font-size: 41px;
+    font-weight: 100;
+    margin: 0;
+    color: #503204;
+}
+
+/*************Target Section************/
+.target {
+    flex: 1;
+    display: flex;
+}
+.target-inner {
+    min-height: 550px;
+    background-image: url(../images/card.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.percentage {
+    position: relative;
+    width: 272px;
+    height: 272px;
+  }
+  
+  .percentage svg {
+    width: 300px;
+    height: 300px;
+}
+  
+  .percentage .bg {
+    fill: none;
+    stroke-width: 20px;
+    stroke: #A86C23;
+}
+  
+  .percentage .progress {
+    fill: none;
+    stroke-width: 20px;
+    stroke: #503204;
+    stroke-linecap: round;
+    stroke-dasharray: 746;
+    stroke-dashoffset: 185; 
+    /*Please change stroke-dashoffset value according to percentage,
+    185 = 75%; 370 = 50%; 555 = 25%; 746 = 0%
+    Don't forget to change in the animation section as well*/
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    animation: big 1.5s ease-in-out;
+}
+  
+  .percentage .text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    font-size: 75px;
+    text-align: center;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #503204;
+  }
+  .percentage .small {
+    font-size: 20px;
+    max-width: 200px;
+    text-transform: lowercase;
+}
+  
+  p.target-to-hit {
+    font-size: 30px;
+    max-width: 350px;
+    margin: 25px auto 0 auto;
+    color: #503204;
+}
+
+
+
+
+
+
+
+
+/*===================================
+Animation CSS
+====================================*/
+@keyframes big {
+    from {
+      stroke-dashoffset: 755;
+    }
+    to {
+      stroke-dashoffset: 185;
+      /*Please change this value according to percentage*/
+    }
+  }
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1800px) {
+    .layout-4 {
+        width: 1000px;
+        margin-bottom: 50px;
+    }
+    h2.headline {
+        font-size: 22px;
+        max-width: 400px;
+        background-size: 100%;
+        padding-top: 65px;
+    }
+    .card-inner {
+        min-height: 420px;
+        margin-right: 5px;
+    }
+    .card figure img {
+        width: 220px;
+        height: 220px;
+    }
+    .revenue {
+        max-width: 400px;
+        min-height: 420px;
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .revenue h2 {
+        font-size: 50px;
+        max-width: 500px;
+        padding: 20px 0;
+        margin: 20px 0;
+    }
+    .revenue p {
+        font-size: 22px;
+    }
+    .card p, p.target-to-hit {
+        font-size: 18px;
+        max-width: 200px;
+        margin: 15px auto 0 auto;
+    }
+    .target-inner {
+        min-height: 420px;
+        margin-left: 5px;
+    }
+    .percentage .text {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        height: auto;
+    }
+    .layout-4 {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .card {
+        order: 2;
+    }
+    .revenue {
+        order: 1;
+        padding-bottom: 50px;
+        width: 400px;
+    }
+    .target {
+        order: 3;
+    }
+    .card-inner {
+        min-height: 556px;
+        margin: 30px 0px;
+        width: 400px;
+    }
+    .target-inner {
+        min-height: 556px;
+        margin: 0px;
+        width: 400px;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    h2.headline {
+        font-size: 17px;
+        max-width: 100%;
+        padding-top: 38px;
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .card, .target {
+        width: 100%;
+    }
+    .revenue {
+        width: 100%;
+    }
+    .revenue h2 {
+        font-size: 32px;
+        max-width: 500px;
+        padding: 10px 0;
+        margin: 10px 0;
+        width: 100%;
+    }
+    .revenue p {
+        font-size: 16px;
+    }
+    .card-inner {
+        min-height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        border-radius: 20px;
+    }
+    .target-inner {
+        margin: 0px;
+        width: 100%;
+        min-height: auto;
+        background-size: cover;
+        border-radius: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
