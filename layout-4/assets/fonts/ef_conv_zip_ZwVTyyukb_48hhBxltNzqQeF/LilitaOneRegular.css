@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'LilitaOneRegular';
-    src: url('fonts/LilitaOneRegular.eot');
-    src: url('fonts/LilitaOneRegular.eot') format('embedded-opentype'),
-         url('fonts/LilitaOneRegular.woff2') format('woff2'),
-         url('fonts/LilitaOneRegular.woff') format('woff'),
-         url('fonts/LilitaOneRegular.ttf') format('truetype'),
-         url('fonts/LilitaOneRegular.svg#LilitaOneRegular') format('svg');
-}

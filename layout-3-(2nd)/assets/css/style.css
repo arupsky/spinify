@@ -56,8 +56,8 @@ h2.headline {
     padding: 0;
 }
 .card figure img {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     object-fit: none;
     object-position: center;
     border: 12px solid black;
@@ -113,48 +113,64 @@ h2.headline {
 /*************Target Section************/
 .target {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 30px;
 }
 .percentage {
-    font-size: 104px;
-    font-weight: 100;
-    width: 350px;
-    height: 350px;
-    margin: 12px auto 0 auto;
-    background: #008b83;
-    border: 8px solid #000;
+    position: relative;
+    width: 290px;
+    height: 290px;
+    border: 5px solid #000;
     border-radius: 50%;
+    background: #38CEC7;
+}
+.percentage svg {
+    width: 300px;
+    height: 300px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.percentage .bg {
+    fill: none;
+    stroke-width: 40px;
+    stroke: #008b83;
+}
+.percentage .progress {
+    fill: none;
+    stroke-width: 40px;
+    stroke: #ffe23d;
+    stroke-linecap: round;
+    stroke-dasharray: 746;
+    stroke-dashoffset: 370;
+    /*Please change stroke-dashoffset value according to percentage,
+    185 = 75%; 370 = 50%; 555 = 25%; 746 = 0%
+    Don't forget to change in the animation section as well*/
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    animation: big 1.5s ease-in-out;
+}  
+  
+  .percentage .text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
-    overflow: hidden;
-}
-.percentage:before {
-    position: absolute;
-    content: '';
-    width: 260px;
-    height: 260px;
-    background: #3dcec7;
-    border-radius: 50%;
-    left: 37px;
-    z-index: 1;
-}
-.percentage:after {
-    position: absolute;
-    content: '';
-    width: 50%;
-    height: 100%;
-    background: #ffe23d;
-    right: 0;
-}
-.percentage span {
-    z-index: 1;
-}
-span.percentage-text {
-    font-size: 22px;
-    font-weight: 100;
+    align-items: center;
+    color: #000000;
+  }
+  .percentage .small {
+    font-size: 20px;
     max-width: 200px;
-    margin: 0 auto;
+    text-transform: lowercase;
 }
 p.target-to-hit {
     font-size: 36px;
@@ -172,18 +188,15 @@ p.target-to-hit {
 /*===================================
 Animation CSS
 ====================================*/
-span.progress-bar:after{
-    position: absolute;
-    animation-name: progress;
-    animation-duration: .5s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-}
-@keyframes progress {
-    0%   {width: 0%;}
-    50%  {width: 50%;}
-    100% {width: 100%;}
-}
+@keyframes big {
+    from {
+      stroke-dashoffset: 755;
+    }
+    to {
+      stroke-dashoffset: 370;
+      /*Please change this value according to percentage*/
+    }
+  }
 p.closed-deals span{
     position: relative;
     animation-name: totalDeal;
@@ -229,20 +242,21 @@ Responsive CSS
     .revenue p {
         font-size: 38px;
     }
-    .percentage {
-        font-size: 62px;
-        width: 240px;
-        height: 240px;
-    }
-    .percentage:before {
-        width: 200px;
-        height: 200px;
-        left: 12px;
-    }
     .card p, p.target-to-hit {
         font-size: 26px;
         max-width: 200px;
         margin: 15px auto 0 auto;
+    }
+    .percentage {
+        width: 276px;
+        height: 276px;
+    }
+    .percentage svg {
+        margin-top: -7px;
+        margin-left: -7px;
+    }
+    .percentage .bg, .percentage .progress {
+        stroke-width: 25px;
     }
 }
 
@@ -286,6 +300,7 @@ Responsive CSS
     }
     .target {
         order: 3;
+        margin-top: 50px;
     }
 
 }
