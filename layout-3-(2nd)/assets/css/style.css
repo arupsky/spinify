@@ -1,0 +1,294 @@
+@font-face {
+    font-family: 'BADABB';
+    src: url('../fonts/BADABB.eot');
+    src: url('../fonts/BADABB.eot') format('embedded-opentype'),
+         url('../fonts/BADABB.woff2') format('woff2'),
+         url('../fonts/BADABB.woff') format('woff'),
+         url('../fonts/BADABB.ttf') format('truetype'),
+         url('../fonts/BADABB.svg#BADABB') format('svg');
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    background-image: url(../images/body-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'BADABB';
+}
+.layout-3-2nd{
+    width: 1520px;
+    margin: 0 auto;
+    margin-top: 230px;
+    text-align: center;
+}
+h2.headline {
+    font-size: 73px;
+    color: #FFF;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+
+
+
+/*************Card Section************/
+.card {
+    flex: 1;
+}
+.card figure {
+    margin: 0;
+    padding: 0;
+}
+.card figure img {
+    width: 350px;
+    height: 350px;
+    object-fit: none;
+    object-position: center;
+    border: 12px solid black;
+    border-radius: 50%;
+    display: block;
+    padding: 25px;
+    background: #008B83;
+}
+.card p {
+    font-size: 36px;
+    max-width: 350px;
+    text-align: center;
+    margin: 25px auto 0 auto;
+}
+
+
+/*************Revenue Section************/
+.revenue {
+    flex: 2;
+}
+.revenue h2 {
+    font-size: 142px;
+    font-weight: 100;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-fill-color: #FFE23D;
+    text-shadow: 11px 4px 2px #000000;
+    background-image: url(../images/star.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 760px;
+}
+.revenue h3 {
+    font-size: 47px;
+    font-weight: 100;
+    margin: 0;
+    padding: 40px 0 60px 0;
+}
+.revenue p {
+    font-size: 58px;
+    font-weight: 100;
+    margin: 0;
+    color: #FFF;
+}
+
+/*************Target Section************/
+.target {
+    flex: 1;
+}
+.percentage {
+    font-size: 104px;
+    font-weight: 100;
+    width: 350px;
+    height: 350px;
+    margin: 12px auto 0 auto;
+    background: #008b83;
+    border: 8px solid #000;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.percentage:before {
+    position: absolute;
+    content: '';
+    width: 260px;
+    height: 260px;
+    background: #3dcec7;
+    border-radius: 50%;
+    left: 37px;
+    z-index: 1;
+}
+.percentage:after {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #ffe23d;
+    right: 0;
+}
+.percentage span {
+    z-index: 1;
+}
+span.percentage-text {
+    font-size: 22px;
+    font-weight: 100;
+    max-width: 200px;
+    margin: 0 auto;
+}
+p.target-to-hit {
+    font-size: 36px;
+    max-width: 350px;
+    margin: 25px auto 0 auto;
+}
+
+
+
+
+
+
+
+
+/*===================================
+Animation CSS
+====================================*/
+span.progress-bar:after{
+    position: absolute;
+    animation-name: progress;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes progress {
+    0%   {width: 0%;}
+    50%  {width: 50%;}
+    100% {width: 100%;}
+}
+p.closed-deals span{
+    position: relative;
+    animation-name: totalDeal;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes totalDeal {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1800px) {
+    .layout-3-2nd {
+        width: 1000px;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+    h2.headline {
+        font-size: 50px;
+    }
+    .card figure img {
+        width: 240px;
+        height: 240px;
+        padding: 11px;
+        border: 6px solid black;
+    }
+    .revenue h2 {
+        font-size: 80px;
+        -webkit-text-stroke-width: 3px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        max-width: 500px;
+    }
+    .revenue h3 {
+        font-size: 34px;
+        padding: 20px 0 17px 0;
+    }
+    .revenue p {
+        font-size: 38px;
+    }
+    .percentage {
+        font-size: 62px;
+        width: 240px;
+        height: 240px;
+    }
+    .percentage:before {
+        width: 200px;
+        height: 200px;
+        left: 12px;
+    }
+    .card p, p.target-to-hit {
+        font-size: 26px;
+        max-width: 200px;
+        margin: 15px auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        height: auto;
+    }
+    .layout-3-2nd {
+        width: 100%;
+        margin-top: 90px;
+        padding: 0 15px;
+    }
+    h2.headline {
+        font-size: 30px;
+    }
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        order: 2;
+    }
+    .revenue {
+        order: 1;
+        padding-bottom: 50px;
+    }
+    .revenue h2 {
+        font-size: 45px;
+        -webkit-text-stroke-width: 2px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .revenue h3 {
+        font-size: 30px;
+        padding: 20px 0 17px 0;
+        color: white;
+    }
+    .revenue p {
+        font-size: 32px;
+    }
+    .target {
+        order: 3;
+    }
+
+}
+@media screen and (max-width: 480px) {
+
+}
