@@ -188,13 +188,7 @@ body.mild p.deadline-text {
 /*===================================
 Animation CSS
 ====================================*/
-@keyframes name {
-    0%   {left:400px; top:0px;}
-    50%  {left:200px; top:0px;}
-    100% {left:0px; top:0px;}
-}
-
-span.total-numbers{
+p.rank, p.total {
     position: relative;
     animation-name: totalNumber;
     animation-duration: .5s;
@@ -207,17 +201,17 @@ span.total-numbers{
     100% {transform: scale(1)}
 }
 
-.points p{
-    position: relative;
-    animation-name: pointsLabel;
+.progressbar-inner{
+    position: absolute;
+    animation-name: progress;
     animation-duration: .5s;
     animation-timing-function: linear;
     animation-direction: alternate;
 }
-@keyframes pointsLabel {
-    0%   {transform: scale(.4)}
-    50%  {transform: scale(.6)}
-    100% {transform: scale(1)}
+@keyframes progress {
+    0%   {width: 0%;}
+    50%  {width: 50%;}
+    100% {width: 100%;}
 }
 
 /*=================================
