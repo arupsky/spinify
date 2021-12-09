@@ -1,0 +1,280 @@
+@font-face {
+    font-family: 'InterRegular';
+    src: url('../fonts/InterRegular.eot');
+    src: url('../fonts/InterRegular.eot') format('embedded-opentype'),
+         url('../fonts/InterRegular.woff2') format('woff2'),
+         url('../fonts/InterRegular.woff') format('woff'),
+         url('../fonts/InterRegular.ttf') format('truetype'),
+         url('../fonts/InterRegular.svg#InterRegular') format('svg');
+}
+@font-face {
+    font-family: 'InterBlack';
+    src: url('../fonts/InterBlack.eot');
+    src: url('../fonts/InterBlack.eot') format('embedded-opentype'),
+         url('../fonts/InterBlack.woff2') format('woff2'),
+         url('../fonts/InterBlack.woff') format('woff'),
+         url('../fonts/InterBlack.ttf') format('truetype'),
+         url('../fonts/InterBlack.svg#InterBlack') format('svg');
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'InterBlack';
+    background-image: url(../images/body-bg-medium.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body.mild{
+    background-image: url(../images/body-bg-mild.jpg);  
+}
+body.spice{
+    background-image: url(../images/body-bg-spicy.jpg);  
+}
+.weekly-sales {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+    padding-bottom: 40px;
+}
+body.mild .weekly-sales {    
+    color: #2A3D46;
+}
+h1.headline {
+    background: #0c426bbd;
+    margin: 0;
+    font-size: 86px;
+    padding: 40px 80px;
+    border-radius: 0 0 30px 30px;
+}
+body.mild h1.headline {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(222,223,225,1) 100%);
+    color: #779BB1;
+}
+body.spice h1.headline {
+    background: #0000008f;
+}
+.weekly-sales ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 40px 0;
+    width: 100%;
+    width: 1760px;
+    margin: 0 auto;
+}
+.weekly-sales ul li {
+    display: flex;
+    background: #0c426bbd;
+    margin-bottom: 25px;
+    border-radius: 30px;
+    padding: 17px 40px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+body.mild .weekly-sales ul li {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(222,223,225,1) 100%);
+}
+body.spice .weekly-sales ul li {
+    background: #0000008f;
+}
+.weekly-sales ul li:last-child {
+    margin-bottom: 0px;
+}
+p.rank {
+    font-size: 36px;
+    margin: 0 40px 0 0;
+    padding: 0;
+}
+.weekly-sales ul li figure {
+    margin: 0 40px 0 0;
+    padding: 0;
+}
+.weekly-sales ul li figure img {
+    margin: 0;
+    padding: 0;
+}
+.weekly-sales ul li figure img {
+    margin: 0;
+    padding: 0;
+    width: 90px;
+    height: 90px;
+    object-fit: none;
+    object-position: center;
+    display: block;
+    border-radius: 50%;
+}
+.details {
+    flex: 1;
+}
+body.mild .details {
+    color: #506A78;
+}
+.details p.name {
+    font-size: 23px;
+    text-align: left;
+    margin: 0 0 10px 0;
+}
+.progressbar {
+    position: relative;
+    background: #153A5F;
+    height: 18px;
+    border-radius: 20px;
+}
+.progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #66BFD4;
+    border-radius: 20px;
+}
+body.mild .progressbar {
+    background: #779BB1;
+}
+body.mild  .progressbar-inner {
+    background: #A4BBCB;
+}
+body.spice .progressbar {
+    background: #ABCDEB;
+}
+body.spice  .progressbar-inner {
+    background: #0284EC;
+}
+
+
+.detail-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.detail-bottom p {
+    margin: 10px 0 0 0;
+    font-size: 15px;
+}
+.detail-bottom p:first-child {
+    font-family: 'InterRegular';
+}
+p.total {
+    font-size: 33px;
+    margin: 0 0 0 40px;
+}
+
+p.deadline-text {
+    text-transform: uppercase;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
+body.mild p.deadline-text {
+    color: #779BB1;
+}
+/*===================================
+Animation CSS
+====================================*/
+@keyframes name {
+    0%   {left:400px; top:0px;}
+    50%  {left:200px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+span.total-numbers{
+    position: relative;
+    animation-name: totalNumber;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes totalNumber {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+
+.points p{
+    position: relative;
+    animation-name: pointsLabel;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes pointsLabel {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1900px) {
+    h1.headline {
+        font-size: 56px;
+        padding: 25px 50px;
+    }
+    .weekly-sales ul {
+        width: 90%;
+    }
+    p.rank {
+        font-size: 26px;
+    }
+    .details p.name {
+        font-size: 18px;
+    }
+    .detail-bottom p {
+        font-size: 13px;
+    }
+    p.total {
+        font-size: 26px;
+    }
+    p.deadline-text {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1.headline {
+        font-size: 40px;
+        padding: 20px 25px;
+    }
+    .weekly-sales ul li {
+        flex-direction: column;
+    }
+    p.rank {
+        font-size: 26px;
+        margin: 0 0px 10px 0;
+    }
+    .weekly-sales ul li figure {
+        margin: 0 0px 10px 0;
+    }
+    .details p.name {
+        font-size: 18px;
+    }
+    .detail-bottom p {
+        font-size: 13px;
+    }
+    p.total {
+        font-size: 26px;
+        margin: 15px 0 0 0 ;
+    }
+    p.deadline-text {
+        font-size: 26px;
+    }
+}
