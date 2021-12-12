@@ -1,0 +1,719 @@
+@font-face {
+    font-family: 'InterRegular';
+    src: url('../fonts/InterRegular.eot');
+    src: url('../fonts/InterRegular.eot') format('embedded-opentype'),
+         url('../fonts/InterRegular.woff2') format('woff2'),
+         url('../fonts/InterRegular.woff') format('woff'),
+         url('../fonts/InterRegular.ttf') format('truetype'),
+         url('../fonts/InterRegular.svg#InterRegular') format('svg');
+}
+@font-face {
+    font-family: 'InterBlack';
+    src: url('../fonts/InterBlack.eot');
+    src: url('../fonts/InterBlack.eot') format('embedded-opentype'),
+         url('../fonts/InterBlack.woff2') format('woff2'),
+         url('../fonts/InterBlack.woff') format('woff'),
+         url('../fonts/InterBlack.ttf') format('truetype'),
+         url('../fonts/InterBlack.svg#InterBlack') format('svg');
+}
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('../fonts/RobotoMedium.eot');
+    src: url('../fonts/RobotoMedium.eot') format('embedded-opentype'),
+         url('../fonts/RobotoMedium.woff2') format('woff2'),
+         url('../fonts/RobotoMedium.woff') format('woff'),
+         url('../fonts/RobotoMedium.ttf') format('truetype'),
+         url('../fonts/RobotoMedium.svg#RobotoMedium') format('svg');
+}
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/RobotoBold.eot');
+    src: url('../fonts/RobotoBold.eot') format('embedded-opentype'),
+         url('../fonts/RobotoBold.woff2') format('woff2'),
+         url('../fonts/RobotoBold.woff') format('woff'),
+         url('../fonts/RobotoBold.ttf') format('truetype'),
+         url('../fonts/RobotoBold.svg#RobotoBold') format('svg');
+}
+@font-face {
+    font-family: 'RobotoBlack';
+    src: url('../fonts/RobotoBlack.eot');
+    src: url('../fonts/RobotoBlack.eot') format('embedded-opentype'),
+         url('../fonts/RobotoBlack.woff2') format('woff2'),
+         url('../fonts/RobotoBlack.woff') format('woff'),
+         url('../fonts/RobotoBlack.ttf') format('truetype'),
+         url('../fonts/RobotoBlack.svg#RobotoBlack') format('svg');
+}
+@font-face {
+    font-family: 'FuturaPTHeavy';
+    src: url('../fonts/FuturaPTHeavy.eot');
+    src: url('../fonts/FuturaPTHeavy.eot') format('embedded-opentype'),
+         url('../fonts/FuturaPTHeavy.woff2') format('woff2'),
+         url('../fonts/FuturaPTHeavy.woff') format('woff'),
+         url('../fonts/FuturaPTHeavy.ttf') format('truetype'),
+         url('../fonts/FuturaPTHeavy.svg#FuturaPTHeavy') format('svg');
+}
+@font-face {
+    font-family: 'FuturaPTDemi';
+    src: url('../fonts/FuturaPTDemi.eot');
+    src: url('../fonts/FuturaPTDemi.eot') format('embedded-opentype'),
+         url('../fonts/FuturaPTDemi.woff2') format('woff2'),
+         url('../fonts/FuturaPTDemi.woff') format('woff'),
+         url('../fonts/FuturaPTDemi.ttf') format('truetype'),
+         url('../fonts/FuturaPTDemi.svg#FuturaPTDemi') format('svg');
+}
+@font-face {
+    font-family: 'FuturaPTBold';
+    src: url('../fonts/FuturaPTBold.eot');
+    src: url('../fonts/FuturaPTBold.eot') format('embedded-opentype'),
+         url('../fonts/FuturaPTBold.woff2') format('woff2'),
+         url('../fonts/FuturaPTBold.woff') format('woff'),
+         url('../fonts/FuturaPTBold.ttf') format('truetype'),
+         url('../fonts/FuturaPTBold.svg#FuturaPTBold') format('svg');
+}
+@font-face {
+    font-family: 'FuturaPTLight';
+    src: url('../fonts/FuturaPTLight.eot');
+    src: url('../fonts/FuturaPTLight.eot') format('embedded-opentype'),
+         url('../fonts/FuturaPTLight.woff2') format('woff2'),
+         url('../fonts/FuturaPTLight.woff') format('woff'),
+         url('../fonts/FuturaPTLight.ttf') format('truetype'),
+         url('../fonts/FuturaPTLight.svg#FuturaPTLight') format('svg');
+}
+
+
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'InterRegular';
+    background-image: url(../images/body-bg-v1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.report {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+}
+h1.headline {
+    margin: 0;
+    font-size: 86px;
+    padding: 40px 250px;
+    border-radius: 0 0 30px 30px;
+    background: rgb(255,255,255);
+    background: linear-gradient( 90deg, rgba(255,255,255,1) 0%, #D1D3D4 100%);
+    color: #779BB1;
+    font-family: 'InterBlack';
+}
+.report-ranking {
+    display: flex;
+    width: 1880px;
+    justify-content: space-between;
+    margin: 53.5px 0;
+}
+.report-ranking ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 25px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,231,232,1) 100%);
+    width: 460px;
+    border-radius: 20px;
+}
+.report-ranking ul li {
+    display: flex;
+    margin-bottom: 14px;
+    border-radius: 17px;
+    padding: 0;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid #DBDDDD;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+li.col-header {
+    text-transform: uppercase;
+    border-left: 0px!important;
+    border-right: 0px!important;
+    border-top: 0px!important;
+    border-radius: 0!important;
+    margin-bottom: 12px!important;
+}
+li.col-header p {
+    font-size: 11px;
+    margin: 0 15px 0 0;
+    color: #535556;
+}
+li.col-header p.ch-progress {
+    margin: 0 15px 0 22px;
+}
+.report-ranking ul li:last-child {
+    margin-bottom: 0px;
+}
+p.place {
+    font-size: 12px;
+    margin: 0;
+    width: 30px;
+    padding: 0;
+    color: #1A262B;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+.report-ranking ul li figure {
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+.report-ranking ul li figure img {
+    margin: 0;
+    padding: 0;
+}
+.report-ranking ul li figure img {
+    margin: 0;
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 50%;
+}
+.details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    position: relative;
+}
+.details:after {
+    position: absolute;
+    content: '';
+    width: 13px;
+    height: 13px;
+    right: -25px;
+    top: 5px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.details p.participant {
+    text-align: left;
+    margin: 5px 0 0 0;
+    width: 77px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 10px;
+    font-family: 'InterBlack';
+    color: #1A262B;
+}
+p.reports-number {
+    margin: 5px 10px 0 0;
+    color: #506A78;
+    border-bottom: 1px solid #506A78;
+    padding: 0;
+    height: 16px;
+    width: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.progressbar {
+    position: relative;
+    background: #D7DEE8;
+    width: 160px;
+    height: 8px;
+    border-radius: 20px;
+    margin-top: 9px;
+}
+.progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #94AFC1;
+    border-radius: 20px;
+}
+p.progress-percentage {
+    font-family: 'InterBlack';
+    margin: 12px 0 0 10px;
+    color: #506A78;
+    line-height: .15;
+    display: flex;
+    padding: 0;
+    height: auto;
+    width: 26px;
+}
+
+p.deadline-text {
+    text-transform: uppercase;
+    font-size: 33px;
+    font-family: 'InterBlack';
+    margin: 0;
+    padding: 45px 0;
+    width: 100%;
+    display: block;
+    color: #2A3D45;
+    background: rgb(255,255,255);
+    background: linear-gradient( 90deg, rgba(255,255,255,1) 0%, #D1D3D4 100%);
+}
+
+
+/*===================================
+Version Specific CSS
+====================================*/
+/* The defualt version is #1*/
+
+/* Version #2*/
+body.report-v2 {
+    background-image: url(../images/body-bg-v2.jpg);
+}
+body.report-v2 h1.headline {
+    font-size: 80px;
+    padding: 40px 250px;
+    background: #0C426B;
+    color: #ffffff;
+    font-family: 'InterRegular';
+    font-weight: 100;
+}
+body.report-v2 p.deadline-text {
+    color: #ffffff;
+    background: transparent;
+}
+body.report-v2 .report-ranking ul {
+    background: none;
+    width: 930px;
+    border-radius: 20px;
+}
+body.report-v2 .report-ranking ul li {
+    border: 0px;
+    padding: 0;
+    margin-bottom: 5px;
+}
+body.report-v2 .details {
+    background: #FFF;
+    flex: 1;
+    padding: 10px;
+    border-radius: 15px;
+}
+body.report-v2 p.place {
+    font-size: 14px;
+    color: #ffffff;
+    width: 40px;
+    text-align: center;
+    margin-right: 10px;
+}
+body.report-v2 .report-ranking ul li figure img {
+    width: 45px;
+    height: 45px;
+}
+body.report-v2 .details p.participant {
+    font-size: 14px;
+    margin-top: 12px;
+    width: 120px;
+    position: relative;
+}
+body.report-v2 .details p.participant:after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 22px;
+    right: 15px;
+    top: 0;
+    background: #cfcfcf;
+    z-index: 1;
+}
+body.report-v2 p.reports-number {
+    color: #1A262B;
+    font-family: 'InterBlack';
+    border-bottom: 1px solid #04a1da;
+    font-size: 14px;
+    height: 22px;
+    margin-top: 11px;
+    width: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+body.report-v2 .progressbar {
+    background: #D7DEE8;
+    width: 300px;
+    height: 10px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+    position: relative;
+}
+body.report-v2 .progressbar-inner {
+    background: #00F2F0;
+    background: linear-gradient( 90deg, #00F2F0 0%, #1399FF 100%);
+}
+body.report-v2 .progressbar:before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 22px;
+    left: -15px;
+    top: -3px;
+    background: #cfcfcf;
+    z-index: 1;
+}
+
+/* Version #4*/
+body.report-v4 {
+    background-image: url(../images/body-bg-v4.jpg);
+    font-family: 'RobotoBold';
+}
+.report-v4 .report {
+    justify-content: center;
+}
+.report-v4 .header {
+    display: flex;
+    width: 1880px;
+    justify-content: end;
+    align-items: center;
+}
+.report-v4 h1.headline {
+    font-family: 'RobotoBlack';
+    color: #506A78;
+    font-size: 59px;
+    padding: 0;
+    background: none;
+}
+.report-v4 p.deadline-text {
+    font-size: 45px;
+    color: #7899B0;
+    font-family: inherit;
+    padding: 0;
+    background: none;
+    width: auto;
+    padding-left: 30px;
+    margin-left: 30px;
+    border-left: 1px solid #7899B0;
+}
+.report-v4 .report-ranking {
+    background: linear-gradient( 90deg, rgba(255,255,255,1) 0%, #D6D7D8 100%);
+    color: #779BB1;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 33px 2px rgb(78 103 118 / 80%);
+    box-shadow: 0px 0px 33px 2px rgb(78 103 118 / 80%);
+    padding: 20px;
+}
+.report-v4 .report-ranking ul {
+    background: none;
+    border-radius: 0px;
+    width: 470px;
+    padding: 0px 0px 12px 0px;
+    border-bottom: 1px solid #c4ced5;
+}
+.report-v4 .report-ranking ul li {
+    margin-bottom: 0;
+    border-radius: 0px;
+    border-right: 1px solid #c4ced5;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 1px solid #c4ced5;
+    padding: 15px;
+}
+.report-v4 .report-ranking ul:last-child li {
+    border-right: 0;
+}
+.report-v4 .report-ranking ul li:last-child {
+    border-bottom: 0;
+}
+.report-v4 li.col-header p {
+    font-family: 'RobotoMedium';
+}
+.report-v4 p.place {
+    font-family: 'RobotoBold';
+    color: #7899B0;
+}
+.report-v4 .details p.participant {
+    font-family: 'RobotoBold';
+    color: #506A78;
+}
+.report-v4 p.progress-percentage {
+    font-family: 'RobotoBold';
+    color: #7899B0;
+}
+
+
+
+/* Version #8*/
+body.report-v8 {
+    background-image: url(../images/body-bg-v8.jpg);
+    font-family: 'FuturaPTBold';
+}
+.report-v8 h1.headline {
+    background: #244058a1;
+    color: #FFF;
+    font-family: 'FuturaPTBold';
+    font-size: 55px;
+}
+.report-v8 p.deadline-text {
+    color: #FFF;
+    background: no-repeat;
+    padding: 0px 0 60px 0;
+    font-family: 'FuturaPTBold';
+}
+.report-v8 .report-ranking {
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    background: #426985c7;
+}
+.report-v8 .report-ranking ul {
+    background: none;
+    border-radius: 0px;
+    width: 470px;
+    padding: 0px 0px 12px 0px;
+    border-bottom: 1px solid #9AB5C6;
+}
+.report-v8 .report-ranking ul li {
+    margin-bottom: 0;
+    border-radius: 0px;
+    border-right: 1px solid #9AB5C6;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 1px solid #9AB5C6;
+    padding: 15px;
+}
+.report-v8 .report-ranking ul:last-child li {
+    border-right: 0;
+}
+.report-v8 .report-ranking ul li:last-child {
+    border-bottom: 0;
+}
+.report-v8 li.col-header p {
+    font-family: 'FuturaPTLight';
+    color: #FFF;
+}
+.report-v8 p.place {
+    font-family: 'FuturaPTDemi';
+    color: #7EC2E9;
+    font-size: 16px;
+}
+.report-v8 .details p.participant {
+    color: #ffffff;
+    font-family: 'FuturaPTHeavy';
+    font-size: 16px;
+    height: auto;
+    margin-top: 1px;
+}
+.report-v8 .details p.reports-number {
+    font-size: 18px;
+    color: #FFF;
+    margin-top: 1px;
+    height: auto;
+    border-bottom-color: #88bde1;
+}
+.report-v8 p.progress-percentage {
+    font-family: 'FuturaPTBold';
+    color: #ffffff;
+    font-size: 18px;
+}
+.report-v8 .details:after {
+    right: -42px;
+}
+.report-v8 .progressbar {
+    background: #D7DEE8;
+}
+.report-v8 .progressbar-inner {
+    background: #8CAABD;
+}
+
+/*===================================
+Animation CSS
+====================================*/
+p.place, p.total {
+    position: relative;
+    animation-name: totalNumber;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes totalNumber {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+
+.progressbar-inner{
+    position: absolute;
+    animation-name: progress;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes progress {
+    0%   {width: 0%;}
+    50%  {width: 50%;}
+    100% {width: 100%;}
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1900px) {
+    h1.headline {
+        font-size: 56px;
+        padding: 25px 50px;
+    }
+    .report-ranking {
+        width: 940px;
+        flex-wrap: wrap;
+    }
+    .report-ranking ul:nth-child(1), .report-ranking ul:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    p.deadline-text {
+        font-size: 26px;
+    }
+    /*V4 responsive css*/
+    body.report-v4 {
+        padding-top: 50px;
+    }
+    .report-v4 .report-ranking {
+        width: 980px;
+    }
+    .report-v4 .header {
+        width: 100%;
+        padding: 0 15px;
+        justify-content: center;
+    }
+    .report-v4 .report-ranking ul:nth-child(2) li {
+        border-right: 0;
+    }
+    /*V8 responsive css*/
+    .report-v8 .report-ranking {
+        width: 980px;
+    }
+    .report-v8 .report-ranking ul:nth-child(2) li {
+        border-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+    .report-ranking {
+        width: 460px;
+        flex-wrap: wrap;
+    }
+    .report-ranking ul:nth-child(3) {
+        margin-bottom: 20px;
+    }
+    /*V4 responsive css*/
+    .report-v4 .report-ranking {
+        width: 450px;
+    }
+    .report-v4 .header {
+        width: 100%;
+        padding: 0 15px;
+        justify-content: center;
+    }
+    .report-v4 .report-ranking ul li {
+        border-right: 0;
+    }
+    .report-v4 h1.headline {
+        font-size: 42px;
+    }
+    .report-v4 p.deadline-text {
+        font-size: 34px;
+    }
+    /*V8 responsive css*/
+    .report-v8 .report-ranking {
+        width: 450px;
+        padding: 10px;
+    }
+    .report-v8 .report-ranking ul li {
+        border-right: 0;
+    }
+    .report-v8 h1.headline {
+        font-size: 42px;
+    }
+    .report-v8 p.deadline-text {
+        font-size: 34px;
+    }
+}
+@media screen and (max-width: 479px) {
+    h1.headline {
+        font-size: 40px;
+        padding: 20px 25px;
+    }
+    .report-ranking {
+        width: 320px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .report-ranking ul {
+        width: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    li.col-header p {
+        margin: 0 11px 0 0;
+    }
+    li.col-header p.ch-progress {
+        margin: 0 11px 0 0px;
+    }
+    .progressbar {
+        width: 30px;
+    }
+    p.deadline-text {
+        font-size: 30px;
+        padding: 25px 10px;
+    }
+    /*V4 responsive css*/
+    .report-v4 .header {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .report-v4 h1.headline {
+        font-size: 32px;
+    }
+    .report-v4 p.deadline-text {
+        font-size: 24px;
+        color: #384954;
+        margin: 10px 0 0 0;
+        padding: 10px 0 0 0;
+        border-left: 0px solid #7899B0;
+        border-top: 1px solid #7899B0;
+    }
+    .report-v4 .report-ranking {
+        width: 300px;
+        padding: 10px;
+    }
+    .report-v4 .report-ranking ul li {
+        padding: 5px;
+    }
+    /*V8 responsive css*/
+    .report-v8 h1.headline {
+        font-size: 32px;
+    }
+    .report-v8 p.deadline-text {
+        font-size: 24px;
+    }
+    .report-v8 .report-ranking {
+        width: 300px;
+        padding: 5px;
+    }
+    .report-v8 .report-ranking ul li {
+        padding: 5px;
+    }
+}
