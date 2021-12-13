@@ -252,7 +252,7 @@ p.reports-number {
 }
 p.progress-percentage {
     font-family: 'InterBlack';
-    margin: 12px 0 0 10px;
+    margin: 5px 0 0 10px;
     color: #506A78;
     display: flex;
     padding: 0;
@@ -480,6 +480,149 @@ body.report-v4 {
     color: #7899B0;
 }
 
+/* Version #6*/
+body.report-v6 {
+    background-image: url(../images/body-bg-v6.jpg);
+    font-family: 'RobotoBlack';
+}
+body.report-v6 .report {
+    justify-content: center;
+}
+body.report-v6 .header {
+    margin-bottom: 40px;
+    background: rgba(3, 21, 31, .8);
+    padding: 30px 50px;
+    border-radius: 30px;
+}
+body.report-v6 h1.headline {
+    font-size: 59px;
+    padding: 0;
+    background: none;
+    color: #6DE6FC;
+    font-family: 'RobotoBlack';
+    font-weight: 100;
+    text-transform: uppercase;
+}
+body.report-v6 .report-ranking {
+    margin: 5px 0;
+    width: 1800px;
+}
+body.report-v6 p.deadline-text {
+    color: #ffffff;
+    background: transparent;
+    padding: 0 35px 0px 0;
+    text-transform: inherit;
+    font-size: 43px;
+    font-weight: 100;
+    font-family: 'FuturaPTBold';
+    width: auto;
+}
+body.report-v6 .report-ranking ul {
+    background: none;
+    width: 930px;
+    border-radius: 20px;
+}
+body.report-v6 .report-ranking ul li {
+    border: 0px;
+    padding: 0;
+    margin-bottom: 5px;
+}
+body.report-v6 li.col-header {
+    border-bottom: 1px solid #20749d6b!important;
+    padding-bottom: 15px!important;
+    margin-bottom: 15px!important;
+}
+body.report-v6 li.col-header p {
+    font-size: 14px;
+    margin: 0 85px 0 0;
+    color: #ffffff;
+    font-family: 'RobotoMedium';
+}
+body.report-v6 .details {    
+    background: rgba(3, 21, 31, .8);
+    flex: 1;
+    padding: 6px 15px;
+    border-radius: 15px;
+}
+body.report-v6 p.place {
+    font-size: 20px;
+    color: #ffffff;
+    width: 40px;
+    text-align: center;
+    margin: 0px 10px 0 0;
+    font-family: 'RobotoMedium';
+}
+body.report-v6 .report-ranking ul li figure img {
+    width: 54px;
+    height: 54px;
+}
+body.report-v6 .details p.participant {
+    margin: 17px 0 0 10px;
+    padding: 0 20px 0 0;
+    font-size: 18px;
+    width: 170px;
+    position: relative;
+    color: #FFF;
+}
+body.report-v6 p.participant span {
+    font-family: 'RobotoBlack';
+}
+body.report-v6 .details p.participant:after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 22px;
+    right: 15px;
+    top: 0;
+    background: #1b5e6a;
+    z-index: 1;
+}
+body.report-v6 p.reports-number {
+    color: #1A262B;
+    font-family: 'RobotoBold';
+    border-bottom: 0px solid #04a1da;
+    font-size: 18px;
+    height: 24px;
+    margin-top: 17px;
+    width: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #FFF;
+}
+body.report-v6 .progressbar {
+    background: #D7DEE8;
+    width: 280px;
+    height: 12px;
+    border-radius: 20px;
+    margin-top: 24px;
+    margin-left: 50px;
+    position: relative;
+}
+body.report-v6 .progressbar-inner {
+    background: #6DE6FC;
+}
+body.report-v6 .progressbar:before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 22px;
+    left: -35px;
+    top: -6px;
+    background: #1b5e6a;
+    z-index: 1;
+}
+body.report-v6 p.progress-percentage {
+    margin: 18px 0 0 35px;
+    color: #FFF;
+    width: 52px;
+    font-size: 18px;
+}
+body.report-v6 .details:after {
+    width: 18px;
+    height: 18px;
+    right: 20px;
+    top: 24px;
+}
 
 
 /* Version #8*/
@@ -702,7 +845,6 @@ body.report-v9 .details:after {
     height: 18px;
     right: 20px;
     top: 24px;
-    background-image: url(../images/arrow.png);
 }
 
 
@@ -739,6 +881,93 @@ p.place, p.total {
 Responsive CSS
 ==================================*/
 
+@media screen and (min-width: 1901px) {
+    .details {
+        flex: 1!important;
+    }
+    .details p.participant {
+        margin: 0px 0 0 10px!important;
+        text-overflow: clip;
+        white-space: pre-wrap;
+        display: flex;
+        align-items: center;
+        max-height: 28px;
+    }
+    p.participant span {
+        max-height: 25px;
+        overflow: hidden;
+        line-height: 1;
+    }
+    p.reports-number {
+        width: auto!important;
+    }
+    .progressbar {
+        width: auto!important;
+        flex: 1;
+    }
+    .report-ranking ul li {
+        padding-right: 35px!important;
+    }
+    /*V2 responsive css*/
+    body.report-v2 .report-ranking ul li {
+        padding-right: 0px!important;
+    }
+    body.report-v2 .details {
+        padding: 6px 40px 6px 15px;
+    }
+    body.report-v2 .details p.participant:after {
+        top: 18px;
+    }
+    body.report-v2 p.participant {
+        max-height: inherit;
+    }
+    body.report-v2 p.participant span {
+        max-height: 35px;
+    }
+    /*V6 responsive css*/
+    body.report-v6 .report-ranking ul li {
+        padding-right: 0px!important;
+    }
+    body.report-v6 .details {
+        padding: 6px 40px 6px 15px;
+    }
+    body.report-v6 .details p.participant:after {
+        top: 18px;
+    }
+    body.report-v6 p.participant {
+        max-height: inherit;
+    }
+    body.report-v6 p.participant span {
+        max-height: 35px;
+    }
+    /*V8 responsive css*/
+    body.report-v8 p.participant span {
+        max-height: 34px;
+    }
+    body.report-v8 .report-ranking ul li {
+        padding-right: 65px!important;
+    }
+    .report-v8 p.progress-percentage {
+        margin: 2px 0 0 10px;
+    }
+    /*V9 responsive css*/
+    body.report-v9 .report-ranking ul li {
+        padding-right: 0px!important;
+    }
+    body.report-v9 .details {
+        padding: 6px 40px 6px 15px;
+    }
+    body.report-v9 .details p.participant:after {
+        top: 18px;
+    }
+    body.report-v9 p.participant {
+        max-height: inherit;
+    }
+    body.report-v9 p.participant span {
+        max-height: 35px;
+    }
+
+}
 @media screen and (max-width: 1900px) {
     h1.headline {
         font-size: 56px;
@@ -776,6 +1005,17 @@ Responsive CSS
     }
     .report-v4 .report-ranking ul:nth-child(2) li {
         border-right: 0;
+    }
+    /*V6 responsive css*/
+    body.report-v6 .header {
+        margin-top: 20px;
+    }
+    body.report-v6 .report-ranking {
+        width: 900px;
+    }
+    body.report-v6 h1.headline {
+        font-size: 50px;
+        padding: 25px 50px;
     }
     /*V8 responsive css*/
     .report-v8 .report-ranking {
@@ -883,6 +1123,78 @@ Responsive CSS
     }
     .report-v4 p.deadline-text {
         font-size: 34px;
+    }
+    /*V6 responsive css*/
+    body.report-v6 .header {
+        width: auto;
+        margin-bottom: 30px;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+    body.report-v6 h1.headline {
+        padding: 0;
+        font-size: 32px;
+    }
+    body.report-v6 p.deadline-text {
+        padding: 0 0px 0px 0;
+        font-size: 26px;
+    }
+    body.report-v6 .report-ranking {
+        width: 450px;
+    }
+    body.report-v6 .report-ranking ul {
+        width: 450px;
+        padding: 0px;
+    }
+    body.report-v6 li.col-header p {
+        font-size: 11px;
+        margin: 0 55px 0 0;
+    }
+    body.report-v6 p.place {
+        font-size: 12px;
+        width: 25px;
+        margin: 3px 10px 0 0;
+    }
+    body.report-v6 .details p.participant {
+        margin: 17px 0 0 5px;
+        padding: 0 10px 0 0;
+        font-size: 12px;
+        width: 100px;
+    }
+    body.report-v6 .details p.participant:after {
+        height: 20px;
+        right: 5px;
+        top: 0;
+    }
+    body.report-v6 p.reports-number {
+        font-size: 12px;
+        height: 24px;
+        margin-top: 17px;
+        width: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    body.report-v6 .progressbar {
+        width: 70px;
+        height: 10px;
+        margin-top: 24px;
+        margin-left: 20px;
+    }
+    body.report-v6 .progressbar:before {
+        left: -15px;
+        top: -6px;
+    }
+    body.report-v6 p.progress-percentage {
+        margin: 21px 0 0 10px;
+        width: 37px;
+        font-size: 12px;
+    }
+    body.report-v6 .details:after {
+        width: 10px;
+        height: 10px;
+        right: 15px;
+        top: 28px;
     }
     /*V8 responsive css*/
     .report-v8 .report-ranking {
@@ -1088,6 +1400,72 @@ Responsive CSS
     }
     .report-v4 .report-ranking ul li {
         padding: 5px;
+    }
+    /*V6 responsive css*/
+     body.report-v6 h1.headline {
+        font-size: 34px;
+        padding: 0;
+    }
+    body.report-v6 .report-ranking {
+        width: 300px;
+    }
+    body.report-v6 .report-ranking ul {
+        width: 300px;
+        padding: 0px;
+    }
+    body.report-v6 li.col-header p {
+        font-size: 10px;
+        margin: 0 20px 0 0;
+    }
+    body.report-v6 p.place {
+        font-size: 11px;
+        width: 20px;
+        margin: 3px 5px 0 0;
+    }
+    body.report-v6 .details {
+        padding: 6px 10px;
+        border-radius: 15px;
+    }
+    body.report-v6 .report-ranking ul li figure img {
+        width: 24px;
+        height: 24px;
+        margin-top: 2px;
+    }
+    body.report-v6 .details p.participant {
+        margin: 5px 0 0 5px;
+        padding: 2px 6px 0 0;
+        font-size: 11px;
+        width: 65px;
+    }
+    body.report-v6 p.reports-number {
+        font-size: 11px;
+        height: 16px;
+        margin-top: 7px;
+        width: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    body.report-v6 .progressbar {
+        width: 30px;
+        height: 8px;
+        margin-top: 13px;
+        margin-left: 10px;
+    }
+    body.report-v6 .progressbar:before {
+        left: -8px;
+        top: -5px;
+    }
+    body.report-v6 p.progress-percentage {
+        margin: 10px 0 0 5px;
+        width: 25px;
+        font-size: 11px;
+    }
+    body.report-v6 .details:after {
+        top: 18px;
+    }
+    body.report-v6 p.deadline-text {
+        padding: 0 0 0px 0;
+        font-size: 20px;
     }
     /*V8 responsive css*/
     .report-v8 h1.headline {
