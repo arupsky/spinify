@@ -17,6 +17,24 @@
          url('../fonts/InterBlack.svg#InterBlack') format('svg');
 }
 @font-face {
+    font-family: 'RobotoLight';
+    src: url('../fonts/RobotoLight.eot');
+    src: url('../fonts/RobotoLight.eot') format('embedded-opentype'),
+         url('../fonts/RobotoLight.woff2') format('woff2'),
+         url('../fonts/RobotoLight.woff') format('woff'),
+         url('../fonts/RobotoLight.ttf') format('truetype'),
+         url('../fonts/RobotoLight.svg#RobotoLight') format('svg');
+}
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/RobotoRegular.eot');
+    src: url('../fonts/RobotoRegular.eot') format('embedded-opentype'),
+         url('../fonts/RobotoRegular.woff2') format('woff2'),
+         url('../fonts/RobotoRegular.woff') format('woff'),
+         url('../fonts/RobotoRegular.ttf') format('truetype'),
+         url('../fonts/RobotoRegular.svg#RobotoRegular') format('svg');
+}
+@font-face {
     font-family: 'RobotoMedium';
     src: url('../fonts/RobotoMedium.eot');
     src: url('../fonts/RobotoMedium.eot') format('embedded-opentype'),
@@ -553,7 +571,118 @@ body.report-v4 {
     font-family: 'RobotoBold';
     color: #7899B0;
 }
-
+/*V5 responsive css*/
+body.report-v5 {
+    background-image: url(../images/body-bg-v5.jpg);
+    font-family: 'InterRegular';
+}
+body.report-v5 .header {
+    background: rgba(0,39,92,.8);
+    border-radius: 0 20px 20px 0;
+    width: 420px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 0 0 50px;
+}
+body.report-v5 .report {
+    flex-direction: row;
+}
+body.report-v5 h1.headline {
+    margin: 0;
+    font-size: 60px;
+    padding: 0;
+    background: none;
+    color: #ffffff;
+    font-family: 'InterRegular';
+    font-weight: 100;
+    border-radius: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+body.report-v5 p.deadline-text {
+    font-family: 'RobotoLight';
+    font-weight: 100!important;
+    margin: 15px 0 0 0;
+    padding: 0;
+    width: auto;
+    text-align: left;
+    display: block;
+    color: #ffffff;
+    background: none;
+}
+body.report-v5 .report-ranking {
+    display: flex;
+    width: 1280px;
+    justify-content: space-between;
+    margin: 20px 100px 20px 0;
+    background: rgba(0,39,92,.8);
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+body.report-v5 .report-ranking ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 25px;
+    background: transparent;
+    width: 605px;
+    border-radius: 10px;
+}
+body.report-v5 .report-ranking ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0px solid #DBDDDD;
+    border-bottom: 1px solid #2f5c9f;
+    border-radius: 0;
+}
+body.report-v5 li.col-header p {
+    font-size: 11px;
+    margin: 0 50px 0 0;
+    color: #ffffff;
+    font-family: 'RobotoRegular';
+}
+body.report-v5 p.place {
+    color: #9EE9FF;
+    font-family: 'RobotoRegular';
+    font-size: 18px;
+    width: 40px;
+}
+body.report-v5 .report-ranking ul li figure img {
+    width: 38px;
+    height: 38px;
+}
+body.report-v5 .details p.participant {
+    color: #FFF;
+    font-family: 'RobotoBold';
+    font-size: 18px;
+    max-height: initial;
+}
+body.report-v5 p.reports-number {
+    font-family: 'RobotoBold';
+    font-size: 18px;
+    height: 24px;
+    color: #FFF;
+}
+body.report-v5 .progressbar {
+    background: #ffffff;
+    height: 10px;
+}
+body.report-v5 .progressbar-inner {
+    background: #00EFF1;
+}
+body.report-v5 p.progress-percentage {
+    color: #ffffff;
+    width: 30px;
+    font-family: 'RobotoBold';
+    font-size: 18px;
+}
+body.report-v5 .details:after {
+    top: 8px;
+}
 /* Version #6*/
 body.report-v6 {
     background-image: url(../images/body-bg-v6.jpg);
@@ -1010,6 +1139,21 @@ Responsive CSS
         border-bottom: 1px solid #00EFF1;
         margin: 5px 30px 0 15px;
     }
+    /*V5 responsive css*/
+    body.report-v5 .details p.participant {
+        width: 110px;
+    }
+    body.report-v5 li.col-header p.ch-progress {
+        margin-left: 80px;
+    }
+    body.report-v5 p.participant span {
+        max-height: 35px;
+    }
+    body.report-v5 p.reports-number {
+        color: #FFF;
+        border-bottom: 1px solid #00EFF1;
+        margin: 5px 30px 0 15px;
+    }
     /*V6 responsive css*/
     body.report-v6 .report-ranking ul li {
         padding-right: 0px!important;
@@ -1117,6 +1261,36 @@ Responsive CSS
     }
     .report-v4 .report-ranking ul:nth-child(2) li {
         border-right: 0;
+    }
+    /*V5 responsive css*/
+    body.report-v5 .report {
+        flex-direction: column;
+    }
+    body.report-v5 .header {
+        width: auto;
+        height: auto;
+        padding: 20px 35px;
+        border-radius: 0 0 30px 30px;
+        align-items: center;
+    }
+    body.report-v5 h1.headline {
+        font-size: 52px;
+        text-align: center;
+    }
+    body.report-v5 p.deadline-text{
+        font-size: 26px;
+        text-align: center;
+    }
+    body.report-v5 li.col-header p {
+        margin: 0 25px 0 0;
+    }
+    body.report-v5 .report-ranking {
+        width: 950px;
+        margin: 20px 0 20px 0;
+        padding: 0;
+    }
+    body.report-v5 .report-ranking ul {
+        width: 475px;
     }
     /*V6 responsive css*/
     body.report-v6 .header {
@@ -1234,7 +1408,6 @@ Responsive CSS
         width: auto;
         flex: 1;
     }
-
     /*V4 responsive css*/
     .report-v4 .report-ranking {
         width: 450px;
@@ -1252,6 +1425,33 @@ Responsive CSS
     }
     .report-v4 p.deadline-text {
         font-size: 34px;
+    }
+    /*V5 responsive css*/
+    body.report-v5 .header {
+        padding: 15px 20px;
+    }
+    body.report-v5 p.deadline-text {
+        font-size: 22px;
+        text-align: center;
+    }
+    body.report-v5 h1.headline {
+        font-size: 30px;
+        text-align: center;
+    }
+    body.report-v5 .report-ranking {
+        width: 300px;
+    }
+    body.report-v5 .report-ranking ul {
+        width: 300px;
+        padding: 10px 35px 10px 5px;
+        margin-bottom: 20px;
+    }
+    body.report-v5 .details {
+        flex: 1;
+    }
+    body.report-v5 .progressbar {
+        width: auto;
+        flex: 1;
     }
     /*V6 responsive css*/
     body.report-v6 .header {
