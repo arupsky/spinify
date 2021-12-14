@@ -827,7 +827,122 @@ body.report-v6 .details:after {
     top: 24px;
 }
 
-
+/*V7 responsive css*/
+body.report-v7 {
+    background-image: url(../images/body-bg-v7.jpg);
+    font-family: 'InterRegular';
+}
+body.report-v7 .header {
+    border-radius: 0 20px 20px 0;
+    width: 420px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 0 0 80px;
+}
+body.report-v7 .report {
+    flex-direction: row;
+}
+body.report-v7 h1.headline {
+    margin: 0;
+    font-size: 72px;
+    padding: 0;
+    background: none;
+    color: #233740;
+    font-family: 'FuturaPTBold';
+    font-weight: 100;
+    border-radius: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+body.report-v7 p.deadline-text {
+    font-family: 'RobotoLight';
+    font-weight: 100!important;
+    margin: 15px 0 0 0;
+    padding: 0;
+    width: auto;
+    text-align: left;
+    display: block;
+    color: #ffffff;
+    background: none;
+}
+body.report-v7 .report-ranking {
+    display: flex;
+    width: 1280px;
+    justify-content: space-between;
+    margin: 20px 100px 20px 0;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+body.report-v7 .report-ranking ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 25px;
+    background: transparent;
+    width: 605px;
+    border-radius: 10px;
+}
+body.report-v7 .report-ranking ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0px solid #DBDDDD;
+    background: white;
+    margin-bottom: 2px;
+}
+body.report-v7 li.col-header {
+    background: none!important;
+    border-bottom: 1px solid #a7cfe7!important;
+}
+body.report-v7 li.col-header p {
+    font-size: 11px;
+    margin: 0 50px 0 0;
+    color: #6A7E8A;
+    font-family: 'InterRegular';
+    font-weight: 600;
+}
+body.report-v7 p.place {
+    color: #6A7E8A;
+    font-family: 'FuturaPTDemi';
+    font-size: 18px;
+    width: 40px;
+    font-weight: 100;
+}
+body.report-v7 .report-ranking ul li figure img {
+    width: 38px;
+    height: 38px;
+}
+body.report-v7 .details p.participant {
+    color: #2A1C23;
+    font-family: 'FuturaPTDemi';
+    font-size: 16px;
+}
+body.report-v7 p.reports-number {
+    color: #2A1C23;
+    font-family: 'FuturaPTDemi';
+    font-size: 16px;
+    height: 24px;
+}
+body.report-v7 .progressbar {
+    background: #D7DEE8;
+    height: 10px;
+    margin-top: 12px;
+}
+body.report-v7 .progressbar-inner {
+    background: #6A7E8A;
+}
+body.report-v7 p.progress-percentage {
+    color: #2A1C23;
+    font-family: 'FuturaPTDemi';
+    font-size: 16px;
+    width: 30px;
+}
+body.report-v7 .details:after {
+    top: 8px;
+}
 /* Version #8*/
 body.report-v8 {
     background-image: url(../images/body-bg-v8.jpg);
@@ -1170,6 +1285,40 @@ Responsive CSS
     body.report-v6 p.participant span {
         max-height: 35px;
     }
+    /*V7 responsive css*/
+    body.report-v7 .details p.participant {
+        width: 110px;
+        position: relative;
+    }
+    body.report-v7 .details p.participant:after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 16px;
+        right: 0px;
+        top: 11px;
+        background: #dfdfdf;
+        z-index: 1;
+    }
+    body.report-v7 li.col-header p.ch-progress {
+        margin-left: 80px;
+    }
+    body.report-v7 p.participant span {
+        max-height: 30px;
+    }
+    body.report-v7 p.reports-number {
+        margin: 5px 30px 0 15px;
+    }
+    body.report-v7 .progressbar:before {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 16px;
+        left: -17px;
+        top: -2px;
+        background: #dfdfdf;
+        z-index: 1;
+    }
     /*V8 responsive css*/
     body.report-v8 p.participant span {
         max-height: 34px;
@@ -1302,6 +1451,36 @@ Responsive CSS
     body.report-v6 h1.headline {
         font-size: 50px;
         padding: 25px 50px;
+    }
+    /*V7 responsive css*/
+    body.report-v7 .report {
+        flex-direction: column;
+    }
+    body.report-v7 .header {
+        width: auto;
+        height: auto;
+        padding: 20px 35px;
+        border-radius: 0 0 30px 30px;
+        align-items: center;
+    }
+    body.report-v7 h1.headline {
+        font-size: 52px;
+        text-align: center;
+    }
+    body.report-v7 p.deadline-text{
+        font-size: 26px;
+        text-align: center;
+    }
+    body.report-v7 li.col-header p {
+        margin: 0 25px 0 0;
+    }
+    body.report-v7 .report-ranking {
+        width: 950px;
+        margin: 20px 0 20px 0;
+        padding: 0;
+    }
+    body.report-v7 .report-ranking ul {
+        width: 475px;
     }
     /*V8 responsive css*/
     .report-v8 .report-ranking {
@@ -1524,6 +1703,33 @@ Responsive CSS
         height: 10px;
         right: 15px;
         top: 28px;
+    }
+    /*V7 responsive css*/
+    body.report-v7 .header {
+        padding: 15px 20px;
+    }
+    body.report-v7 p.deadline-text {
+        font-size: 22px;
+        text-align: center;
+    }
+    body.report-v7 h1.headline {
+        font-size: 30px;
+        text-align: center;
+    }
+    body.report-v7 .report-ranking {
+        width: 300px;
+    }
+    body.report-v7 .report-ranking ul {
+        width: 300px;
+        padding: 10px 35px 10px 5px;
+        margin-bottom: 20px;
+    }
+    body.report-v7 .details {
+        flex: 1;
+    }
+    body.report-v7 .progressbar {
+        width: auto;
+        flex: 1;
     }
     /*V8 responsive css*/
     .report-v8 .report-ranking {
