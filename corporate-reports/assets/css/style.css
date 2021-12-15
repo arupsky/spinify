@@ -1,0 +1,720 @@
+@font-face {
+    font-family: 'InterRegular';
+    src: url('../fonts/InterRegular.eot');
+    src: url('../fonts/InterRegular.eot') format('embedded-opentype'),
+         url('../fonts/InterRegular.woff2') format('woff2'),
+         url('../fonts/InterRegular.woff') format('woff'),
+         url('../fonts/InterRegular.ttf') format('truetype'),
+         url('../fonts/InterRegular.svg#InterRegular') format('svg');
+}
+@font-face {
+    font-family: 'InterBlack';
+    src: url('../fonts/InterBlack.eot');
+    src: url('../fonts/InterBlack.eot') format('embedded-opentype'),
+         url('../fonts/InterBlack.woff2') format('woff2'),
+         url('../fonts/InterBlack.woff') format('woff'),
+         url('../fonts/InterBlack.ttf') format('truetype'),
+         url('../fonts/InterBlack.svg#InterBlack') format('svg');
+}
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('../fonts/RobotoLight.eot');
+    src: url('../fonts/RobotoLight.eot') format('embedded-opentype'),
+         url('../fonts/RobotoLight.woff2') format('woff2'),
+         url('../fonts/RobotoLight.woff') format('woff'),
+         url('../fonts/RobotoLight.ttf') format('truetype'),
+         url('../fonts/RobotoLight.svg#RobotoLight') format('svg');
+}
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/RobotoRegular.eot');
+    src: url('../fonts/RobotoRegular.eot') format('embedded-opentype'),
+         url('../fonts/RobotoRegular.woff2') format('woff2'),
+         url('../fonts/RobotoRegular.woff') format('woff'),
+         url('../fonts/RobotoRegular.ttf') format('truetype'),
+         url('../fonts/RobotoRegular.svg#RobotoRegular') format('svg');
+}
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('../fonts/RobotoMedium.eot');
+    src: url('../fonts/RobotoMedium.eot') format('embedded-opentype'),
+         url('../fonts/RobotoMedium.woff2') format('woff2'),
+         url('../fonts/RobotoMedium.woff') format('woff'),
+         url('../fonts/RobotoMedium.ttf') format('truetype'),
+         url('../fonts/RobotoMedium.svg#RobotoMedium') format('svg');
+}
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/RobotoBold.eot');
+    src: url('../fonts/RobotoBold.eot') format('embedded-opentype'),
+         url('../fonts/RobotoBold.woff2') format('woff2'),
+         url('../fonts/RobotoBold.woff') format('woff'),
+         url('../fonts/RobotoBold.ttf') format('truetype'),
+         url('../fonts/RobotoBold.svg#RobotoBold') format('svg');
+}
+@font-face {
+    font-family: 'RobotoBlack';
+    src: url('../fonts/RobotoBlack.eot');
+    src: url('../fonts/RobotoBlack.eot') format('embedded-opentype'),
+         url('../fonts/RobotoBlack.woff2') format('woff2'),
+         url('../fonts/RobotoBlack.woff') format('woff'),
+         url('../fonts/RobotoBlack.ttf') format('truetype'),
+         url('../fonts/RobotoBlack.svg#RobotoBlack') format('svg');
+}
+@font-face {
+    font-family: 'FuturaPTHeavy';
+    src: url('../fonts/FuturaPTHeavy.eot');
+    src: url('../fonts/FuturaPTHeavy.eot') format('embedded-opentype'),
+         url('../fonts/FuturaPTHeavy.woff2') format('woff2'),
+         url('../fonts/FuturaPTHeavy.woff') format('woff'),
+         url('../fonts/FuturaPTHeavy.ttf') format('truetype'),
+         url('../fonts/FuturaPTHeavy.svg#FuturaPTHeavy') format('svg');
+}
+@font-face {
+    font-family: 'FuturaPTDemi';
+    src: url('../fonts/FuturaPTDemi.eot');
+    src: url('../fonts/FuturaPTDemi.eot') format('embedded-opentype'),
+         url('../fonts/FuturaPTDemi.woff2') format('woff2'),
+         url('../fonts/FuturaPTDemi.woff') format('woff'),
+         url('../fonts/FuturaPTDemi.ttf') format('truetype'),
+         url('../fonts/FuturaPTDemi.svg#FuturaPTDemi') format('svg');
+}
+@font-face {
+    font-family: 'FuturaPTBold';
+    src: url('../fonts/FuturaPTBold.eot');
+    src: url('../fonts/FuturaPTBold.eot') format('embedded-opentype'),
+         url('../fonts/FuturaPTBold.woff2') format('woff2'),
+         url('../fonts/FuturaPTBold.woff') format('woff'),
+         url('../fonts/FuturaPTBold.ttf') format('truetype'),
+         url('../fonts/FuturaPTBold.svg#FuturaPTBold') format('svg');
+}
+@font-face {
+    font-family: 'FuturaPTLight';
+    src: url('../fonts/FuturaPTLight.eot');
+    src: url('../fonts/FuturaPTLight.eot') format('embedded-opentype'),
+         url('../fonts/FuturaPTLight.woff2') format('woff2'),
+         url('../fonts/FuturaPTLight.woff') format('woff'),
+         url('../fonts/FuturaPTLight.ttf') format('truetype'),
+         url('../fonts/FuturaPTLight.svg#FuturaPTLight') format('svg');
+}
+@font-face {
+    font-family: 'baloo_da_2bold';
+    src: url('../fonts/balooda2-bold-webfont.eot');
+    src: url('../fonts/balooda2-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/balooda2-bold-webfont.woff2') format('woff2'),
+         url('../fonts/balooda2-bold-webfont.woff') format('woff'),
+         url('../fonts/balooda2-bold-webfont.ttf') format('truetype'),
+         url('../fonts/balooda2-bold-webfont.svg#baloo_da_2bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'baloo_da_2medium';
+    src: url('../fonts/balooda2-medium-webfont.eot');
+    src: url('../fonts/balooda2-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/balooda2-medium-webfont.woff2') format('woff2'),
+         url('../fonts/balooda2-medium-webfont.woff') format('woff'),
+         url('../fonts/balooda2-medium-webfont.ttf') format('truetype'),
+         url('../fonts/balooda2-medium-webfont.svg#baloo_da_2medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'digital-7_monomono';
+    src: url('../fonts/digital-7_mono-webfont.eot');
+    src: url('../fonts/digital-7_mono-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/digital-7_mono-webfont.woff2') format('woff2'),
+         url('../fonts/digital-7_mono-webfont.woff') format('woff'),
+         url('../fonts/digital-7_mono-webfont.ttf') format('truetype'),
+         url('../fonts/digital-7_mono-webfont.svg#digital-7_monomono') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'InterRegular';
+    background-image: url(../images/body-bg-v1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.report {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+}
+h1.headline {
+    margin: 0;
+    font-size: 86px;
+    padding: 40px 250px;
+    border-radius: 0 0 30px 30px;
+    background: rgb(255,255,255);
+    background: linear-gradient( 90deg, rgba(255,255,255,1) 0%, #D1D3D4 100%);
+    color: #779BB1;
+    font-family: 'InterBlack';
+}
+.report-ranking {
+    display: flex;
+    width: 1880px;
+    justify-content: space-between;
+    margin: 53.5px 0;
+}
+.report-ranking ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 25px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,231,232,1) 100%);
+    width: 460px;
+    border-radius: 20px;
+}
+.report-ranking ul li {
+    display: flex;
+    margin-bottom: 14px;
+    border-radius: 17px;
+    padding: 0;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid #DBDDDD;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+li.col-header {
+    text-transform: uppercase;
+    border-left: 0px!important;
+    border-right: 0px!important;
+    border-top: 0px!important;
+    border-radius: 0!important;
+    margin-bottom: 12px!important;
+}
+li.col-header p {
+    font-size: 11px;
+    margin: 0 15px 0 0;
+    color: #535556;
+}
+li.col-header p.ch-progress {
+    margin: 0 15px 0 22px;
+}
+.report-ranking ul li:last-child {
+    margin-bottom: 0px;
+}
+p.place {
+    font-size: 12px;
+    margin: 0;
+    width: 30px;
+    padding: 0;
+    color: #1A262B;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+.report-ranking ul li figure {
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+.report-ranking ul li figure img {
+    margin: 0;
+    padding: 0;
+}
+.report-ranking ul li figure img {
+    margin: 0;
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 50%;
+}
+.details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    position: relative;
+}
+.details:after {
+    position: absolute;
+    content: '';
+    width: 13px;
+    height: 13px;
+    right: -25px;
+    top: 5px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.details p.participant {
+    text-align: left;
+    margin: 5px 0 0 0;
+    width: 77px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 10px;
+    font-family: 'InterBlack';
+    color: #1A262B;
+}
+p.reports-number {
+    margin: 5px 10px 0 0;
+    color: #506A78;
+    border-bottom: 1px solid #506A78;
+    padding: 0;
+    height: 16px;
+    width: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.progressbar {
+    position: relative;
+    background: #D7DEE8;
+    width: 160px;
+    height: 8px;
+    border-radius: 20px;
+    margin-top: 9px;
+}
+.progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #94AFC1;
+    border-radius: 20px;
+}
+p.progress-percentage {
+    font-family: 'InterBlack';
+    margin: 5px 0 0 10px;
+    color: #506A78;
+    display: flex;
+    padding: 0;
+    height: auto;
+    width: 26px;
+}
+
+p.deadline-text {
+    text-transform: uppercase;
+    font-size: 33px;
+    font-family: 'InterBlack';
+    margin: 0;
+    padding: 45px 0;
+    width: 100%;
+    display: block;
+    color: #2A3D45;
+    background: rgb(255,255,255);
+    background: linear-gradient( 90deg, rgba(255,255,255,1) 0%, #D1D3D4 100%);
+}
+
+
+/*===================================
+Version Specific CSS
+====================================*/
+/* The defualt version is #1*/
+
+/*Pool css*/
+body.report-pool {
+    background-image: url(../images/body-bg-pool.jpg);
+    font-family: 'baloo_da_2bold';
+}
+body.report-pool h1.headline {
+    font-size: 85px;
+    padding: 45px 20px 0px 20px;
+    font-family: 'baloo_da_2bold';
+    background: -webkit-linear-gradient(45deg, #21bdd7, #0a4a70 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+body.report-pool .report-ranking {
+    margin: 0px 0 20px 0;
+}
+body.report-pool .report-ranking ul {
+    background: transparent;
+    border-radius: 0px;
+    padding: 0;
+}
+body.report-pool .report-ranking ul li {
+    background: #FFF;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+body.report-pool .report-ranking ul li.col-header {
+    background: transparent;
+}
+body.report-pool li.col-header p {
+    font-size: 12px;
+    color: #091E27;
+    font-family: 'baloo_da_2medium';
+    font-weight: 600;
+}
+body.report-pool .details p.participant {
+    font-family: 'baloo_da_2bold';
+    color: #2A1C23;
+}
+body.report-pool .report-ranking ul li figure img {
+    width: 28px;
+    height: 28px;
+}
+body.report-pool p.reports-number {
+    color: #2A1C23;
+}
+body.report-pool p.deadline-text {
+    font-size: 44px;
+    font-family: 'baloo_da_2bold';
+    padding: 130px 20px 10px 20px;
+    width: 100%;
+    color: #005E90;
+    background: transparent;
+}
+body.report-pool .progressbar-inner {
+    background: #21bdd7;
+    background: -webkit-linear-gradient( 45deg, #21bdd7, #0a4a70 100%);
+}
+body.report-pool p.progress-percentage {
+    font-family: 'baloo_da_2bold';
+    color: #2A1C23;
+}
+/*Basketball css*/
+body.report-basketball {
+    background-image: url(../images/body-bg-basketball.jpg);
+    font-family: 'digital-7_monomono';
+}
+body.report-basketball .report {
+    justify-content: start;
+}
+body.report-basketball h1.headline {
+    margin: 0;
+    font-size: 70px;
+    font-weight: 100;
+    padding: 130px 0 0 0;
+    border-radius: 0;
+    background: url(../images/header-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #EED358;
+    font-family: 'digital-7_monomono';
+    width: 700px;
+    height: 233px;
+}
+body.report-basketball .report-ranking {
+    margin: -5px 0 0 0;
+    background: #316D85;
+    position: relative;
+    padding: 20px 30px 50px 30px;
+    border-radius: 20px;
+}
+body.report-basketball .report-ranking ul {
+    margin: 0;
+    padding: 15px;
+    background: transparent;
+    width: 460px;
+    border-radius: 20px;
+    z-index: 10;
+}
+body.report-basketball .report-ranking ul li {
+    border: 0px solid #DBDDDD;
+    background: #3b7b93;
+}
+body.report-basketball .report-ranking ul li.col-header {
+    border-bottom: 1px solid #478ea9;
+    background: transparent;
+}
+body.report-basketball .report-ranking ul li.col-header p {
+    font-size: 14px;
+    color: #EED358;
+}
+body.report-basketball .report-ranking ul li p.place {
+    color: #ffffff;
+}
+body.report-basketball .details p.participant {
+    margin: 0;
+    color: #ffffff;
+    font-family: 'digital-7_monomono';
+    max-height: 33px;
+}
+body.report-basketball .details p.participant span {
+    max-height: 34px;
+}
+body.report-basketball p.reports-number {
+    color: #EED358;
+    font-family: 'digital-7_monomono';
+}
+body.report-basketball .progressbar-inner {
+    background: #F43C5B;
+}
+body.report-basketball p.progress-percentage {
+    color: #EED358;
+    font-family: 'digital-7_monomono';
+}
+body.report-basketball p.deadline-text {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: -45px 0 0 0;
+    padding: 20px 60px;
+    width: auto;
+    color: #EED358;
+    background: #141735;
+    font-family: 'digital-7_monomono';
+    border-radius: 10px;
+    font-weight: 100;
+    z-index: 10;
+}
+
+/*===================================
+Animation CSS#ffffff
+====================================*/
+p.place, p.total {
+    position: relative;
+    animation-name: totalNumber;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes totalNumber {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+.progressbar-inner{
+    position: absolute;
+    animation-name: progress;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes progress {
+    0%   {width: 0%;}
+    50%  {width: 50%;}
+    100% {width: 100%;}
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+    .details {
+        flex: 1!important;
+    }
+    .details p.participant {
+        margin: 0px 0 0 10px!important;
+        text-overflow: clip;
+        white-space: pre-wrap;
+        display: flex;
+        align-items: center;
+        max-height: 28px;
+    }
+    p.participant span {
+        max-height: 25px;
+        overflow: hidden;
+        line-height: 1;
+    }
+    p.reports-number {
+        width: auto!important;
+    }
+    .progressbar {
+        width: auto!important;
+        flex: 1;
+    }
+    .report-ranking ul li {
+        padding-right: 35px!important;
+    }
+    /*Pool version responsive css*/
+    body.report-pool li.col-header p {
+        margin: 0 25px 0 0;
+    } 
+    body.report-pool .details p.participant {
+        font-size: 16px;
+    }
+    body.report-pool p.participant span {
+        max-height: 28px;
+    }
+    body.report-pool p.reports-number {
+        color: #2A1C23;
+        font-size: 16px;
+        height: 22px;
+        margin-top: 0;
+        margin-right: 25px;
+    }
+    body.report-pool p.progress-percentage {
+        margin: 0px 0 0 10px;
+        font-size: 16px;
+    }  
+    /*Basketball version responsive css*/
+    body.report-basketball .report-ranking ul li.col-header p {
+        margin: 0 30px 0 0;
+    }
+    body.report-basketball .report-ranking {
+        width: 100%;
+    }
+    body.report-basketball .report-ranking:before {
+        position: absolute;
+        content: '';
+        width: 98%;
+        height: 93%;
+        top: 23px;
+        left: 17px;
+        background: transparent;
+        border: 1px solid #152d36;
+        border-radius: 20px;
+        z-index: 10;
+    }
+    body.report-basketball .report-ranking:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(60% 0, 100% 0, 100% 100%, 33% 100%);
+        background: #3b7b93;
+        z-index: 1;
+        top: 0;
+        right: 0;    
+        border-radius: 0 20px 20px 0;
+    }
+    body.report-basketball .report-ranking ul li p.place {
+        font-size: 18px;
+    }
+    body.report-basketball .details p.participant {
+        font-size: 18px;
+    }
+    body.report-basketball .report-ranking ul li figure img {
+        width: 36px;
+        height: 36px;
+    }
+    body.report-basketball p.reports-number {
+        font-size: 18px;
+        margin: 7px 30px 0px 7px;
+    }
+    body.report-basketball .progressbar {
+        background: #141735;
+        height: 10px;
+        margin-top: 9px;
+    }
+    body.report-basketball p.progress-percentage {
+        margin: 6px 0 0 25px;
+        font-size: 18px;
+    }
+    body.report-basketball h1.headline {
+        padding: 130px 80px 0 80px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 1900px) {
+    h1.headline {
+        font-size: 56px;
+        padding: 25px 50px;
+    }
+    .report-ranking {
+        width: 940px;
+        flex-wrap: wrap;
+    }
+    .report-ranking ul:nth-child(1), .report-ranking ul:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    p.deadline-text {
+        font-size: 26px;
+    }
+    /*Basketball version responsive css*/
+    body.report-basketball {
+        padding-bottom: 50px;
+    }
+    body.report-basketball h1.headline {
+        padding: 130px 80px 0 80px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    body.report-basketball .report-ranking {
+        padding: 0px 0px 50px 0px;
+    }
+    body.report-basketball .details p.participant {
+        margin-top: 7px;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+    .report-ranking {
+        width: 460px;
+        flex-wrap: wrap;
+    }
+    .report-ranking ul:nth-child(3) {
+        margin-bottom: 20px;
+    }
+    /*Pool responsive css*/
+    body.report-pool h1.headline {
+        font-size: 48px;
+        padding: 20px 2px 0px 0px;
+    }
+    body.report-pool p.deadline-text {
+        font-size: 26px;
+        padding: 50px 0px;
+    }
+    /*Basketball version responsive css*/
+    body.report-basketball h1.headline {
+        font-size: 50px;
+        width: 100%;
+        height: auto;
+        background: none;
+        padding: 50px 20px;
+        text-overflow: initial;
+        white-space: inherit;
+    }
+    body.report-basketball p.deadline-text {
+        font-size: 33px;
+        margin: -35px 0 0 0;
+        padding: 15px 25px;
+    }
+}
+@media screen and (max-width: 479px) {
+    h1.headline {
+        font-size: 40px;
+        padding: 20px 25px;
+    }
+    .report-ranking {
+        width: 320px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .report-ranking ul {
+        width: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    li.col-header p {
+        margin: 0 11px 0 0;
+    }
+    li.col-header p.ch-progress {
+        margin: 0 11px 0 0px;
+    }
+    .progressbar {
+        width: 30px;
+    }
+    p.deadline-text {
+        font-size: 30px;
+        padding: 25px 10px;
+    }
+    /*Basketball version responsive css*/
+    
+}
