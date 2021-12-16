@@ -630,6 +630,103 @@ body.report-golf .details:after {
     top: 4px;
 }
 
+/*Newyork css*/
+body.report-newyork {
+    background-image: url(../images/body-bg-newyork.jpg);
+    font-family: 'AmericanTypewriterBold';
+}
+body.report-newyork .header {
+    border-radius: 0;
+    width: 280px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 0;
+}
+body.report-newyork .report {
+    flex-direction: row;
+    justify-content: center;
+}
+body.report-newyork p.deadline-text {
+    font-weight: 600;
+    margin: 20px 0 0 0;
+    padding: 0;
+    width: auto;
+    text-align: right;
+    display: block;
+    color: #ffffff;
+    background: none;
+    font-family: 'AmericanTypewriterBold';
+    font-size: 29px;
+    text-transform: inherit;
+}
+body.report-newyork .report-ranking {
+    display: flex;
+    width: 1300px;
+    justify-content: space-between;
+    margin: 20px 30px 20px 100px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+body.report-newyork .report-ranking ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background: transparent;
+    width: 615px;
+    border-radius: 10px;
+    padding: 0;
+}
+body.report-newyork .report-ranking ul li {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: 0px solid #DBDDDD;
+    background: white;
+    margin-bottom: 2px;
+}
+body.report-newyork li.col-header {
+    background: none!important;
+    border-bottom: 1px solid #7bc2d1!important;
+}
+body.report-newyork li.col-header p {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'AmericanTypewriterRegular';
+    font-weight: 600;
+}
+body.report-newyork p.place {
+    color: #4772AF;
+    font-family: 'AmericanTypewriterBold';
+    font-weight: 100;
+}
+body.report-newyork .details p.participant {
+    color: #4772AF;
+    font-family: 'AmericanTypewriterRegular';
+    text-transform: uppercase;
+}
+body.report-newyork p.reports-number {
+    color: #4772AF;
+    font-family: 'AmericanTypewriterBold';
+}
+body.report-newyork .progressbar {
+    background: #D1CFD3;
+    height: 10px;
+    margin-top: 7px;
+}
+body.report-newyork .progressbar-inner {
+    background: #4671AF;
+}
+body.report-newyork p.progress-percentage {
+    color: #4772AF;
+    font-family: 'AmericanTypewriterBold';
+    width: 30px;
+}
+body.report-newyork .details:after {
+    top: 4px;
+}
+
 /*===================================
 Animation CSS#ffffff
 ====================================*/
@@ -813,6 +910,49 @@ Responsive CSS
     body.report-golf .details:after {
         top: 9px;
     }
+    /*Newyork responsive css*/
+    body.report-newyork li.col-header p {
+        font-size: 18px;
+        margin: 0 20px 0 0;
+    }
+    body.report-newyork li.col-header p.ch-progress {
+        margin-left: 40px;
+    }
+    body.report-newyork p.place {
+        font-size: 18px;
+        margin-top: 4px;
+        width: 40px;
+    }
+    body.report-newyork .report-ranking ul li figure img {
+        width: 40px;
+        height: 40px;
+    }
+    body.report-newyork .details p.participant {
+        width: 140px;
+        position: relative;
+        font-size: 18px;
+        max-height: initial;
+        height: auto;
+    }
+    body.report-newyork p.participant span {
+        max-height: 32px;
+    }
+    body.report-newyork p.reports-number {
+        margin: 5px 30px 0 15px;
+        line-height: 25px;
+        font-size: 18px;
+        height: 24px;
+    }
+    body.report-newyork .progressbar {
+        margin-top: 14px;
+    }
+    body.report-newyork p.progress-percentage {
+        font-size: 18px;
+        margin: 9px 10px 0 20px;
+    }
+    body.report-newyork .details:after {
+        top: 9px;
+    }
 }
 @media screen and (max-width: 1900px) {
     h1.headline {
@@ -874,6 +1014,39 @@ Responsive CSS
     }
     body.report-golf .report-ranking ul {
         width: 475px;
+    }
+    /*Newyork responsive css*/
+    body.report-newyork .report {
+        flex-direction: column;
+        min-height: auto;
+    }
+    body.report-newyork .header {
+        width: auto;
+        height: auto;
+        padding: 20px 35px;
+        border-radius: 0 0 30px 30px;
+        align-items: center;
+    }
+    body.report-newyork h1.headline {
+        font-size: 52px;
+        text-align: center;
+    }
+    body.report-newyork p.deadline-text{
+        font-size: 26px;
+        text-align: center;
+    }
+    body.report-newyork li.col-header p {
+        margin: 0 10px 0 0;
+        font-size: 12px;
+    }
+    body.report-newyork .report-ranking {
+        width: 900px;
+        margin: 20px 0 20px 0;
+        padding: 0;
+    }
+    body.report-newyork .report-ranking ul {
+        width: 430px;
+        padding: 10px;
     }
 
 }
@@ -937,6 +1110,36 @@ Responsive CSS
         flex: 1;
     }
     body.report-golf .progressbar {
+        width: auto;
+        flex: 1;
+    }
+    /*Newyork responsive css*/
+    body.report-newyork .header {
+        padding: 15px 20px;
+    }
+    body.report-newyork p.deadline-text {
+        font-size: 22px;
+        text-align: center;
+    }
+    body.report-newyork h1.headline {
+        font-size: 30px;
+        text-align: center;
+    }
+    body.report-newyork .report-ranking {
+        width: 300px;
+    }
+    body.report-newyork .report-ranking ul {
+        width: 300px;
+        padding: 10px 0px 10px 0px;
+        margin-bottom: 20px;
+    }
+    body.report-newyork .report-ranking ul li {
+        padding-right: 35px;
+    }
+    body.report-newyork .details {
+        flex: 1;
+    }
+    body.report-newyork .progressbar {
         width: auto;
         flex: 1;
     }
