@@ -133,6 +133,48 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'AmericanTypewriterBold';
+    src: url('../fonts/AmericanTypewriterBold.eot');
+    src: url('../fonts/AmericanTypewriterBold.eot') format('embedded-opentype'),
+         url('../fonts/AmericanTypewriterBold.woff2') format('woff2'),
+         url('../fonts/AmericanTypewriterBold.woff') format('woff'),
+         url('../fonts/AmericanTypewriterBold.ttf') format('truetype'),
+         url('../fonts/AmericanTypewriterBold.svg#AmericanTypewriterBold') format('svg');
+}
+@font-face {
+    font-family: 'AmericanTypewriterRegular';
+    src: url('../fonts/AmericanTypewriterRegular.eot');
+    src: url('../fonts/AmericanTypewriterRegular.eot') format('embedded-opentype'),
+         url('../fonts/AmericanTypewriterRegular.woff2') format('woff2'),
+         url('../fonts/AmericanTypewriterRegular.woff') format('woff'),
+         url('../fonts/AmericanTypewriterRegular.ttf') format('truetype'),
+         url('../fonts/AmericanTypewriterRegular.svg#AmericanTypewriterRegular') format('svg');
+}
+@font-face {
+    font-family: 'oswaldbold';
+    src: url('../fonts/oswald-bold-webfont.eot');
+    src: url('../fonts/oswald-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oswald-bold-webfont.woff2') format('woff2'),
+         url('../fonts/oswald-bold-webfont.woff') format('woff'),
+         url('../fonts/oswald-bold-webfont.ttf') format('truetype'),
+         url('../fonts/oswald-bold-webfont.svg#oswaldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'oswald_regularregular';
+    src: url('../fonts/oswald-regular-webfont.eot');
+    src: url('../fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oswald-regular-webfont.woff2') format('woff2'),
+         url('../fonts/oswald-regular-webfont.woff') format('woff'),
+         url('../fonts/oswald-regular-webfont.ttf') format('truetype'),
+         url('../fonts/oswald-regular-webfont.svg#oswald_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
@@ -478,6 +520,112 @@ body.report-basketball p.deadline-text {
     font-weight: 100;
     z-index: 10;
 }
+/*Golf css*/
+body.report-golf {
+    background-image: url(../images/body-bg-golf.jpg);
+    font-family: 'oswaldbold';
+}
+body.report-golf .header {
+    border-radius: 0 20px 20px 0;
+    width: 420px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0;
+}
+body.report-golf .report {
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+body.report-golf h1.headline {
+    margin: 0;
+    font-size: 128px;
+    padding: 50px 0 0 0;
+    background: none;
+    color: #568232;
+    font-weight: 100;
+    border-radius: 0;
+    text-align: left;
+    font-family: 'oswaldbold';
+}
+body.report-golf p.deadline-text {
+    font-weight: 100!important;
+    margin: 15px 0 0 0;
+    padding: 0;
+    width: auto;
+    text-align: left;
+    display: block;
+    color: #ffffff;
+    background: none;
+    font-family: 'oswaldbold';
+    font-size: 44px;
+}
+body.report-golf .report-ranking {
+    display: flex;
+    width: 1230px;
+    justify-content: space-between;
+    margin: 20px 30px 20px 100px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+body.report-golf .report-ranking ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 25px;
+    background: transparent;
+    width: 605px;
+    border-radius: 10px;
+}
+body.report-golf .report-ranking ul li {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: 0px solid #DBDDDD;
+    background: white;
+    margin-bottom: 2px;
+}
+body.report-golf li.col-header {
+    background: none!important;
+    border-bottom: 1px solid #7bc2d1!important;
+}
+body.report-golf li.col-header p {
+    color: #2A1C23;
+    font-weight: 600;
+    font-family: 'oswald_regularregular';
+}
+body.report-golf p.place {
+    color: #2A1C23;
+    font-family: 'oswald_regularregular';
+    font-weight: 100;
+}
+body.report-golf .details p.participant {
+    color: #2A1C23;    
+    font-family: 'oswald_regularregular';
+    text-transform: uppercase;
+}
+body.report-golf p.reports-number {
+    color: #2A1C23;
+    font-family: 'oswald_regularregular';
+}
+body.report-golf .progressbar {
+    background: #DA4311;
+    height: 10px;
+    margin-top: 7px;
+}
+body.report-golf .progressbar-inner {
+    background: #FF9724;
+}
+body.report-golf p.progress-percentage {
+    color: #2A1C23;
+    font-family: 'oswald_regularregular';
+    width: 30px;
+}
+body.report-golf .details:after {
+    top: 4px;
+}
 
 /*===================================
 Animation CSS#ffffff
@@ -619,6 +767,50 @@ Responsive CSS
         white-space: nowrap;
         overflow: hidden;
     }
+    /*Golf responsive css*/
+    body.report-golf li.col-header p {
+        font-size: 18px;
+        margin: 0 32px 0 0;
+    }
+    body.report-golf li.col-header p.ch-progress {
+        margin-left: 40px;
+    }
+    body.report-golf p.place {
+        font-size: 24px;
+        line-height: 27px;
+        margin-top: 7px;
+        width: 45px;
+    }
+    body.report-golf .report-ranking ul li figure img {
+        width: 40px;
+        height: 40px;
+    }
+    body.report-golf .details p.participant {
+        width: 90px;
+        position: relative;
+        font-size: 17px;
+        max-height: initial;
+        height: auto;
+    }
+    body.report-golf p.participant span {
+        max-height: 30px;
+    }
+    body.report-golf p.reports-number {
+        margin: 7px 30px 0 15px;
+        line-height: 27px;
+        font-size: 24px;
+        height: 24px;
+    }
+    body.report-golf .progressbar {
+        margin-top: 14px;
+    }
+    body.report-golf p.progress-percentage {
+        font-size: 24px;
+        margin: 8px 10px 0 15px;
+    }
+    body.report-golf .details:after {
+        top: 9px;
+    }
 }
 @media screen and (max-width: 1900px) {
     h1.headline {
@@ -650,6 +842,36 @@ Responsive CSS
     }
     body.report-basketball .details p.participant {
         margin-top: 7px;
+    }
+    /*Golf responsive css*/
+    body.report-golf .report {
+        flex-direction: column;
+    }
+    body.report-golf .header {
+        width: auto;
+        height: auto;
+        padding: 20px 35px;
+        border-radius: 0 0 30px 30px;
+        align-items: center;
+    }
+    body.report-golf h1.headline {
+        font-size: 52px;
+        text-align: center;
+    }
+    body.report-golf p.deadline-text{
+        font-size: 26px;
+        text-align: center;
+    }
+    body.report-golf li.col-header p {
+        margin: 0 25px 0 0;
+    }
+    body.report-golf .report-ranking {
+        width: 950px;
+        margin: 20px 0 20px 0;
+        padding: 0;
+    }
+    body.report-golf .report-ranking ul {
+        width: 475px;
     }
 
 }
@@ -685,6 +907,36 @@ Responsive CSS
         font-size: 33px;
         margin: -35px 0 0 0;
         padding: 15px 25px;
+    }
+    /*Golf responsive css*/
+    body.report-golf .header {
+        padding: 15px 20px;
+    }
+    body.report-golf p.deadline-text {
+        font-size: 22px;
+        text-align: center;
+    }
+    body.report-golf h1.headline {
+        font-size: 30px;
+        text-align: center;
+    }
+    body.report-golf .report-ranking {
+        width: 300px;
+    }
+    body.report-golf .report-ranking ul {
+        width: 300px;
+        padding: 10px 0px 10px 0px;
+        margin-bottom: 20px;
+    }
+    body.report-golf .report-ranking ul li {
+        padding-right: 35px;
+    }
+    body.report-golf .details {
+        flex: 1;
+    }
+    body.report-golf .progressbar {
+        width: auto;
+        flex: 1;
     }
 }
 @media screen and (max-width: 479px) {
