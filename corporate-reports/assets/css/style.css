@@ -500,6 +500,9 @@ body.report-basketball p.reports-number {
     color: #EED358;
     font-family: 'digital-7_monomono';
 }
+body.report-basketball .progressbar {
+    background: #141735;
+}
 body.report-basketball .progressbar-inner {
     background: #F43C5B;
 }
@@ -753,7 +756,6 @@ Responsive CSS
         margin: 7px 30px 0px 7px;
     }
     body.report-basketball .progressbar {
-        background: #141735;
         height: 10px;
         margin-top: 9px;
     }
