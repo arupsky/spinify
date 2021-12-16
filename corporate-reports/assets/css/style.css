@@ -173,6 +173,27 @@
          url('../fonts/oswald-regular-webfont.svg#oswald_regularregular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: 'LilitaOneRegular';
+    src: url('../fonts/LilitaOneRegular.eot');
+    src: url('../fonts/LilitaOneRegular.eot') format('embedded-opentype'),
+         url('../fonts/LilitaOneRegular.woff2') format('woff2'),
+         url('../fonts/LilitaOneRegular.woff') format('woff'),
+         url('../fonts/LilitaOneRegular.ttf') format('truetype'),
+         url('../fonts/LilitaOneRegular.svg#LilitaOneRegular') format('svg');
+}
+@font-face {
+    font-family: 'kg_broken_vessels_sketchRg';
+    src: url('../fonts/kgbrokenvesselssketch-webfont.eot');
+    src: url('../fonts/kgbrokenvesselssketch-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kgbrokenvesselssketch-webfont.woff2') format('woff2'),
+         url('../fonts/kgbrokenvesselssketch-webfont.woff') format('woff'),
+         url('../fonts/kgbrokenvesselssketch-webfont.ttf') format('truetype'),
+         url('../fonts/kgbrokenvesselssketch-webfont.svg#kg_broken_vessels_sketchRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
 
 }
 
@@ -629,7 +650,6 @@ body.report-golf p.progress-percentage {
 body.report-golf .details:after {
     top: 4px;
 }
-
 /*Newyork css*/
 body.report-newyork {
     background-image: url(../images/body-bg-newyork.jpg);
@@ -726,6 +746,230 @@ body.report-newyork p.progress-percentage {
 body.report-newyork .details:after {
     top: 4px;
 }
+/* Desert CSS*/
+body.report-desert {
+    background-image: url(../images/body-bg-desert.jpg);
+    font-family: 'LilitaOneRegular';
+}
+body.report-desert .report {
+    justify-content: start;
+}
+body.report-desert h1.headline {
+    font-size: 68px;
+    padding: 95px 15px 0 15px;
+    background: transparent;
+    color: #503204;
+    font-family: 'LilitaOneRegular';
+    font-weight: 100;
+    width: 675px;
+    height: 224px;
+    background-image: url(../images/desert-headline-bg.png);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+body.report-desert .report-ranking {
+    margin: 5px 0;
+    width: 1700px;
+}
+body.report-desert p.deadline-text {
+    color: #ffffff;
+    background: transparent;
+    padding: 0 0 40px 0;
+}
+body.report-desert .report-ranking ul {
+    background: none;
+    width: 850px;
+    border-radius: 20px;
+}
+body.report-desert .report-ranking ul li {
+    border: 0px;
+    padding: 0;
+    margin-bottom: 5px;
+}
+body.report-desert li.col-header {
+    padding-bottom: 15px!important;
+    margin-bottom: 15px!important;
+}
+body.report-desert li.col-header p {
+    font-size: 20px;
+    margin: 0 60px 0 0;
+    color: #ffffff;
+}
+body.report-desert .details {
+    flex: 1;
+    padding: 6px 15px;
+    border-radius: 15px;
+    background-image: url(../images/desert-details-bg.png);
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 4px 4px 0px -2px #363636; 
+    box-shadow: 4px 4px 0px -2px #363636;
+}
+body.report-desert p.place {
+    font-size: 20px;
+    color: #ffffff;
+    width: 40px;
+    text-align: center;
+    margin: 3px 10px 0 0;
+}
+body.report-desert .report-ranking ul li figure img {
+    width: 54px;
+    height: 54px;
+}
+body.report-desert .details p.participant {
+    margin: 17px 0 0 10px;
+    padding: 0 20px 0 0;
+    font-size: 18px;
+    width: 170px;
+    position: relative;
+    color: #2A1C23;
+}
+body.report-desert p.reports-number {
+    color: #2A1C23;
+    font-family: 'LilitaOneRegular';
+    font-size: 18px;
+    height: 24px;
+    margin-top: 17px;
+    width: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom: 0px;
+}
+body.report-desert .progressbar {
+    background: #DF8627;
+    height: 12px;
+    border-radius: 20px;
+    margin-top: 24px;
+    margin-left: 50px;
+    position: relative;
+}
+body.report-desert .progressbar-inner {
+    background: #5C7202;
+}
+body.report-desert p.progress-percentage {
+    margin: 18px 0 0 35px;
+    color: #2A1C23;
+    width: 52px;
+    font-size: 18px;
+}
+body.report-desert .details:after {
+    width: 18px;
+    height: 18px;
+    right: 20px;
+    top: 24px;
+}
+/* School CSS*/
+body.report-school {
+    background-image: url(../images/body-bg-school.jpg);
+    font-family: 'kg_broken_vessels_sketchRg', Sans-Serif;
+}
+body.report-school .report {
+    justify-content: start;
+}
+body.report-school h1.headline {
+    font-size: 82px;
+    padding: 90px 15px 0 15px;
+    background: transparent;
+    color: #ffffff;
+    font-family: 'kg_broken_vessels_sketchRg', Sans-Serif;
+    font-weight: 100;
+    border-radius: 0;
+}
+body.report-school .report-ranking {
+    margin: 5px 0;
+    width: 1640px;
+}
+body.report-school p.deadline-text {
+    color: #ffffff;
+    background: transparent;
+    padding: 58px 0 10px 0;
+    font-family: 'kg_broken_vessels_sketchRg', Sans-Serif;
+    font-size: 24px;
+}
+body.report-school .report-ranking ul {
+    background: none;
+    width: 820px;
+    border-radius: 20px;
+    padding: 0 25px;
+}
+body.report-school .report-ranking ul li {
+    border: 0px;
+    padding: 0;
+    margin-bottom: 5px;
+}
+body.report-school li.col-header {
+    padding-bottom: 15px!important;
+    margin-bottom: 15px!important;
+    border-bottom: 1px solid #FFF!important;
+}
+body.report-school li.col-header p {
+    font-size: 20px;
+    margin: 0 60px 0 0;
+    color: #ffffff;
+}
+body.report-school .details {
+    flex: 1;
+    padding: 6px 15px;
+    border-radius: 15px;
+}
+body.report-school p.place {
+    font-size: 20px;
+    color: #ffffff;
+    width: 40px;
+    text-align: center;
+    margin: 3px 10px 0 0;
+}
+body.report-school .report-ranking ul li figure img {
+    width: 54px;
+    height: 54px;
+}
+body.report-school .details p.participant {
+    margin: 17px 0 0 10px;
+    padding: 0 20px 0 0;
+    font-size: 18px;
+    width: 170px;
+    position: relative;
+    color: #ffffff;
+    font-family: 'kg_broken_vessels_sketchRg', Sans-Serif;
+}
+body.report-school p.reports-number {
+    color: #ffffff;
+    font-family: 'kg_broken_vessels_sketchRg', Sans-Serif;
+    font-size: 18px;
+    height: 24px;
+    margin-top: 17px;
+    width: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom: 0px;
+}
+body.report-school .progressbar {
+    background: transparent;
+    height: 12px;
+    border-radius: 20px;
+    margin-top: 24px;
+    margin-left: 50px;
+    position: relative;
+    border: 1px solid #afafaf;
+}
+body.report-school .progressbar-inner {
+    background: url(../images/school-progress-patern-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body.report-school p.progress-percentage {
+    margin: 18px 0 0 35px;
+    color: #ffffff;
+    width: 52px;
+    font-size: 18px;
+    font-family: 'kg_broken_vessels_sketchRg', Sans-Serif;
+}
+body.report-school .details:after {
+    width: 18px;
+    height: 18px;
+    right: 20px;
+    top: 24px;
+}
 
 /*===================================
 Animation CSS#ffffff
@@ -741,18 +985,6 @@ p.place, p.total {
     0%   {transform: scale(.4)}
     50%  {transform: scale(.6)}
     100% {transform: scale(1)}
-}
-.progressbar-inner{
-    position: absolute;
-    animation-name: progress;
-    animation-duration: .5s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-}
-@keyframes progress {
-    0%   {width: 0%;}
-    50%  {width: 50%;}
-    100% {width: 100%;}
 }
 
 /*=================================
@@ -953,6 +1185,56 @@ Responsive CSS
     body.report-newyork .details:after {
         top: 9px;
     }
+    /*Desert responsive css*/
+    body.report-desert .report-ranking ul li {
+        padding-right: 0px!important;
+    }
+    body.report-desert .details {
+        padding: 6px 40px 6px 15px;
+    }
+    body.report-desert .details p.participant {
+        max-height: inherit;
+        font-size: 22px;
+    }
+    body.report-desert .details p.participant span {
+        max-height: 44px;
+    }
+    body.report-desert p.reports-number {
+        font-size: 22px;
+        margin-top: 15px;
+    }
+    body.report-desert p.progress-percentage {
+        margin: 15px 10px 0 35px;
+        font-size: 22px;
+    }
+    /*School responsive css*/
+    body.report-school h1.headline {
+        max-width: 1200px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    body.report-school .report-ranking ul li {
+        padding-right: 0px!important;
+    }
+    body.report-school .details {
+        padding: 6px 40px 6px 15px;
+    }
+    body.report-school .details p.participant {
+        max-height: inherit;
+        font-size: 22px;
+    }
+    body.report-school .details p.participant span {
+        max-height: 44px;
+    }
+    body.report-school p.reports-number {
+        font-size: 22px;
+        margin-top: 15px;
+    }
+    body.report-school p.progress-percentage {
+        margin: 15px 10px 0 35px;
+        font-size: 22px;
+    }
 }
 @media screen and (max-width: 1900px) {
     h1.headline {
@@ -1048,7 +1330,32 @@ Responsive CSS
         width: 430px;
         padding: 10px;
     }
-
+    /*Desert responsive css*/
+    body.report-desert .report-ranking {
+        width: 760px;
+    }
+    body.report-desert .report-ranking ul {
+        width: 760px;
+    }
+    /*School responsive css*/
+    body.report-school {
+        background-color: #285720;
+        border: 16px solid #723f08;
+        background-image: none;
+    }
+    body.report-school h1.headline {
+        width: auto;
+        height: auto;
+        background: none;
+        padding: 20px;
+        font-size: 40px;
+    }
+    body.report-school .report-ranking {
+        width: 760px;
+    }
+    body.report-school .report-ranking ul {
+        width: 760px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -1143,6 +1450,127 @@ Responsive CSS
         width: auto;
         flex: 1;
     }
+    /*Desert responsive css*/
+    body.report-desert h1.headline {
+        width: auto;
+        height: auto;
+        background: none;
+        padding: 20px;
+        font-size: 40px;
+    }
+    body.report-desert .report-ranking {
+        width: 450px;
+    }
+    body.report-desert .report-ranking ul {
+        width: 450px;
+        padding: 0px;
+    }
+    body.report-desert li.col-header p {
+        font-size: 11px;
+        margin: 0 55px 0 0;
+    }
+    body.report-desert p.place {
+        font-size: 12px;
+        width: 25px;
+        margin: 3px 10px 0 0;
+    }
+    body.report-desert .details p.participant {
+        margin: 17px 0 0 5px;
+        padding: 0 10px 0 0;
+        font-size: 12px;
+        width: 100px;
+    }
+    body.report-desert .details p.participant:after {
+        height: 20px;
+        right: 5px;
+        top: 0;
+    }
+    body.report-desert p.reports-number {
+        font-size: 12px;
+        height: 24px;
+        margin-top: 17px;
+        width: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    body.report-desert .progressbar {
+        width: 70px;
+        height: 10px;
+        margin-top: 24px;
+        margin-left: 20px;
+    }
+    body.report-desert .progressbar:before {
+        left: -15px;
+        top: -6px;
+    }
+    body.report-desert p.progress-percentage {
+        margin: 21px 0 0 10px;
+        width: 37px;
+        font-size: 12px;
+    }
+    body.report-desert .details:after {
+        width: 10px;
+        height: 10px;
+        right: 15px;
+        top: 28px;
+    }
+    /*School responsive css*/
+    body.report-school .report-ranking {
+        width: 450px;
+    }
+    body.report-school .report-ranking ul {
+        width: 450px;
+        padding: 0px;
+    }
+    body.report-school li.col-header p {
+        font-size: 11px;
+        margin: 0 55px 0 0;
+    }
+    body.report-school p.place {
+        font-size: 12px;
+        width: 25px;
+        margin: 3px 10px 0 0;
+    }
+    body.report-school .details p.participant {
+        margin: 17px 0 0 5px;
+        padding: 0 10px 0 0;
+        font-size: 12px;
+        width: 100px;
+    }
+    body.report-school .details p.participant:after {
+        height: 20px;
+        right: 5px;
+        top: 0;
+    }
+    body.report-school p.reports-number {
+        font-size: 12px;
+        height: 24px;
+        margin-top: 17px;
+        width: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    body.report-school .progressbar {
+        width: 70px;
+        height: 10px;
+        margin-top: 24px;
+        margin-left: 20px;
+    }
+    body.report-school .progressbar:before {
+        left: -15px;
+        top: -6px;
+    }
+    body.report-school p.progress-percentage {
+        margin: 21px 0 0 10px;
+        width: 37px;
+        font-size: 12px;
+    }
+    body.report-school .details:after {
+        width: 10px;
+        height: 10px;
+        right: 15px;
+        top: 28px;
+    }
 }
 @media screen and (max-width: 479px) {
     h1.headline {
@@ -1172,6 +1600,137 @@ Responsive CSS
         font-size: 30px;
         padding: 25px 10px;
     }
-    /*Basketball version responsive css*/
+    /*Desert responsive css*/
+    body.report-desert h1.headline {
+        font-size: 34px;
+        padding: 20px 35px;
+    }
+    body.report-desert .report-ranking {
+        width: 300px;
+    }
+    body.report-desert .report-ranking ul {
+        width: 300px;
+        padding: 0px;
+    }
+    body.report-desert li.col-header p {
+        font-size: 10px;
+        margin: 0 20px 0 0;
+    }
+    body.report-desert p.place {
+        font-size: 11px;
+        width: 20px;
+        margin: 3px 5px 0 0;
+    }
+    body.report-desert .details {
+        padding: 6px 10px;
+        border-radius: 15px;
+    }
+    body.report-desert .report-ranking ul li figure img {
+        width: 24px;
+        height: 24px;
+        margin-top: 2px;
+    }
+    body.report-desert .details p.participant {
+        margin: 5px 0 0 5px;
+        padding: 2px 6px 0 0;
+        font-size: 11px;
+        width: 65px;
+    }
+    body.report-desert p.reports-number {
+        font-size: 11px;
+        height: 16px;
+        margin-top: 7px;
+        width: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    body.report-desert .progressbar {
+        width: 30px;
+        height: 8px;
+        margin-top: 13px;
+        margin-left: 10px;
+    }
+    body.report-desert .progressbar:before {
+        left: -8px;
+        top: -5px;
+    }
+    body.report-desert p.progress-percentage {
+        margin: 10px 0 0 5px;
+        width: 25px;
+        font-size: 11px;
+    }
+    body.report-desert .details:after {
+        top: 18px;
+    }
+    body.report-desert p.deadline-text {
+        padding: 0 0 40px 0;
+        font-size: 20px;
+    }
+    /*School responsive css*/
+    body.report-school h1.headline {
+        font-size: 34px;
+        padding: 20px 35px;
+    }
+    body.report-school .report-ranking {
+        width: 300px;
+    }
+    body.report-school .report-ranking ul {
+        width: 300px;
+        padding: 0px;
+    }
+    body.report-school li.col-header p {
+        font-size: 10px;
+        margin: 0 20px 0 0;
+    }
+    body.report-school p.place {
+        font-size: 11px;
+        width: 20px;
+        margin: 3px 5px 0 0;
+    }
+    body.report-school .details {
+        padding: 6px 10px;
+        border-radius: 15px;
+    }
+    body.report-school .report-ranking ul li figure img {
+        width: 24px;
+        height: 24px;
+        margin-top: 2px;
+    }
+    body.report-school .details p.participant {
+        margin: 5px 0 0 5px;
+        padding: 2px 6px 0 0;
+        font-size: 11px;
+        width: 65px;
+    }
+    body.report-school p.reports-number {
+        font-size: 11px;
+        height: 16px;
+        margin-top: 7px;
+        width: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    body.report-school .progressbar {
+        width: 30px;
+        height: 8px;
+        margin-top: 13px;
+        margin-left: 10px;
+    }
+    body.report-school .progressbar:before {
+        left: -8px;
+        top: -5px;
+    }
+    body.report-school p.progress-percentage {
+        margin: 10px 0 0 5px;
+        width: 25px;
+        font-size: 11px;
+    }
+    body.report-school .details:after {
+        top: 18px;
+    }
+    body.report-school p.deadline-text {
+        padding: 0 0 40px 0;
+        font-size: 20px;
+    }
     
 }
