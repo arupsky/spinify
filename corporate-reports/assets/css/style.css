@@ -196,6 +196,32 @@
     font-display: fallback;
 
 }
+@font-face {
+    font-family: 'MagicalWorld';
+    src: url('../fonts/MagicalWorld.eot');
+    src: url('../fonts/MagicalWorld.eot') format('embedded-opentype'),
+         url('../fonts/MagicalWorld.woff2') format('woff2'),
+         url('../fonts/MagicalWorld.woff') format('woff'),
+         url('../fonts/MagicalWorld.ttf') format('truetype'),
+         url('../fonts/MagicalWorld.svg#MagicalWorld') format('svg');
+}
+@font-face {font-family: "AcuminProCond-Bold";
+    src: url("../fonts/AcuminProCond-Bold.eot"); /* IE9*/
+    src: url("../fonts/AcuminProCond-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/AcuminProCond-Bold.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/AcuminProCond-Bold.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/AcuminProCond-Bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/AcuminProCond-Bold.svg#AcuminProCond-Bold") format("svg"); /* iOS 4.1- */
+  }
+  @font-face {
+    font-family: 'Acumin Variable Concept';
+    src: url('../fonts/AcuminVariableConcept.eot');
+    src: url('../fonts/AcuminVariableConcept.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AcuminVariableConcept.woff2') format('woff2'),
+         url('../fonts/AcuminVariableConcept.woff') format('woff'),
+         url('../fonts/AcuminVariableConcept.ttf')  format('truetype'),
+         url('../fonts/AcuminVariableConcept.svg#Acumin Variable Concept') format('svg');
+}
 
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
@@ -214,6 +240,7 @@ body {
     background-image: url(../images/body-bg-v1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
 }
 .report {
     display: flex;
@@ -970,7 +997,214 @@ body.report-school .details:after {
     right: 20px;
     top: 24px;
 }
-
+/*Magic css*/
+body.report-magic {
+    background-image: url(../images/body-bg-magic.jpg);
+    font-family: 'MagicalWorld';
+}
+body.report-magic h1.headline {
+    font-size: 101px;
+    padding: 45px 20px 0px 20px;
+    font-family: 'MagicalWorld';
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #ff84f5;
+    text-align: center;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-fill-color: #ff84f5;
+    text-shadow: -11px 7px 2px #000000;
+    background: none;
+    border-radius: 0;
+    position: relative;
+}
+body.report-magic h1.headline span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;    
+    display: block;
+    max-width: 1550px;
+}
+body.report-magic h1.headline:before {
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 70px;
+    left: -90px;
+    top: 50px;
+    background-image: url(../images/magic-star-left.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+body.report-magic h1.headline:after {
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 70px;
+    right: -90px;
+    top: 50px;
+    background-image: url(../images/magic-star-left.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+body.report-magic .report {
+    justify-content: start;
+}
+body.report-magic .report-ranking {
+    margin: 50px 0;
+}
+body.report-magic .report-ranking ul {
+    background: transparent;
+    border-radius: 0px;
+    padding: 0;
+}
+body.report-magic .report-ranking ul li {
+    background: transparent;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+body.report-magic .report-ranking ul li.col-header {
+    background: transparent;
+}
+body.report-magic li.col-header p {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'MagicalWorld';
+}
+body.report-magic p.place {
+    font-family: 'MagicalWorld';
+    color: #fff;
+}
+body.report-magic .details p.participant {
+    font-family: 'MagicalWorld';
+    color: #fff;
+    text-transform: uppercase;
+}
+body.report-magic .report-ranking ul li figure img {
+    width: 28px;
+    height: 28px;
+}
+body.report-magic p.reports-number {
+    color: #fff;
+}
+body.report-magic p.deadline-text {
+    font-size: 36px;
+    font-family: 'MagicalWorld';
+    padding: 20px 10px;
+    width: auto;
+    color: #ffffff;
+    background: transparent;
+    position: relative;
+    max-width: 800px;
+}
+body.report-magic p.deadline-text::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    left: -40px;
+    top: 25px;
+    background-image: url(../images/history.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+body.report-magic .progressbar-inner {
+    background: #21bdd7;
+    background: -webkit-linear-gradient( 45deg, #CD62FB, #21bdd7 100%);
+}
+body.report-magic p.progress-percentage {
+    font-family: 'MagicalWorld';
+    color: #fff;
+}
+/*Winter css*/
+body.report-winter {
+    background-image: url(../images/body-bg-winter.jpg);
+    font-family: 'Acumin Variable Concept';
+}
+body.report-winter h1.headline {
+    font-size: 91px;
+    padding: 0px 50px;
+    font-family: "AcuminProCond-Bold";
+    color: #ffffff;
+    text-align: center;
+    background: #0E72E3;
+    border-radius: 0;
+    position: relative;
+    border-radius: 15px;
+    margin-top: 90px;
+    -webkit-box-shadow: 4px 4px 0px 1px #b4d7ff73;
+    box-shadow: 4px 4px 0px 1px #b4d7ff73;
+    letter-spacing: 5px;
+}
+body.report-winter h1.headline span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;    
+    display: block;
+    max-width: 1550px;
+}
+body.report-winter .report {
+    justify-content: start;
+}
+body.report-winter .report-ranking {
+    margin: 50px 0;
+}
+body.report-winter .report-ranking ul {
+    background: transparent;
+    border-radius: 0px;
+    padding: 0;
+}
+body.report-winter .report-ranking ul li {
+    background: #FFF;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+body.report-winter .report-ranking ul li.col-header {
+    background: transparent;
+}
+body.report-winter li.col-header p {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'Acumin Variable Concept';
+    font-weight: 600;
+    text-transform: capitalize;
+}
+body.report-winter p.place {
+    font-family: 'Acumin Variable Concept';
+    color: #0F1319;
+}
+body.report-winter .details p.participant {
+    font-family: 'Acumin Variable Concept';
+    color: #0F1319;
+}
+body.report-winter .report-ranking ul li figure img {
+    width: 28px;
+    height: 28px;
+}
+body.report-winter p.reports-number {
+    color: #0F72E3;
+    border-bottom-color: #FEC542;
+}
+body.report-winter p.progress-percentage {
+    font-family: 'Acumin Variable Concept';
+    color: #0F1319;
+}
+body.report-winter p.deadline-text {
+    font-size: 38px;
+    font-family: "AcuminProCond-Bold";
+    padding: 20px 10px;
+    width: auto;
+    color: #FEC542;
+    background: transparent;
+    position: relative;
+    max-width: 800px;
+    letter-spacing: 4px;
+}
+body.report-winter .progressbar-inner {
+    background: #024ACE;
+}
 /*===================================
 Animation CSS#ffffff
 ====================================*/
@@ -1235,6 +1469,58 @@ Responsive CSS
         margin: 15px 10px 0 35px;
         font-size: 22px;
     }
+    /*Magic version responsive css*/
+    body.report-magic li.col-header p {
+        margin: 0 25px 0 0;
+    } 
+    body.report-magic p.place {
+        font-size: 16px;
+    }
+    body.report-magic .details p.participant {
+        font-size: 16px;
+    }
+    body.report-magic p.participant span {
+        max-height: 31px;
+    }
+    body.report-magic p.reports-number {
+        font-size: 16px;
+        height: 22px;
+        margin-top: 0;
+        margin-right: 25px;
+    }
+    body.report-magic p.progress-percentage {
+        margin: 0px 0 0 10px;
+        font-size: 16px;
+    }  
+    /*Winter version responsive css*/
+    body.report-winter li.col-header p {
+        margin: 0 25px 0 0;
+    } 
+    body.report-winter p.place {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    body.report-winter .details p.participant {
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 0px!important;
+        width: 100px;
+    }
+    body.report-winter p.participant span {
+        max-height: 28px;
+    }
+    body.report-winter p.reports-number {
+        font-size: 16px;
+        height: 22px;
+        margin-top: 4px;
+        margin-right: 25px;
+        font-weight: 600;
+    }
+    body.report-winter p.progress-percentage {
+        margin: 4px 0 0 10px;
+        font-size: 16px;
+        font-weight: 600;
+    }  
 }
 @media screen and (max-width: 1900px) {
     h1.headline {
@@ -1355,6 +1641,27 @@ Responsive CSS
     }
     body.report-school .report-ranking ul {
         width: 760px;
+    }
+    /*Magic responsive css*/
+    body.report-magic h1.headline {
+        font-size: 44px;
+        max-width: 90%;
+    }
+    body.report-magic h1.headline:before, body.report-magic h1.headline::after {
+        display: none;
+    }
+    /*Winter responsive css*/
+    body.report-winter h1.headline {
+        font-size: 38px;
+        border-radius: 5px;
+        max-width: 90%;
+        padding: 0 10px;
+    }
+    body.report-winter h1.headline span {
+        text-overflow: inherit;
+        white-space: inherit;
+        text-align: center;
+        overflow: inherit;
     }
 }
 
@@ -1570,6 +1877,24 @@ Responsive CSS
         height: 10px;
         right: 15px;
         top: 28px;
+    }
+    /*Magic Responsive CSS*/
+    body.report-magic h1.headline {
+        font-size: 56px;
+        padding: 35px 0px 0px 0px;
+        text-shadow: 0px 3px 2px #000000;
+        width: 100%;
+    }
+    body.report-magic h1.headline span {
+        max-width: 100%;
+        padding-left: 15px;
+    }
+    body.report-magic h1.headline:before, body.report-magic h1.headline:after{
+        display: none;
+    }
+    body.report-magic .report {
+        justify-content: start;
+        padding-bottom: 200px;
     }
 }
 @media screen and (max-width: 479px) {
