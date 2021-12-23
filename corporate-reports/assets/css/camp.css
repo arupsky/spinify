@@ -1,0 +1,409 @@
+@font-face {
+    font-family: 'arvoregular';
+    src: url('../fonts/arvo-regular-webfont.eot');
+    src: url('../fonts/arvo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/arvo-regular-webfont.woff2') format('woff2'),
+         url('../fonts/arvo-regular-webfont.woff') format('woff'),
+         url('../fonts/arvo-regular-webfont.ttf') format('truetype'),
+         url('../fonts/arvo-regular-webfont.svg#arvoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*===================================
+Version Specific CSS
+====================================*/
+/* Version #6*/
+body.report-camp {
+    background-image: url(../images/body-bg-camp.jpg);
+    font-family: 'arvoregular';
+}
+body.report-camp .report {
+    justify-content: start;
+}
+body.report-camp h1.headline {
+    font-size: 87px;
+    padding: 0 10px;
+    background: none;
+    color: #3F1E18;
+    font-family: 'arvoregular';
+    font-weight: 700;
+    text-transform: capitalize;
+    display: flex;
+    height: 200px;
+    width: 750px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+body.report-camp h1.headline span {
+    max-height: 200px;
+}
+body.report-camp .report-ranking {
+    margin: 0;
+    width: 1640px;
+    background: #fff1dcf5;
+    clip-path: polygon(0 0, 36% 0, 65% 0, 100% 0, 99% 40%, 99% 60%, 100% 96%, 70% 100%, 30% 100%, 0 96%, 1% 60%, 1% 40%);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+body.report-camp p.deadline-text {
+    color: #ffffff;
+    background: transparent;
+    padding: 30px 10px;
+    text-transform: inherit;
+    font-size: 29px;
+    font-weight: 100;
+    font-family: 'arvoregular';
+    width: auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+body.report-camp .report-ranking ul {
+    background: none;
+    width: 930px;
+    border-radius: 20px;
+}
+body.report-camp .report-ranking ul li {
+    border: 0px;
+    padding: 0;
+    margin-bottom: 5px;
+}
+body.report-camp li.col-header {
+    border-bottom: 1px solid #20749d6b!important;
+    padding-bottom: 15px!important;
+    margin-bottom: 15px!important;
+}
+body.report-camp li.col-header p {
+    font-size: 14px;
+    margin: 0 95px 0 0;
+    color: #3F1E18;
+    font-family: 'arvoregular';
+    text-transform: capitalize;
+}
+body.report-camp .details {
+    flex: 1;
+    padding: 6px 15px;
+    border-radius: 15px;
+}
+body.report-camp p.place {
+    font-size: 20px;
+    color: #3F1E18;
+    width: 40px;
+    text-align: center;
+    margin: 0px 10px 0 0;
+    font-family: 'arvoregular';
+    font-weight: 700;
+}
+body.report-camp .report-ranking ul li figure img {
+    width: 44px;
+    height: 44px;
+}
+body.report-camp .details p.participant {
+    margin: 17px 0 0 10px;
+    padding: 0 20px 0 0;
+    font-size: 18px;
+    width: 150px;
+    position: relative;
+    color: #3F1E18;
+    font-weight: 700;
+}
+body.report-camp p.participant span {
+    font-family: 'arvoregular';
+}
+body.report-camp .details p.participant:after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 22px;
+    right: 15px;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+}
+body.report-camp p.reports-number {
+    font-family: 'arvoregular';
+    border-bottom: 1px solid #3F1E18;
+    font-size: 20px;
+    font-weight: 700;
+    height: 28px;
+    margin-top: 2px;
+    width: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #e2902a;
+}
+body.report-camp .progressbar {
+    background: #F8CFAD;
+    width: 280px;
+    height: 12px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 50px;
+    position: relative;
+}
+body.report-camp .progressbar-inner {
+    background: #d58c01;
+    border-radius: 15px;
+}
+body.report-camp .progressbar:before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 22px;
+    left: -35px;
+    top: -6px;
+    background: #fff;
+    z-index: 1;
+}
+body.report-camp p.progress-percentage {
+    margin: 18px 0 0 35px;
+    color: #3F1E18;
+    width: 52px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'arvoregular';
+}
+body.report-camp .details:after {
+    width: 18px;
+    height: 18px;
+    right: 0px;
+    top: 13px;
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+    /*camp responsive css*/
+    body.report-camp .report-ranking ul li {
+        padding-right: 0px!important;
+    }
+    body.report-camp li.col-header p {
+        font-size: 21px;
+        margin: 0 42px 0 0;
+    }
+    body.report-camp li.col-header p.ch-progress {
+        margin: 0 42px 0 70px;
+    }
+    
+    body.report-camp p.place {
+        font-size: 24px;
+    }
+    body.report-camp .details {
+        padding: 6px 25px 6px 5px;
+    }
+    body.report-camp .details p.participant:after {
+        top: 6px;
+    }
+    body.report-camp .details p.participant{
+        max-height: inherit;
+        font-size: 24px;
+    }
+    body.report-camp p.participant span {
+        max-height: 41px;
+        line-height: .9;
+    }
+    body.report-camp .progressbar {
+        margin-top: 13px;
+    }
+    body.report-camp p.progress-percentage {
+        margin: 4px 5px 0 20px;
+        width: 52px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1900px) {
+    /*camp responsive css*/
+    body.report-camp {
+        background-position: center;
+    }
+    body.report-camp .header {
+        margin-top: 20px;
+        width: 96%;
+        flex-direction: column;
+    }
+    body.report-camp .report-ranking {
+        width: 900px;
+    }
+    body.report-camp h1.headline {
+        font-size: 40px;
+        padding: 15px;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+    body.report-camp .report-ranking ul li figure img {
+        width: 32px;
+        height: 32px;
+    }
+    body.report-camp .details p.participant {
+        margin: 2px 0 0 10px;
+        font-size: 18px;
+    }
+    body.report-camp p.reports-number {
+        font-size: 18px;
+        height: 30px;
+    }
+    body.report-camp .progressbar {
+        margin-top: 9px;
+    }
+    body.report-camp p.progress-percentage {
+        margin: 2px 0 0 35px;
+        font-size: 18px;
+    }
+    body.report-camp .details:after {
+        top: 15px;
+    }
+    body.report-camp p.deadline-text {
+        font-size: 28px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    /*camp responsive css*/
+    body.report-camp .header {
+        width: auto;
+        margin-bottom: 30px;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+    body.report-camp h1.headline {
+        padding: 0;
+        font-size: 32px;
+    }
+    body.report-camp p.deadline-text {
+        padding: 20px 10px;
+        font-size: 26px;
+    }
+    body.report-camp .report-ranking {
+        width: 450px;
+        padding: 10px;
+    }
+    body.report-camp .report-ranking ul {
+        width: 450px;
+        padding: 0px;
+    }
+    body.report-camp li.col-header p {
+        font-size: 11px;
+        margin: 0 55px 0 0;
+    }
+    body.report-camp p.place {
+        font-size: 12px;
+        width: 25px;
+        margin: 3px 10px 0 0;
+    }
+    body.report-camp .details p.participant {
+        margin: 8px 0 0 5px;
+        padding: 0 10px 0 0;
+        font-size: 12px;
+        width: 100px;
+    }
+    body.report-camp .details p.participant:after {
+        height: 20px;
+        right: 5px;
+        top: 0;
+    }
+    body.report-camp p.reports-number {
+        font-size: 12px;
+        height: 24px;
+        margin-top: 6px;
+        width: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    body.report-camp .progressbar {
+        width: 70px;
+        height: 10px;
+        margin-top: 13px;
+        margin-left: 20px;
+    }
+    body.report-camp .progressbar:before {
+        left: -15px;
+        top: -6px;
+    }
+    body.report-camp p.progress-percentage {
+        margin: 9px 0 0 10px;
+        width: 37px;
+        font-size: 12px;
+    }
+    body.report-camp .details:after {
+        width: 10px;
+        height: 10px;
+        right: 15px;
+        top: 21px;
+    }
+}
+@media screen and (max-width: 479px) {
+    /*camp responsive css*/
+     body.report-camp h1.headline {
+        font-size: 34px;
+        padding: 0;
+    }
+    body.report-camp .report-ranking {
+        width: 300px;
+    }
+    body.report-camp .report-ranking ul {
+        width: 300px;
+        padding: 0px;
+    }
+    body.report-camp li.col-header p {
+        font-size: 10px;
+        margin: 0 34px 0 0;
+    }
+    body.report-camp p.place {
+        font-size: 11px;
+        width: 20px;
+        margin: 3px 5px 0 0;
+    }
+    body.report-camp .details {
+        padding: 6px 10px;
+        border-radius: 15px;
+    }
+    body.report-camp .report-ranking ul li figure img {
+        width: 24px;
+        height: 24px;
+        margin-top: 2px;
+    }
+    body.report-camp .details p.participant {
+        margin: 5px 0 0 5px;
+        padding: 2px 6px 0 0;
+        font-size: 11px;
+        width: 65px;
+    }
+    body.report-camp p.reports-number {
+        font-size: 11px;
+        height: 16px;
+        margin-top: 7px;
+        width: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    body.report-camp .progressbar {
+        width: 30px;
+        height: 8px;
+        margin-top: 13px;
+        margin-left: 10px;
+    }
+    body.report-camp .progressbar:before {
+        left: -8px;
+        top: -8px;
+        height: 20px;
+    }
+    body.report-camp p.progress-percentage {
+        margin: 10px 0 0 5px;
+        width: 25px;
+        font-size: 11px;
+    }
+    body.report-camp .details:after {
+        top: 18px;
+    }
+    body.report-camp p.deadline-text {
+        font-size: 20px;
+    }
+}

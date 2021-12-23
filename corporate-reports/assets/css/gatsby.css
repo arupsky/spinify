@@ -1,0 +1,408 @@
+@font-face {
+    font-family: 'georgiaregular';
+    src: url('../fonts/georgia-webfont.eot');
+    src: url('../fonts/georgia-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/georgia-webfont.woff2') format('woff2'),
+         url('../fonts/georgia-webfont.woff') format('woff'),
+         url('../fonts/georgia-webfont.ttf') format('truetype'),
+         url('../fonts/georgia-webfont.svg#georgiaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*===================================
+Version Specific CSS
+====================================*/
+/* Version #6*/
+body.report-gatsby {
+    background-image: url(../images/body-bg-gatsby.jpg);
+    font-family: 'georgiaregular';
+}
+body.report-gatsby .report {
+    justify-content: start;
+}
+body.report-gatsby .header {
+    padding: 40px 0 10px 0;
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1600px;
+    margin-top: 110px;
+}
+body.report-gatsby h1.headline {
+    font-size: 56px;
+    padding: 0 10px;
+    background: none;
+    color: #ffffff;
+    font-family: 'georgiaregular';
+    font-weight: 100;
+    text-transform: capitalize;
+    font-style: italic;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 50%;
+    border-radius: 0;
+}
+body.report-gatsby .report-ranking {
+    margin: 0;
+    width: 1640px;
+}
+body.report-gatsby p.deadline-text {
+    color: #ffffff;
+    background: transparent;
+    padding: 0 35px 0px 0;
+    text-transform: inherit;
+    font-size: 33px;
+    font-weight: 100;
+    font-family: 'georgiaregular';
+    width: auto;
+    font-style: italic;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 50%;
+}
+body.report-gatsby .report-ranking ul {
+    background: none;
+    width: 930px;
+    border-radius: 20px;
+}
+body.report-gatsby .report-ranking ul li {
+    border: 0px;
+    padding: 0;
+    margin-bottom: 5px;
+}
+body.report-gatsby li.col-header {
+    border-bottom: 1px solid #585858!important;
+    padding-bottom: 15px!important;
+    margin-bottom: 15px!important;
+}
+body.report-gatsby li.col-header p {
+    font-size: 14px;
+    margin: 0 95px 0 0;
+    color: #ffffff;
+    font-family: 'georgiaregular';
+    text-transform: capitalize;
+}
+body.report-gatsby .details {
+    flex: 1;
+    padding: 6px 15px;
+    border-radius: 15px;
+}
+body.report-gatsby p.place {
+    font-size: 20px;
+    color: #ffffff;
+    width: 40px;
+    text-align: center;
+    margin: 0px 10px 0 0;
+    font-family: 'georgiaregular';
+}
+body.report-gatsby .report-ranking ul li figure img {
+    width: 44px;
+    height: 44px;
+}
+body.report-gatsby .details p.participant {
+    margin: 17px 0 0 10px;
+    padding: 0 20px 0 0;
+    font-size: 18px;
+    width: 150px;
+    position: relative;
+    color: #d58c01;
+}
+body.report-gatsby p.participant span {
+    font-family: 'georgiaregular';
+}
+body.report-gatsby .details p.participant:after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 22px;
+    right: 15px;
+    top: 0;
+    background: #707070;
+    z-index: 1;
+}
+body.report-gatsby p.reports-number {
+    font-family: 'georgiaregular';
+    border-bottom: 1px solid #d58c01;
+    font-size: 24px;
+    height: 36px;
+    margin-top: 2px;
+    width: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #FFF;
+}
+body.report-gatsby .progressbar {
+    background: #ffffff;
+    width: 280px;
+    height: 12px;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: 50px;
+    position: relative;
+}
+body.report-gatsby .progressbar-inner {
+    background: #d58c01;
+    border-radius: 3px;
+}
+body.report-gatsby .progressbar:before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 22px;
+    left: -35px;
+    top: -7px;
+    background: #707070;
+    z-index: 1;
+}
+body.report-gatsby p.progress-percentage {
+    margin: 18px 0 0 35px;
+    color: #FFF;
+    width: 52px;
+    font-size: 18px;
+    font-family: 'georgiaregular';
+}
+body.report-gatsby .details:after {
+    width: 18px;
+    height: 18px;
+    right: 0px;
+    top: 24px;
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+    /*gatsby responsive css*/
+    body.report-gatsby .report-ranking ul li {
+        padding-right: 0px!important;
+    }
+    body.report-gatsby li.col-header p {
+        font-size: 21px;
+        margin: 0 55px 0 0;
+    }
+    body.report-gatsby li.col-header p.ch-progress {
+        margin: 0 55px 0 70px;
+    }
+    body.report-gatsby p.place {
+        font-size: 24px;
+    }
+    body.report-gatsby .details {
+        padding: 6px 25px 6px 5px;
+    }
+    body.report-gatsby .details p.participant:after {
+        top: 13px;
+    }
+    body.report-gatsby .details p.participant{
+        max-height: inherit;
+        font-size: 24px;
+    }
+    body.report-gatsby p.participant span {
+        max-height: 41px;
+        line-height: .9;
+    }
+    body.report-gatsby p.progress-percentage {
+        margin: 4px 5px 0 20px;
+        color: #FFF;
+        width: 52px;
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 1900px) {
+    /*gatsby responsive css*/
+    body.report-gatsby {
+        background-position: center;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    body.report-gatsby .header {
+        margin-top: 20px;
+        width: 96%;
+        flex-direction: column;
+    }
+    body.report-gatsby .report-ranking {
+        width: 900px;
+    }
+    body.report-gatsby h1.headline {
+        font-size: 40px;
+        padding: 0 15px;
+        max-width: 100%;
+    }
+    body.report-gatsby .report-ranking ul li figure img {
+        width: 32px;
+        height: 32px;
+    }
+    body.report-gatsby .details p.participant {
+        margin: 2px 0 0 10px;
+        font-size: 18px;
+    }
+    body.report-gatsby p.reports-number {
+        font-size: 18px;
+        height: 30px;
+    }
+    body.report-gatsby .progressbar {
+        margin-top: 9px;
+    }
+    body.report-gatsby p.progress-percentage {
+        margin: 2px 0 0 35px;
+        font-size: 18px;
+    }
+    body.report-gatsby .details:after {
+        top: 15px;
+    }
+    body.report-gatsby p.deadline-text {
+        padding: 0 15px;
+        font-size: 28px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    /*gatsby responsive css*/
+    body.report-gatsby .header {
+        width: 100%;
+        margin-bottom: 30px;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+    body.report-gatsby h1.headline {
+        padding: 0;
+        font-size: 32px;
+    }
+    body.report-gatsby p.deadline-text {
+        padding: 0 0px 0px 0;
+        font-size: 26px;
+    }
+    body.report-gatsby .report-ranking {
+        width: 450px;
+    }
+    body.report-gatsby .report-ranking ul {
+        width: 450px;
+        padding: 0px;
+    }
+    body.report-gatsby li.col-header p {
+        font-size: 11px;
+        margin: 0 55px 0 0;
+    }
+    body.report-gatsby p.place {
+        font-size: 12px;
+        width: 25px;
+        margin: 3px 10px 0 0;
+    }
+    body.report-gatsby .details p.participant {
+        margin: 8px 0 0 5px;
+        padding: 0 10px 0 0;
+        font-size: 12px;
+        width: 100px;
+    }
+    body.report-gatsby .details p.participant:after {
+        height: 20px;
+        right: 5px;
+        top: 0;
+    }
+    body.report-gatsby p.reports-number {
+        font-size: 12px;
+        height: 24px;
+        margin-top: 6px;
+        width: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    body.report-gatsby .progressbar {
+        width: 70px;
+        height: 10px;
+        margin-top: 13px;
+        margin-left: 20px;
+    }
+    body.report-gatsby .progressbar:before {
+        left: -15px;
+        top: -6px;
+    }
+    body.report-gatsby p.progress-percentage {
+        margin: 9px 0 0 10px;
+        width: 37px;
+        font-size: 12px;
+    }
+    body.report-gatsby .details:after {
+        width: 10px;
+        height: 10px;
+        right: 15px;
+        top: 21px;
+    }
+}
+@media screen and (max-width: 479px) {
+    /*gatsby responsive css*/
+     body.report-gatsby h1.headline {
+        font-size: 34px;
+        padding: 0;
+    }
+    body.report-gatsby .report-ranking {
+        width: 300px;
+    }
+    body.report-gatsby .report-ranking ul {
+        width: 300px;
+        padding: 0px;
+    }
+    body.report-gatsby li.col-header p {
+        font-size: 10px;
+        margin: 0 34px 0 0;
+    }
+    body.report-gatsby p.place {
+        font-size: 11px;
+        width: 20px;
+        margin: 3px 5px 0 0;
+    }
+    body.report-gatsby .details {
+        padding: 6px 10px;
+        border-radius: 15px;
+    }
+    body.report-gatsby .report-ranking ul li figure img {
+        width: 24px;
+        height: 24px;
+        margin-top: 2px;
+    }
+    body.report-gatsby .details p.participant {
+        margin: 5px 0 0 5px;
+        padding: 2px 6px 0 0;
+        font-size: 11px;
+        width: 65px;
+    }
+    body.report-gatsby p.reports-number {
+        font-size: 11px;
+        height: 16px;
+        margin-top: 7px;
+        width: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    body.report-gatsby .progressbar {
+        width: 30px;
+        height: 8px;
+        margin-top: 13px;
+        margin-left: 10px;
+    }
+    body.report-gatsby .progressbar:before {
+        left: -8px;
+        top: -8px;
+        height: 20px;
+    }
+    body.report-gatsby p.progress-percentage {
+        margin: 10px 0 0 5px;
+        width: 25px;
+        font-size: 11px;
+    }
+    body.report-gatsby .details:after {
+        top: 18px;
+    }
+    body.report-gatsby p.deadline-text {
+        padding: 0 0 0px 0;
+        font-size: 20px;
+    }
+}

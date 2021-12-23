@@ -56,6 +56,11 @@ body.report-comics p.deadline-text {
     width: auto;
     background-size: 25px;
     background-position: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 80%;
 }
 body.report-comics .report-ranking ul {
     background: none;
@@ -212,6 +217,9 @@ Responsive CSS
     }
     body.report-comics p.progress-percentage {
         margin: 10px 0 0 35px;
+    }
+    body.report-comics p.deadline-text {
+        max-width: 90%;
     }
 }
 
