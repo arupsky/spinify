@@ -403,7 +403,6 @@ p.progress-percentage {
 }
 
 p.deadline-text {
-    text-transform: uppercase;
     font-size: 33px;
     font-family: 'InterBlack';
     margin: 0;
