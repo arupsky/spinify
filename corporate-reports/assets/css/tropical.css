@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'NunitoBlack';
+    src: url('../fonts/NunitoBlack.eot');
+    src: url('../fonts/NunitoBlack.eot') format('embedded-opentype'),
+         url('../fonts/NunitoBlack.woff2') format('woff2'),
+         url('../fonts/NunitoBlack.woff') format('woff'),
+         url('../fonts/NunitoBlack.ttf') format('truetype'),
+         url('../fonts/NunitoBlack.svg#NunitoBlack') format('svg');
+}
+@font-face {
+    font-family: 'PacificoRegular';
+    src: url('../fonts/PacificoRegular.eot');
+    src: url('../fonts/PacificoRegular.eot') format('embedded-opentype'),
+         url('../fonts/PacificoRegular.woff2') format('woff2'),
+         url('../fonts/PacificoRegular.woff') format('woff'),
+         url('../fonts/PacificoRegular.ttf') format('truetype'),
+         url('../fonts/PacificoRegular.svg#PacificoRegular') format('svg');
+}
+/*tropical responsive css*/
+body.report-tropical {
+    background-image: url(../images/body-bg-tropical.jpg);
+    font-family: 'NunitoBlack';
+}
+body.report-tropical .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 300px 0 0 60px;
+    min-height: 1080px;
+}
+body.report-tropical .report {
+    flex-direction: row;
+    align-items: start;
+}
+body.report-tropical h1.headline {
+    margin: 0;
+    font-size: 101px;
+    padding: 0;
+    background: none;
+    color: #ffffff;
+    font-family: 'PacificoRegular';
+    font-weight: 100;
+    border-radius: 0;
+    text-align: left;
+    max-height: 408px;
+    overflow: hidden;
+    line-height: 1.3;
+}
+body.report-tropical p.deadline-text {
+    font-family: 'NunitoBlack';
+    margin: 5px 0 0 0;
+    padding: 20px 0 0 0;
+    width: auto;
+    text-align: left;
+    display: block;
+    color: #E9A900;
+    background: none;
+    font-size: 49px;
+    max-height: 150px;
+    overflow: hidden;
+    line-height: 1.3;
+    letter-spacing: 2px;
+}
+body.report-tropical .report-ranking {
+    display: flex;
+    width: 1330px;
+    justify-content: space-between;
+    margin: 40px;
+    background-image: url(../images/tropical-report-ranking-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+body.report-tropical .report-ranking ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 25px;
+    background: transparent;
+    width: 665px;
+    border-radius: 10px;
+}
+body.report-tropical .report-ranking ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0px;
+    border-bottom: 1px solid #b1b1b1;
+    margin-bottom: 2px;
+    border-radius: 0;
+}
+body.report-tropical .report-ranking ul li:last-child {
+    border-bottom: 0px;
+}
+body.report-tropical li.col-header {
+    background: none!important;
+    border-bottom: 1px solid #b1b1b1!important;
+}
+body.report-tropical li.col-header p {
+    font-size: 11px;
+    margin: 0 50px 0 0;
+    color: #ffffff;
+    font-family: 'NunitoBlack';
+    font-weight: 600;
+    text-transform: capitalize;
+}
+body.report-tropical p.place {
+    color: #e9aa03;
+    font-family: 'NunitoBlack';
+    font-size: 18px;
+    width: 40px;
+    font-weight: 100;
+}
+body.report-tropical .report-ranking ul li figure img {
+    width: 38px;
+    height: 38px;
+}
+body.report-tropical .details p.participant {
+    color: #ffffff;
+    font-family: 'NunitoBlack';
+    font-size: 16px;
+}
+body.report-tropical p.reports-number {
+    color: #ffffff;
+    font-family: 'NunitoBlack';
+    font-size: 16px;
+    height: 22px;
+    border-bottom-color: #e9aa03;
+}
+body.report-tropical .progressbar {
+    background: #ffffff;
+    height: 10px;
+    margin-top: 12px;
+    border: 1px solid #ffffff;
+}
+body.report-tropical .progressbar-inner {
+    background: #28265A;
+}
+body.report-tropical p.progress-percentage {
+    color: #ffffff;
+    font-family: 'NunitoBlack';
+    font-size: 16px;
+    width: 50px;
+}
+body.report-tropical .details:after {
+    top: 8px;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+    body.report-tropical .report-ranking {
+        width: auto;
+        margin: 20px 40px 0 0;
+        padding: 32px;
+    }
+    /*tropical responsive css*/
+    body.report-tropical li.col-header {
+        padding-bottom: 16px!important;
+    }
+    body.report-tropical li.col-header p {
+        font-size: 18px;
+        margin: 0 36px 0 0;
+    }
+    body.report-tropical p.place {
+        font-size: 21px;
+    }
+    body.report-tropical .details p.participant {
+        width: 100px;
+        position: relative;
+        max-height: 46px;
+        font-size: 20px;
+    }
+    body.report-tropical .report-ranking ul li figure img {
+        width: 46px;
+        height: 46px;
+    }
+    body.report-tropical li.col-header p.ch-progress {
+        margin-left: 60px;
+    }
+    body.report-tropical p.participant span {
+        max-height: 42px;
+    }
+    body.report-tropical p.reports-number {
+        margin: 7px 30px 0 15px;
+        font-size: 21px;
+        height: 30px;
+    }
+    body.report-tropical .progressbar {
+        height: 12px;
+        margin-top: 17px;
+    }
+    body.report-tropical p.progress-percentage {
+        margin-top: 8px;
+        font-size: 21px;
+    }
+    body.report-tropical .details:after {
+        top: 16px;
+    }
+}
+@media screen and (max-width: 1900px) {
+    /*tropical responsive css*/
+    body.report-tropical .report {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    body.report-tropical .header {
+        width: auto;
+        height: auto;
+        padding: 20px 35px;
+        border-radius: 0 0 30px 30px;
+        align-items: center;
+        min-height: auto;
+    }
+    body.report-tropical h1.headline {
+        font-size: 52px;
+        text-align: center;
+    }
+    body.report-tropical p.deadline-text{
+        font-size: 26px;
+        text-align: center;
+    }
+    body.report-tropical li.col-header p {
+        margin: 0 25px 0 0;
+        font-size: 14px;
+    }
+    body.report-tropical .report-ranking {
+        width: 950px;
+        margin: 20px 0 20px 0;
+        padding: 0;
+        background-color: #55559A;
+        background-image: none;
+        border-radius: 20px;
+    }
+    body.report-tropical .report-ranking ul {
+        width: 475px;
+    }
+    body.report-tropical .report-ranking ul li figure img {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    /*tropical responsive css*/
+    body.report-tropical .header {
+        padding: 15px 20px;
+    }
+    body.report-tropical p.deadline-text {
+        font-size: 22px;
+        text-align: center;
+    }
+    body.report-tropical h1.headline {
+        font-size: 30px;
+        text-align: center;
+    }
+    body.report-tropical .report-ranking {
+        width: 300px;
+    }
+    body.report-tropical .report-ranking ul {
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    body.report-tropical .report-ranking ul li {
+        padding-right: 35px;
+    }
+    body.report-tropical li.col-header p {
+        margin: 0 20px 0 0;
+        font-size: 12px;
+    }
+    body.report-tropical p.place {
+        font-size: 14px;
+        width: 30px;
+    }
+    body.report-tropical .details {
+        flex: 1;
+    }
+    body.report-tropical .details p.participant {
+        font-size: 14px;
+        width: 70px;
+    }
+    body.report-tropical p.reports-number {
+        font-size: 14px;
+        height: 20px;
+    }
+    body.report-tropical .progressbar {
+        width: auto;
+        flex: 1;
+    }
+    body.report-tropical p.progress-percentage {
+        width: 30px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 479px) {
+}
