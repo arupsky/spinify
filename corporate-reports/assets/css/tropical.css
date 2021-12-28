@@ -216,6 +216,7 @@ Responsive CSS
     body.report-tropical h1.headline {
         font-size: 52px;
         text-align: center;
+        padding: 8px;
     }
     body.report-tropical p.deadline-text{
         font-size: 26px;
