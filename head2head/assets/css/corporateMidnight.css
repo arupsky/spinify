@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'FuturaPTBold';
+    src: url('../fonts/FuturaPTBold.eot');
+    src: url('../fonts/FuturaPTBold.eot') format('embedded-opentype'),
+         url('../fonts/FuturaPTBold.woff2') format('woff2'),
+         url('../fonts/FuturaPTBold.woff') format('woff'),
+         url('../fonts/FuturaPTBold.ttf') format('truetype'),
+         url('../fonts/FuturaPTBold.svg#FuturaPTBold') format('svg');
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'FuturaPTBold';
+    background-image: url(../images/body-bg-v9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.head2head {
+    min-height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.header {
+    border-radius: 0 0 30px 30px;    
+    background: rgb(0 0 0 / 70%);
+    width: 1030px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+h1.headline {
+    margin: 0;
+    font-size: 63px;
+    color: #ffffff;
+    font-family: 'FuturaPTBold';
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+p.subheadline {
+    margin: 10px 0 5px 0;
+    font-size: 30px;
+    color: #ffffff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'FuturaPTBold';
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 1600px;
+    margin: 200px auto 0 auto;
+}
+.item {
+    background: rgb(0 0 0 / 70%);
+    width: 518px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.item figure {
+    margin: -140px 0 0 0;
+    padding: 0;
+}
+.item figure img {
+    margin: 0;
+    padding: 0;
+    width: 310px;
+    height: 310px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 50%;
+    border: 20px solid #41546cba;
+}
+.item p {    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+.item p.name {
+    color: #ffffff;
+    font-size: 54px;
+    font-family: 'FuturaPTBold';
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ffffff;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.item p.score {
+    font-size: 53px;
+    font-family: 'FuturaPTBold';
+    margin: 0;
+    color: #ffffff;
+}
+.item p.dealclosed {
+    font-size: 23px;
+    font-family: 'FuturaPTBold';
+    margin: 8px 0 0 0;
+    color: #ffffff;
+}
+.item .progressbar {
+    position: relative;
+    background-color: #B5B7BA;
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+.item .progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #719DD6;
+    border-radius: 20px;
+}
+.item p.target {
+    margin: 0;
+    color: #ffffff;
+    font-size: 23px;
+    font-family: 'FuturaPTBold';
+}
+.item-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 417px;
+}
+.item-middle p {
+    background: rgb(0 0 0 / 70%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    border-radius: 30px;
+}
+.item-middle p.vs span {
+    font-size: 70px;
+    background: #4687A3;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    font-family: 'FuturaPTBold';
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p.deadline-text {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'FuturaPTBold';
+    background: rgb(0 0 0 / 70%);
+    color: #ffffff;
+    padding: 25px;
+}
+/*===================================
+Animation CSS
+====================================*/
+p.place, p.total {
+    position: relative;
+    animation-name: totalNumber;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes totalNumber {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+
+.progressbar-inner{
+    position: absolute;
+    animation-name: progress;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes progress {
+    0%   {width: 0%;}
+    50%  {width: 50%;}
+    100% {width: 100%;}
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+
+}
+@media screen and (max-width: 1900px) {
+    .head2head {
+        min-height: auto;
+    }
+    .header {
+        width: 95%;
+        height: auto;
+    }
+    h1.headline {
+        font-size: 42px;
+    }
+    p.subheadline {
+        font-size: 24px;
+    }
+    .content {
+        width: 1000px;
+        margin-bottom: 100px;
+    }
+    .item {
+        width: 300px;
+        padding: 20px;
+    }
+    .item p.name {
+        font-size: 32px;
+        margin: 10px 0;
+        padding-bottom: 10px;
+    }
+    .item p.score {
+        font-size: 28px;
+    }
+    .item p.dealclosed {
+        font-size: 16px;
+    }
+    .item p.target {
+        font-size: 16px;
+    }
+    .item-middle {
+        width: 300px;
+    }
+    .item-middle p.vs span {
+        font-size: 42px;
+        width: 100px;
+        height: 100px;
+    }
+    .item figure img {
+        width: 200px;
+        height: 200px;
+        border-width: 10px;
+    }
+    p.deadline-text {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .content {
+        flex-direction: column;
+        width: 300px;
+        margin-top: 50px;
+    }
+    .item {
+        margin-top: 110px;
+    }
+}
+@media screen and (max-width: 479px) {
+}

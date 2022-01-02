@@ -1,0 +1,347 @@
+@font-face {
+    font-family: 'InterRegular';
+    src: url('../fonts/InterRegular.eot');
+    src: url('../fonts/InterRegular.eot') format('embedded-opentype'),
+         url('../fonts/InterRegular.woff2') format('woff2'),
+         url('../fonts/InterRegular.woff') format('woff'),
+         url('../fonts/InterRegular.ttf') format('truetype'),
+         url('../fonts/InterRegular.svg#InterRegular') format('svg');
+}
+@font-face {
+    font-family: 'InterBlack';
+    src: url('../fonts/InterBlack.eot');
+    src: url('../fonts/InterBlack.eot') format('embedded-opentype'),
+         url('../fonts/InterBlack.woff2') format('woff2'),
+         url('../fonts/InterBlack.woff') format('woff'),
+         url('../fonts/InterBlack.ttf') format('truetype'),
+         url('../fonts/InterBlack.svg#InterBlack') format('svg');
+}
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/RobotoBold.eot');
+    src: url('../fonts/RobotoBold.eot') format('embedded-opentype'),
+         url('../fonts/RobotoBold.woff2') format('woff2'),
+         url('../fonts/RobotoBold.woff') format('woff'),
+         url('../fonts/RobotoBold.ttf') format('truetype'),
+         url('../fonts/RobotoBold.svg#RobotoBold') format('svg');
+}
+@font-face {
+    font-family: 'RobotoBlack';
+    src: url('../fonts/RobotoBlack.eot');
+    src: url('../fonts/RobotoBlack.eot') format('embedded-opentype'),
+         url('../fonts/RobotoBlack.woff2') format('woff2'),
+         url('../fonts/RobotoBlack.woff') format('woff'),
+         url('../fonts/RobotoBlack.ttf') format('truetype'),
+         url('../fonts/RobotoBlack.svg#RobotoBlack') format('svg');
+}
+@font-face {
+    font-family: 'FuturaPTBold';
+    src: url('../fonts/FuturaPTBold.eot');
+    src: url('../fonts/FuturaPTBold.eot') format('embedded-opentype'),
+         url('../fonts/FuturaPTBold.woff2') format('woff2'),
+         url('../fonts/FuturaPTBold.woff') format('woff'),
+         url('../fonts/FuturaPTBold.ttf') format('truetype'),
+         url('../fonts/FuturaPTBold.svg#FuturaPTBold') format('svg');
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'InterRegular';
+    background-image: url(../images/body-bg-v6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.head2head {
+    min-height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.header {
+    border-radius: 30px;
+    background: rgba(0, 0, 0, .7);
+    width: 1030px;
+    height: 223px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+h1.headline {
+    margin: 0;
+    font-size: 90px;
+    color: #9EEAFF;
+    font-family: 'RobotoBlack';
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+p.subheadline {
+    margin: 10px 0 5px 0;
+    font-size: 30px;
+    color: #9EEAFF;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 1780px;
+    margin: 80px auto 140px auto;
+    background: rgba(0, 0, 0, .7);
+    padding: 50px;
+    border-radius: 30px;
+}
+.item {
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.item-top-right {
+    padding-left: 50px;
+    overflow: hidden;
+}
+.item figure {
+    margin: 0;
+    padding: 0;
+}
+.item figure img {
+    margin: 0;
+    padding: 2px;
+    width: 215px;
+    height: 215px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 50%;
+    border: 8px solid #8CAABD;
+}
+.item p {    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+}
+.item p.name {
+    color: #9EEAFF;
+    font-size: 63px;
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1.5px solid #94afc1;
+    display: block;
+    width: 100%;
+    font-family: 'RobotoBlack';
+}
+.item p.score {
+    font-size: 59px;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'RobotoBlack';
+}
+.item p.dealclosed {
+    font-size: 29px;
+    margin: 8px 0 0 0;
+    color: #ffffff;
+    font-family: 'RobotoBold';
+}
+.item .progressbar {
+    position: relative;
+    background: #37C2E1;
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+.item .progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #D3F0F7;
+    border-radius: 20px;
+}
+.item p.target {
+    margin: 0;
+    font-size: 31px;
+    color: #37C2E1;
+}
+.item-bottom {
+    margin-top: 30px;
+}
+.item-bottom p {
+    text-align: right;
+}
+.item-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-middle p.vs {
+    font-size: 70px;
+    background: #9EEAFF;
+    border-radius: 50%;
+    color: #1D4E7E;
+    font-family: 'RobotoBlack';
+    position: relative;
+    width: 162px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p.deadline-text {
+    font-size: 33px;
+    font-family: 'InterBlack';
+    padding: 45px 0;
+    display: block;
+    color: #ffffff;
+    background: rgba(0, 0, 0, .7);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    max-width: 1030px;
+    border-radius: 30px 30px 0 0;
+}
+/*===================================
+Animation CSS
+====================================*/
+p.place, p.total {
+    position: relative;
+    animation-name: totalNumber;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes totalNumber {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+
+.progressbar-inner{
+    position: absolute;
+    animation-name: progress;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes progress {
+    0%   {width: 0%;}
+    50%  {width: 50%;}
+    100% {width: 100%;}
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+
+}
+@media screen and (max-width: 1900px) {
+    .header {
+        width: 95%;
+        height: auto;
+        padding: 15px;
+    }
+    h1.headline {
+        font-size: 42px;
+        text-overflow: inherit;
+        white-space: inherit;
+        text-align: inherit;
+        overflow: inherit;
+    }
+    p.subheadline {
+        font-size: 22px;
+    }
+    .content {
+        width: 780px;
+        margin: 50px auto 50px auto;
+        flex-direction: column;
+    }
+    .item {
+        padding: 20px;
+    }
+    .item-middle p.vs {
+        font-size: 50px;
+        width: 120px;
+        height: 120px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .content {
+        width: 400px;
+        padding: 0px;
+    }
+    .item {
+        width: 100%;
+    }
+    .item-top {
+        flex-direction: column;
+    }
+    .item-top-right {
+        padding-left: 0px;
+        width: 100%;
+    }
+    .item p.name {
+        font-size: 34px;
+        margin: 15px 0;
+        padding-bottom: 15px;
+    }
+    .item p.score {
+        font-size: 30px;
+    }
+    .item p.dealclosed {
+        font-size: 18px;
+    }
+    .item p.target {
+        font-size: 18px;
+    }
+    p.deadline-text {
+        font-size: 24px;
+        padding: 25px 15px;
+        text-overflow: inherit;
+        white-space: inherit;
+        overflow: inherit;
+        max-width: 95%;
+    }
+}
+@media screen and (max-width: 479px) {
+    .content {
+        width: 300px;
+    }
+    .item {
+        width: 300px;
+    }
+    .item figure img {
+        width: 200px;
+        height: 200px;
+    }
+}
