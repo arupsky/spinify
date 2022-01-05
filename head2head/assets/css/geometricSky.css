@@ -188,6 +188,12 @@ p.deadline-text {
     background: rgb(36 64 88 / 80%);
     color: #ffffff;
     padding: 25px;
+    max-height: 174px;
+    overflow: hidden;
+}
+p.deadline-text span {
+    max-height: 88px;
+    overflow: hidden;
 }
 /*===================================
 Animation CSS

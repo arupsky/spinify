@@ -189,6 +189,10 @@ p.deadline-text {
     color: #ffffff;
     padding: 25px;
 }
+p.deadline-text span {
+    max-height: 88px;
+    overflow: hidden;
+}
 /*===================================
 Animation CSS
 ====================================*/
@@ -290,4 +294,5 @@ Responsive CSS
     }
 }
 @media screen and (max-width: 479px) {
+
 }

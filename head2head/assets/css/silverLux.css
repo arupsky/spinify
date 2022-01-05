@@ -217,13 +217,16 @@ p.deadline-text {
     font-size: 33px;
     font-family: 'InterBlack';
     margin: 0;
-    padding: 45px 0;
+    padding: 45px 10px;
     width: 100%;
-    display: block;
-    text-align: center;
     color: #2A3D45;
     background: rgb(255,255,255);
     background: linear-gradient( 90deg, rgba(255,255,255,1) 0%, #D1D3D4 100%);
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
 }
 /*===================================
 Animation CSS

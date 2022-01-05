@@ -221,6 +221,9 @@ p.deadline-text {
     text-align: center;
     color: #ffffff;
     background: rgba(0, 0, 0, .7);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 /*===================================
 Animation CSS
