@@ -1,0 +1,345 @@
+/*Font*/
+@font-face {
+    font-family: 'HammersmithOneRegular';
+    src: url('../fonts/HammersmithOneRegular.eot');
+    src: url('../fonts/HammersmithOneRegular.eot') format('embedded-opentype'),
+         url('../fonts/HammersmithOneRegular.woff2') format('woff2'),
+         url('../fonts/HammersmithOneRegular.woff') format('woff'),
+         url('../fonts/HammersmithOneRegular.ttf') format('truetype'),
+         url('../fonts/HammersmithOneRegular.svg#HammersmithOneRegular') format('svg');
+}
+
+/*pumpkin css*/
+body.report-pumpkin {
+    background-image: url(../images/body-bg-pumpkin.jpg);
+    font-family: 'HammersmithOneRegular';
+}
+body.report-pumpkin h1.headline {
+    font-size: 91px;
+    padding: 70px 0 30px 0;
+    font-family: 'HammersmithOneRegular';
+    color: #6A3013;
+    text-align: center;
+    background: transparent;
+    border-radius: 0;
+    position: relative;
+    border-radius: 15px;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+body.report-pumpkin h1.headline:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/pumpkin-header-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    left: 0;
+    bottom: 10px;
+}
+body.report-pumpkin h1.headline span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;    
+    display: block;
+    max-width: 1550px;
+}
+body.report-pumpkin .report {
+    justify-content: start;
+}
+body.report-pumpkin .report-ranking {
+    margin: 50px 0;
+    width: 1400px;
+}
+body.report-pumpkin .report-ranking ul {
+    background: transparent;
+    border-radius: 0px;
+    padding: 0;
+}
+body.report-pumpkin .report-ranking ul li {
+    background: #FFF;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+body.report-pumpkin .report-ranking ul li.col-header {
+    background: transparent;
+}
+body.report-pumpkin li.col-header p {
+    font-size: 13px;
+    color: #692E13;
+    font-family: 'HammersmithOneRegular';
+    font-weight: 600;
+    text-transform: uppercase;
+}
+body.report-pumpkin p.place {
+    font-family: 'HammersmithOneRegular';
+    color: #692E13;
+}
+body.report-pumpkin .details p.participant {
+    font-family: 'HammersmithOneRegular';
+    color: #692E13;
+}
+body.report-pumpkin .report-ranking ul li figure img {
+    width: 28px;
+    height: 28px;
+}
+body.report-pumpkin p.reports-number {
+    color: #D56827;
+    border-bottom-color: #692E13;
+}
+body.report-pumpkin .progressbar {
+    background: #FED691;
+}
+body.report-pumpkin .progressbar-inner {
+    background: #EE6123;
+}
+body.report-pumpkin p.progress-percentage {
+    font-family: 'HammersmithOneRegular';
+    color: #D56827;
+}
+body.report-pumpkin p.deadline-text {
+    font-size: 46px;
+    font-family: 'HammersmithOneRegular';
+    padding: 20px 10px;
+    width: auto;
+    color: #692E13;
+    background: transparent;
+    position: relative;
+    max-width: 800px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+
+/* Highlights section */
+body.report-pumpkin ul.highlights-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 885px;
+}
+body.report-pumpkin ul.highlights-full li {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    background: transparent;
+}
+body.report-pumpkin .report-ranking ul.highlights-full li figure img {
+    width: 100px;
+    height: 100px;
+}
+body.report-pumpkin .highlights-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+body.report-pumpkin .highlights-header p {
+    font-size: 38px;
+    margin: 0 0 0 10px;
+    color: #692E13;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    overflow: hidden;
+    max-width: 250px;
+}
+.highlights-content {
+    width: 100%;
+}
+body.report-pumpkin .highlights-items {
+    display: flex;
+    width: 100%;
+}
+body.report-pumpkin .highlights-item-single {
+    display: flex;
+    flex: 1;
+    position: relative;
+    align-items: center;
+    padding: 25px 30px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background: #FFF;
+    border-radius: 30px;
+}
+body.report-pumpkin .highlights-item-single p {
+    margin: 0;
+}
+body.report-pumpkin .highlights-item-single p.highlights-item-text {
+    font-size: 42px;
+    margin: 0px;
+    color: #692E13;
+}
+body.report-pumpkin .highlights-item-single p.highlights-item-number {
+    font-size: 43px;
+    color: #D56827;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 250px;
+}
+body.report-pumpkin .highlights-item-single p.highlights-item-number span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+body.report-pumpkin .highlights-items {
+    display: flex;
+    flex-direction: column;
+}
+body.report-pumpkin .highlights-bottom {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    background: #FFF;
+    padding: 25px 30px;
+    border-radius: 30px;
+}
+body.report-pumpkin .highlights-bottom p.highlights-bottom-title {
+    font-size: 42px;
+    margin: 0px 25px 0 0;
+    color: #692E13;
+}
+body.report-pumpkin .highlights-progressbar {
+    background: #FED691;
+    height: 21px;
+    border-radius: 20px;
+    position: relative;
+    flex: 1;
+}
+body.report-pumpkin .highlights-progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #EE6123;
+    border-radius: 20px;
+}
+body.report-pumpkin .highlights-progress{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+body.report-pumpkin p.highlights-percentage {
+    font-size: 32px;
+    margin: 0;
+    padding: 0 45px 0 15px;
+    color: #DA413F;
+}
+body.report-pumpkin .highlights-progress:after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    right: 0;
+    top: 7px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*===================================
+Animation CSS#ffffff
+====================================*/
+p.place, p.total {
+    position: relative;
+    animation-name: totalNumber;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes totalNumber {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+    body.report-pumpkin li.col-header p {
+        margin: 0 25px 0 0;
+    } 
+    body.report-pumpkin p.place {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    body.report-pumpkin .details p.participant {
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 0px!important;
+        width: 100px;
+    }
+    body.report-pumpkin p.participant span {
+        max-height: 28px;
+    }
+    body.report-pumpkin p.reports-number {
+        font-size: 16px;
+        height: 22px;
+        margin-top: 4px;
+        margin-right: 25px;
+        font-weight: 600;
+    }
+    body.report-pumpkin p.progress-percentage {
+        margin: 4px 5px 0 10px;
+        font-size: 16px;
+        font-weight: 600;
+    }  
+}
+@media screen and (max-width: 1900px) {
+    body.report-pumpkin h1.headline {
+        font-size: 38px;
+    }
+    body.report-pumpkin h1.headline span {
+        text-overflow: inherit;
+        white-space: inherit;
+        text-align: center;
+        overflow: inherit;
+    }
+    body.report-pumpkin h1.headline:after {
+        display: none;
+    }
+    body.report-pumpkin p.deadline-text {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    body.report-pumpkin .report-ranking {
+        width: 885px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    body.report-pumpkin .report-ranking {
+        width: 450px;
+    }
+}
+@media screen and (max-width: 479px) {
+    body.report-pumpkin .report-ranking {
+        width: 300px;
+    }
+    body.report-pumpkin ul.highlights-full {
+        width: 450px;
+    }
+    body.report-pumpkin .highlights-item-single p.highlights-item-text {
+        font-size: 22px;
+    }
+    
+    body.report-pumpkin .highlights-bottom p.highlights-bottom-title {
+        font-size: 22px;
+    }
+    body.report-pumpkin .highlights-item-single p.highlights-item-number, body.report-pumpkin p.highlights-percentage {
+        font-size: 26px;
+    }
+}

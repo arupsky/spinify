@@ -1,0 +1,344 @@
+/*Font*/
+@font-face {
+    font-family: 'ChivoBold';
+    src: url('../fonts/ChivoBold.eot');
+    src: url('../fonts/ChivoBold.eot') format('embedded-opentype'),
+         url('../fonts/ChivoBold.woff2') format('woff2'),
+         url('../fonts/ChivoBold.woff') format('woff'),
+         url('../fonts/ChivoBold.ttf') format('truetype'),
+         url('../fonts/ChivoBold.svg#ChivoBold') format('svg');
+}
+/*fastfood css*/
+body.report-fastfood {
+    background-image: url(../images/body-bg-fastfood.jpg);
+    font-family: 'ChivoBold';
+}
+body.report-fastfood h1.headline {
+    font-size: 63px;
+    padding: 35px 30px;
+    font-family: 'ChivoBold';
+    color: #ffffff;
+    text-align: center;
+    background: #502F61;
+    position: relative;
+    border-radius: 0 0 50px 50px;
+    font-weight: 100;
+    min-width: 655px;
+}
+body.report-fastfood h1.headline:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/fastfood-header-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    left: 0;
+    bottom: 10px;
+}
+body.report-fastfood h1.headline span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;    
+    display: block;
+    max-width: 1550px;
+}
+body.report-fastfood .report {
+    justify-content: start;
+}
+body.report-fastfood .report-ranking {
+    margin: 50px 0;
+    width: 1400px;
+}
+body.report-fastfood .report-ranking ul {
+    background: transparent;
+    border-radius: 0px;
+    padding: 0;
+    width: 688px;
+}
+body.report-fastfood .report-ranking ul li {
+    background: #FFF;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+body.report-fastfood .report-ranking ul li.col-header {
+    background: transparent;
+}
+body.report-fastfood li.col-header p {
+    font-size: 11px;
+    color: #fff;
+    font-family: 'ChivoBold';
+    font-weight: 600;
+    text-transform: uppercase;
+}
+body.report-fastfood p.place {
+    font-family: 'ChivoBold';
+    color: #2A1C23;
+}
+body.report-fastfood .details p.participant {
+    font-family: 'ChivoBold';
+    color: #2A1C23;
+}
+body.report-fastfood .report-ranking ul li figure img {
+    width: 28px;
+    height: 28px;
+}
+body.report-fastfood p.reports-number {
+    color: #2A1C23;
+    border-bottom: 0px;
+}
+body.report-fastfood .progressbar {
+    background: #FED691;
+}
+body.report-fastfood .progressbar-inner {
+    background: #EE6123;
+}
+body.report-fastfood p.progress-percentage {
+    font-family: 'ChivoBold';
+    color: #2A1C23;
+}
+body.report-fastfood p.deadline-text {
+    font-size: 36px;
+    font-family: 'ChivoBold';
+    padding: 110px 0 0 0;
+    width: auto;
+    color: #fff;
+    background: transparent;
+    position: relative;
+    max-width: 1800px;
+    text-transform: capitalize;
+    font-weight: 100;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;    
+    display: block;
+}
+
+/* Highlights section */
+body.report-fastfood ul.highlights-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body.report-fastfood ul.highlights-full li {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 50px;
+}
+body.report-fastfood ul.highlights-full li figure img {
+    width: 100px;
+    height: 100px;
+}
+body.report-fastfood .highlights-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+body.report-fastfood .highlights-header p {
+    font-size: 24px;
+    margin: 0 0 0 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 250px;
+}
+.highlights-content {
+    width: 100%;
+}
+body.report-fastfood .highlights-items {
+    display: flex;
+    width: 100%;
+}
+body.report-fastfood .highlights-item-single {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    align-items: center;
+}
+body.report-fastfood .highlights-item-single p {
+    margin: 0;
+}
+body.report-fastfood .highlights-item-single p.highlights-item-text {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+body.report-fastfood .highlights-item-single p.highlights-item-number {
+    font-size: 38px;
+    background: #FFBF3D;
+    color: #F03138;
+    text-shadow: 1px 1px 1px #ffffff;
+    height: 168px;
+    width: 168px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body.report-fastfood .highlights-item-single p.highlights-item-number span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+body.report-fastfood .highlights-items {
+    display: flex;
+}
+body.report-fastfood .highlights-bottom {
+    max-width: 465px;
+    margin: 0 auto;
+}
+body.report-fastfood .highlights-bottom p.highlights-bottom-title {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+body.report-fastfood .highlights-progressbar {
+    background: #FFBF3D;
+    height: 21px;
+    border-radius: 20px;
+    position: relative;
+    flex: 1;
+}
+body.report-fastfood .highlights-progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #F03138;
+    border-radius: 20px;
+}
+body.report-fastfood .highlights-progress{
+    position: relative;
+    display: flex;
+}
+body.report-fastfood p.highlights-percentage {
+    font-size: 26px;
+    margin: 0;
+    padding: 0 45px 0 15px;
+}
+body.report-fastfood .highlights-progress:after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    right: 0;
+    top: 3px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/*===================================
+Animation CSS#ffffff
+====================================*/
+p.place, p.total {
+    position: relative;
+    animation-name: totalNumber;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes totalNumber {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+    body.report-fastfood li.col-header p {
+        margin: 0 25px 0 0;
+    } 
+    body.report-fastfood li.col-header p.ch-progress {
+        margin-left: 35px;
+    }
+    body.report-fastfood p.place {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    body.report-fastfood .details p.participant {
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 0px!important;
+        width: 100px;
+    }
+    body.report-fastfood p.participant span {
+        max-height: 28px;
+    }
+    body.report-fastfood p.reports-number {
+        font-size: 14px;
+        height: 22px;
+        margin-top: 5px;
+        margin-right: 25px;
+        font-weight: 600;
+    }
+    body.report-fastfood p.progress-percentage {
+        margin: 5px 0px 0px 10px;
+        font-size: 14px;
+        font-weight: 600;
+    }  
+}
+@media screen and (max-width: 1900px) {
+    body.report-fastfood h1.headline {
+        font-size: 36px;
+        padding: 15px;
+        min-width: auto;
+        border-radius: 0 0 20px 20px;
+    }
+    body.report-fastfood h1.headline span {
+        text-overflow: inherit;
+        white-space: inherit;
+        text-align: center;
+        overflow: inherit;
+    }
+    body.report-fastfood h1.headline:after {
+        display: none;
+    }
+    body.report-fastfood p.deadline-text {
+        font-size: 20px;
+        letter-spacing: 3px;
+        padding: 0;
+        white-space: inherit;
+        max-width: 90%;
+    }
+    body.report-fastfood .report-ranking {
+        width: 688px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    body.report-fastfood .report-ranking {
+        width: 450px;
+    }
+    body.report-fastfood .report-ranking ul {
+        width: 450px;
+    }
+    body.report-fastfood .highlights-header {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 479px) {
+    body.report-fastfood .report-ranking {
+        width: 300px;
+    }
+    body.report-fastfood .report-ranking ul {
+        width: 300px;
+    }
+    body.report-fastfood .highlights-items {
+        flex-direction: column;
+    }
+    body.report-fastfood .highlights-item-single {
+        margin-bottom: 20px;
+    }
+    body.report-fastfood ul.highlights-full li {
+        padding: 20px;
+    }
+}

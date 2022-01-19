@@ -1,0 +1,493 @@
+@font-face {
+    font-family: 'BADABB';
+    src: url('../fonts/BADABB.eot');
+    src: url('../fonts/BADABB.eot') format('embedded-opentype'),
+         url('../fonts/BADABB.woff2') format('woff2'),
+         url('../fonts/BADABB.woff') format('woff'),
+         url('../fonts/BADABB.ttf') format('truetype'),
+         url('../fonts/BADABB.svg#BADABB') format('svg');
+}
+/* comics CSS*/
+body.report-comics {
+    background-image: url(../images/body-bg-comics.jpg);
+    font-family: 'BADABB';
+}
+body.report-comics .report {
+    justify-content: start;
+}
+body.report-comics h1.headline {
+    font-size: 102px;
+    padding: 0 150px;
+    color: #000000;
+    font-family: 'BADABB';
+    font-weight: 100;
+    background-image: url(../images/comics-header-bg.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 937px;
+    height: 210px;
+    background-position: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body.report-comics h1.headline span {
+    max-height: 208px;
+}
+body.report-comics .report-ranking {
+    margin: -1px 0 0 0;
+    width: 1818px;
+    background-image: url(../images/comics-content-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-left: 100px;
+    padding-right: 60px;
+    padding-top: 25px;
+    padding-bottom: 39px;
+}
+body.report-comics p.deadline-text {
+    color: #000000;
+    background: transparent;
+    padding: 20px 0 20px 40px;
+    font-family: 'BADABB';
+    background-image: url(../images/time-icon-black.png);
+    background-repeat: no-repeat;
+    width: auto;
+    background-size: 25px;
+    background-position: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 80%;
+}
+body.report-comics .report-ranking ul {
+    background: none;
+    width: 850px;
+    border-radius: 20px;
+}
+body.report-comics .report-ranking ul li {
+    border: 0px;
+    padding: 0;
+    margin-bottom: 6px;
+}
+body.report-comics li.col-header {
+    padding-bottom: 15px!important;
+    margin-bottom: 15px!important;
+    border-bottom: 1px solid #d5d5d5!important;
+}
+body.report-comics li.col-header p {
+    font-size: 23px;
+    margin: 0 60px 0 0;
+    color: #000000;
+}
+body.report-comics .details {
+    flex: 1;
+    padding: 6px 15px;
+    border-radius: 15px;
+}
+body.report-comics p.place {
+    font-size: 25px;
+    color: #000000;
+    width: 40px;
+    text-align: center;
+    margin: 3px 10px 0 0;
+}
+body.report-comics .report-ranking ul li figure img {
+    width: 44px;
+    height: 44px;
+}
+body.report-comics .details p.participant {
+    margin: 17px 0 0 10px;
+    padding: 0 20px 0 0;
+    font-size: 25px;
+    width: 170px;
+    position: relative;
+    color: #008B83;
+    font-family: 'BADABB';
+}
+body.report-comics .details p.participant span {
+    line-height: .9;
+}
+body.report-comics .details p.participant:after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 22px;
+    right: 15px;
+    top: 12px;
+    background: #6F3812;
+    z-index: 1;
+}
+body.report-comics p.reports-number {
+    color: #000000;
+    font-family: 'BADABB';
+    font-size: 25px;
+    height: 28px;
+    margin-top: 17px;
+    width: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom-color: #008B83;
+}
+body.report-comics .progressbar {
+    background: #6F3812;
+    height: 12px;
+    border-radius: 20px;
+    margin-top: 16px;
+    margin-left: 50px;
+    position: relative;
+}
+body.report-comics .progressbar-inner {
+    background: #FFE03D;
+}
+body.report-comics .progressbar:before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 22px;
+    left: -35px;
+    top: -5px;
+    background: #6F3812;
+    z-index: 1;
+}
+body.report-comics p.progress-percentage {
+    margin: 18px 0 0 35px;
+    color: #008B83;
+    width: 52px;
+    font-size: 25px;
+    font-family: 'BADABB';
+}
+body.report-comics .details:after {
+    width: 18px;
+    height: 18px;
+    right: 20px;
+    top: 19px;
+}
+/* Highlights section */
+body.report-comics ul.highlights-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+}
+body.report-comics ul.highlights-full li {
+    display: flex;
+    flex-direction: column;
+}
+body.report-comics ul.highlights-full li figure img {
+    width: 100px;
+    height: 100px;
+}
+body.report-comics .highlights-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+body.report-comics .highlights-header p {
+    font-size: 54px;
+    margin: 0 0 0 10px;
+    color: #008B83;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 250px;
+}
+.highlights-content {
+    width: 100%;
+}
+body.report-comics .highlights-items {
+    display: flex;
+    width: 100%;
+}
+body.report-comics .highlights-item-single {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    width: 50%;
+}
+body.report-comics .highlights-item-single:first-child::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 90px;
+    background-color: #b8b8b8;
+    right: 0;
+    top: 30px;
+}
+body.report-comics .highlights-item-single p {
+    margin: 0;
+}
+body.report-comics .highlights-item-single p.highlights-item-text {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+body.report-comics .highlights-item-single p.highlights-item-number {
+    font-size: 108px;
+    color: #008B83;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+body.report-comics .highlights-items {
+    display: flex;
+    
+}
+body.report-comics .highlights-bottom p.highlights-bottom-title {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+body.report-comics .highlights-progressbar {
+    background: #6F3812;
+    height: 21px;
+    border-radius: 20px;
+    margin-top: 16px;
+    position: relative;
+    flex: 1;
+}
+body.report-comics .highlights-progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #FFE03D;
+    border-radius: 20px;
+}
+body.report-comics .highlights-progress{
+    position: relative;
+    display: flex;
+}
+body.report-comics p.highlights-percentage {
+    font-size: 41px;
+    margin: 0;
+    color: #008b83;
+    padding: 0 45px 0 15px;
+}
+body.report-comics .highlights-progress:after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    right: 0;
+    top: 5px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+    /*comics responsive css*/
+    body.report-comics .report-ranking ul li {
+        padding-right: 0px!important;
+    }
+    body.report-comics .details {
+        padding: 6px 40px 6px 15px;
+    }
+    body.report-comics .details p.participant {
+        max-height: inherit;
+        font-size: 25px;
+    }
+    body.report-comics .details p.participant span {
+        max-height: 44px;
+    }
+    body.report-comics p.reports-number {
+        font-size: 25px;
+        margin-top: 11px;
+    }
+    body.report-comics p.progress-percentage {
+        margin: 11px 10px 0 35px;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 1900px) {
+    /*comics responsive css*/
+    body.report-comics .report-ranking {
+        width: 760px;
+        background: #fff;
+        padding: 0;
+    }
+    body.report-comics .report-ranking ul {
+        width: 760px;
+    }
+    body.report-comics .details p.participant {
+        margin: 10px 0 0 10px;
+        font-size: 20px;
+    }
+    body.report-comics .details p.participant:after {
+        top: 2px;
+    }
+    body.report-comics p.reports-number {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    body.report-comics p.progress-percentage {
+        margin: 10px 0 0 35px;
+    }
+    body.report-comics p.deadline-text {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    /*comics responsive css*/
+    body.report-comics h1.headline {
+        width: auto;
+        height: auto;
+        padding: 20px;
+        font-size: 40px;
+        background: #F4CD27;
+        margin-bottom: 20px;
+    }
+    body.report-comics .report-ranking {
+        width: 450px;
+        padding: 20px;
+    }
+    body.report-comics .report-ranking ul {
+        width: 450px;
+        padding: 0px;
+    }
+    body.report-comics li.col-header p {
+        font-size: 11px;
+        margin: 0 65px 0 0;
+    }
+    body.report-comics p.place {
+        font-size: 12px;
+        width: 25px;
+        margin: 3px 10px 0 0;
+    }
+    body.report-comics .report-ranking ul li figure img {
+        width: 30px;
+        height: 30px;
+    }
+    body.report-comics .details p.participant {
+        margin: 8px 0 0 5px;
+        padding: 0 10px 0 0;
+        font-size: 12px;
+        width: 100px;
+    }
+    body.report-comics .details p.participant:after {
+        height: 15px;
+        right: 5px;
+        top: 0;
+    }
+
+    body.report-comics p.reports-number {
+        font-size: 12px;
+        height: 18px;
+        margin-top: 7px;
+        width: 35px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    body.report-comics .progressbar {
+        width: 70px;
+        height: 10px;
+        margin-top: 12px;
+        margin-left: 20px;
+    }
+    body.report-comics .progressbar:before {
+        left: -15px;
+        top: -3px;
+        height: 15px;
+    }
+    body.report-comics p.progress-percentage {
+        margin: 11px 0 0 10px;
+        width: 37px;
+        font-size: 12px;
+    }
+    body.report-comics .details:after {
+        width: 10px;
+        height: 10px;
+        right: 15px;
+        top: 18px;
+    }
+    /*Highlights*/
+    body.report-comics .highlights-header p {
+        font-size: 26px;
+    }
+    body.report-comics .highlights-item-single p.highlights-item-number {
+        font-size: 36px;
+    }
+    body.report-comics .highlights-item-single:first-child::after {
+        height: 40px;
+    }
+}
+@media screen and (max-width: 479px) {
+    /*comics responsive css*/
+    body.report-comics h1.headline {
+        font-size: 34px;
+        padding: 20px 35px;
+    }
+    body.report-comics .report-ranking {
+        width: 300px;
+        padding: 10px;
+    }
+    body.report-comics .report-ranking ul {
+        width: 300px;
+        padding: 0px;
+    }
+    body.report-comics li.col-header p {
+        font-size: 10px;
+        margin: 0 35px 0 0;
+    }
+    body.report-comics p.place {
+        font-size: 11px;
+        width: 15px;
+        margin: 3px 5px 0 0;
+    }
+    body.report-comics .details {
+        padding: 6px 0px;
+        border-radius: 15px;
+    }
+    body.report-comics .report-ranking ul li figure img {
+        width: 24px;
+        height: 24px;
+        margin-top: 2px;
+    }
+    body.report-comics .details p.participant {
+        margin: 6px 0 0 5px;
+        padding: 2px 6px 0 0;
+        font-size: 11px;
+        width: 65px;
+    }
+    body.report-comics p.reports-number {
+        font-size: 11px;
+        height: 16px;
+        margin-top: 7px;
+        width: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    body.report-comics .progressbar {
+        width: 50px;
+        height: 7px;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+    body.report-comics .progressbar:before {
+        left: -8px;
+        top: -5px;
+    }
+    body.report-comics p.progress-percentage {
+        margin: 8px 0 0 5px;
+        width: 25px;
+        font-size: 11px;
+    }
+    body.report-comics .details:after {
+        top: 18px;
+    }
+    body.report-comics p.deadline-text {
+        font-size: 20px;
+    }
+    
+}

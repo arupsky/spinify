@@ -1,0 +1,435 @@
+@font-face {
+    font-family: 'SlaberlinXBold';
+    src: url('../fonts/SlaberlinXBold.eot');
+    src: url('../fonts/SlaberlinXBold.eot') format('embedded-opentype'),
+         url('../fonts/SlaberlinXBold.woff2') format('woff2'),
+         url('../fonts/SlaberlinXBold.woff') format('woff'),
+         url('../fonts/SlaberlinXBold.ttf') format('truetype'),
+         url('../fonts/SlaberlinXBold.svg#SlaberlinXBold') format('svg');
+}
+@font-face {
+    font-family: 'sanchezboldwebfont';
+    src: url('../fonts/sanchezboldwebfont.eot');
+    src: url('../fonts/sanchezboldwebfont.eot') format('embedded-opentype'),
+         url('../fonts/sanchezboldwebfont.woff2') format('woff2'),
+         url('../fonts/sanchezboldwebfont.woff') format('woff'),
+         url('../fonts/sanchezboldwebfont.ttf') format('truetype'),
+         url('../fonts/sanchezboldwebfont.svg#sanchezboldwebfont') format('svg');
+}
+@font-face {
+    font-family: 'SlaberlinBold';
+    src: url('../fonts/SlaberlinBold.eot');
+    src: url('../fonts/SlaberlinBold.eot') format('embedded-opentype'),
+         url('../fonts/SlaberlinBold.woff2') format('woff2'),
+         url('../fonts/SlaberlinBold.woff') format('woff'),
+         url('../fonts/SlaberlinBold.ttf') format('truetype'),
+         url('../fonts/SlaberlinBold.svg#SlaberlinBold') format('svg');
+}
+/*trekking css*/
+body.report-trekking {
+    background-image: url(../images/body-bg-trekking.jpg);
+    font-family: 'SlaberlinBold';
+}
+body.report-trekking .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 100px 0 0 0;
+    width: 1100px;
+    height: 980px;
+}
+body.report-trekking .report {
+    flex-direction: row-reverse;
+    align-items: start;
+}
+body.report-trekking h1.headline {
+    margin: 0;
+    font-size: 91px;
+    padding: 0;
+    background: none;
+    color: #52180A;
+    font-family: 'sanchezboldwebfont';
+    font-weight: 100;
+    border-radius: 0;
+    text-align: left;
+    max-height: 500px;
+    overflow: hidden;
+}
+body.report-trekking p.deadline-text {
+    font-family: 'SlaberlinBold';
+    font-weight: 100!important;
+    margin: 5px 0 0 0;
+    padding: 0 0 0 45px;
+    width: auto;
+    text-align: left;
+    display: block;
+    color: #191818;
+    background: none;
+    font-size: 32px;
+    background-image: url(../images/trekking-ends-bg.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    max-height: 190px;
+    overflow: hidden;
+}
+body.report-trekking .report-ranking {
+    display: flex;
+    width: 665px;
+    justify-content: space-between;
+    margin: 40px 80px 0px 80px;
+}
+body.report-trekking .report-ranking ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 25px;
+    background: transparent;
+    width: 665px;
+    border-radius: 10px;
+}
+body.report-trekking .report-ranking ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0px solid #DBDDDD;
+    background: white;
+    margin-bottom: 2px;
+}
+body.report-trekking li.col-header {
+    background: none!important;
+    border-bottom: 1px solid #12e19b!important;
+}
+body.report-trekking li.col-header p {
+    font-size: 11px;
+    margin: 0 50px 0 0;
+    color: #191818;
+    font-family: 'SlaberlinBold';
+    font-weight: 600;
+    text-transform: capitalize;
+}
+body.report-trekking p.place {
+    color: #191818;
+    font-family: 'SlaberlinXBold';
+    font-size: 18px;
+    width: 40px;
+    font-weight: 100;
+}
+body.report-trekking .report-ranking ul li figure img {
+    width: 38px;
+    height: 38px;
+}
+body.report-trekking .details p.participant {
+    color: #191818;
+    font-family: 'SlaberlinBold';
+    font-size: 16px;
+    font-weight: 700;
+}
+body.report-trekking p.reports-number {
+    color: #191818;
+    font-family: 'SlaberlinXBold';
+    font-size: 16px;
+    height: 22px;
+}
+body.report-trekking .progressbar {
+    background: #D7DEE8;
+    height: 10px;
+    margin-top: 12px;
+}
+body.report-trekking .progressbar-inner {
+    background: #00744D;
+}
+body.report-trekking p.progress-percentage {
+    color: #191818;
+    font-family: 'SlaberlinXBold';
+    font-size: 16px;
+    width: 30px;
+}
+body.report-trekking .details:after {
+    top: 8px;
+}
+
+
+/* Highlights section */
+body.report-trekking .highlights-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background: white;
+    border-radius: 50px;
+    padding: 40px;
+    height: 600px;
+}
+body.report-trekking ul.highlights-full li {
+    display: flex;
+    flex-direction: column;
+}
+body.report-trekking .highlights-full figure {
+    margin: 0;
+}
+body.report-trekking .highlights-full figure img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 7px solid #00744D;
+}
+body.report-trekking .highlights-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #00744D;
+    flex: 1;
+}
+body.report-trekking .highlights-header p {
+    font-size: 28px;
+    margin: 50px 0 0 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 200px;
+}
+.highlights-content {
+    width: 100%;
+    flex: 2;
+    margin-left: 50px;
+}
+body.report-trekking .highlights-items {
+    display: flex;
+    width: 100%;
+}
+body.report-trekking .highlights-item-single {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 45%;
+    max-width: 250px;
+    margin-right: 5%;
+}
+body.report-trekking .highlights-item-single:last-child {
+    margin-right: 0;
+    margin-left: 5%;
+}
+body.report-trekking .highlights-item-single p {
+    margin: 0;
+}
+body.report-trekking .highlights-item-single p.highlights-item-text {
+    font-size: 23px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #00744D;
+    text-align: left;
+    padding-bottom: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+body.report-trekking .highlights-item-single p.highlights-item-number {
+    font-size: 90px;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+body.report-trekking .highlights-items {
+    display: flex;
+    border-bottom: 1px solid #00744D;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.highlights-bottom {
+    display: flex;
+    align-items: center;
+}
+body.report-trekking .highlights-bottom p.highlights-bottom-title {
+    font-size: 23px;
+    margin: 0px 35px 0px 0px;
+}
+body.report-trekking .highlights-progressbar {
+    background: #D7DEE8;
+    height: 15px;
+    border-radius: 20px;
+    margin-top: 16px;
+    position: relative;
+    flex: 1;
+}
+body.report-trekking .highlights-progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #00744D;
+    border-radius: 20px;
+}
+body.report-trekking .highlights-progress{
+    position: relative;
+    display: flex;
+    flex: 1;
+}
+body.report-trekking p.highlights-percentage {
+    font-size: 32px;
+    margin: 0;
+    color: #008b83;
+    padding: 0 35px 0 15px;
+}
+body.report-trekking .highlights-progress:after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    right: 0;
+    top: 5px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+    /*trekking responsive css*/
+    body.report-trekking .report-ranking ul li {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    body.report-trekking li.col-header p {
+        font-size: 18px;
+        margin: 0 36px 0 0;
+    }
+    body.report-trekking .details p.participant {
+        width: 100px;
+        position: relative;
+        max-height: 42px;
+    }
+    body.report-trekking .report-ranking ul li figure img {
+        width: 42px;
+        height: 42px;
+    }
+    body.report-trekking li.col-header p.ch-progress {
+        margin-left: 80px;
+    }
+    body.report-trekking p.participant span {
+        max-height: 33px;
+    }
+    body.report-trekking p.reports-number {
+        margin: 10px 30px 0 15px;
+    }
+    body.report-trekking .progressbar {
+        background: #D7DEE8;
+        height: 10px;
+        margin-top: 17px;
+    }
+    body.report-trekking p.progress-percentage {
+        margin-top: 12px;
+    }
+    body.report-trekking .details:after {
+        top: 14px;
+    }
+}
+@media screen and (max-width: 1900px) {
+    /*trekking responsive css*/
+    body.report-trekking .report {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    body.report-trekking .header {
+        width: auto;
+        height: 780px;
+        padding: 20px 35px;
+        border-radius: 0 0 30px 30px;
+    }
+    body.report-trekking h1.headline {
+        font-size: 52px;
+        text-align: center;
+    }
+    body.report-trekking p.deadline-text{
+        font-size: 26px;
+        background-size: 20px;
+        padding-left: 30px;
+    }
+    body.report-trekking li.col-header p {
+        margin: 0 25px 0 0;
+        font-size: 16px;
+    }
+    body.report-trekking .report-ranking {
+        width: 475px;
+        margin: 20px 0 20px 0;
+        padding: 0;
+    }
+    body.report-trekking .report-ranking ul {
+        width: 475px;
+    }
+    body.report-trekking .report-ranking ul li figure img {
+        width: 34px;
+        height: 34px;
+    }
+    body.report-trekking .highlights-full {
+        height: auto;
+        width: 100%;
+    }
+    body.report-trekking .highlights-full figure img {
+        width: 130px;
+        height: 130px;
+    }
+    .highlights-bottom {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    /*trekking responsive css*/
+    body.report-trekking .header {
+        height: auto;
+        width: 300;
+    }
+    body.report-trekking p.deadline-text {
+        font-size: 22px;
+        text-align: center;
+    }
+    body.report-trekking h1.headline {
+        font-size: 30px;
+        text-align: center;
+    }
+    body.report-trekking .report-ranking {
+        width: 300px;
+    }
+    body.report-trekking .report-ranking ul {
+        width: 300px;
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+    body.report-trekking .report-ranking ul li {
+        padding-right: 35px;
+    }
+    body.report-trekking .details {
+        flex: 1;
+    }
+    body.report-trekking .progressbar {
+        width: auto;
+        flex: 1;
+    }
+    body.report-trekking .report {
+        flex-direction: column;
+    }
+    body.report-trekking .highlights-full {
+        flex-direction: column;
+        width: 300px;
+    }
+    body.report-trekking .highlights-header {
+        border-right: 0px solid #00744D;
+    }
+    .header-top {
+        margin-bottom: 20px;
+    }
+    body.report-trekking .highlights-content {
+        margin-left: 0px;
+    }
+    body.report-trekking .highlights-item-single p.highlights-item-number {
+        font-size: 36px;
+    }
+}
+@media screen and (max-width: 479px) {
+    
+}

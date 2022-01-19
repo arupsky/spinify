@@ -1,0 +1,553 @@
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/RobotoBold.eot');
+    src: url('../fonts/RobotoBold.eot') format('embedded-opentype'),
+         url('../fonts/RobotoBold.woff2') format('woff2'),
+         url('../fonts/RobotoBold.woff') format('woff'),
+         url('../fonts/RobotoBold.ttf') format('truetype'),
+         url('../fonts/RobotoBold.svg#RobotoBold') format('svg');
+}
+@font-face {
+    font-family: 'road_rageregular';
+    src: url('../fonts/roadrage-regular-webfont.eot');
+    src: url('../fonts/roadrage-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roadrage-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roadrage-regular-webfont.woff') format('woff'),
+         url('../fonts/roadrage-regular-webfont.ttf') format('truetype'),
+         url('../fonts/roadrage-regular-webfont.svg#road_rageregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Version #6*/
+body.report-summer {
+    background-image: url(../images/body-bg-summer.jpg);
+    font-family: 'road_rageregular';
+    overflow: hidden;
+}
+body.report-summer .report {
+    justify-content: start;
+}
+body.report-summer .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1750px;
+    align-items: end;
+    margin-top: 90px;
+    margin-bottom: -20px;
+    z-index: 1;
+}
+body.report-summer h1.headline {
+    font-size: 56px;
+    padding: 10px;
+    color: #ffffff;
+    font-family: 'RobotoBold';
+    font-weight: 100;
+    text-transform: uppercase;
+    background: #698D43;
+    border-radius: 10px;
+    min-width: 535px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 48%;
+}
+body.report-summer .report-ranking {
+    margin: 0;
+    width: 1750px;
+    background-image: url(../images/summer-details-bg.jpg);
+    background-size: cover;
+    border-radius: 30px;
+    padding: 30px 20px 50px 21px;
+    position: relative;
+}
+body.report-summer .report-ranking:after {
+    position: absolute;
+    content: '';
+    width: 105%;
+    height: 190px;
+    background-image: url(../images/summer-details-bottom-full.png);
+    left: -40px;
+    bottom: -140px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+body.report-summer p.deadline-text {
+    color: #ffffff;
+    background-image: url(../images/summer-end-bg.png);
+    background-repeat: no-repeat;
+    padding: 10px;
+    text-transform: inherit;
+    font-size: 45px;
+    font-weight: 100;
+    font-family: 'RobotoBold';
+    width: auto;
+    min-width: 486px;
+    background-size: cover;
+    max-width: 48%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+body.report-summer .report-ranking ul {
+    background: none;
+    width: 930px;
+    border-radius: 20px;
+}
+body.report-summer .report-ranking ul li {
+    border: 0px;
+    padding: 0;
+    margin-bottom: 5px;
+}
+body.report-summer li.col-header {
+    border-bottom: 1px solid #c1c0bf!important;
+    padding-bottom: 15px!important;
+    margin-bottom: 15px!important;
+}
+body.report-summer li.col-header p {
+    font-size: 20px;
+    margin: 0 110px 0 0;
+    color: #392B27;
+    font-family: 'road_rageregular';
+}
+body.report-summer .details {
+    flex: 1;
+    padding: 6px 15px;
+    border-radius: 15px;
+}
+body.report-summer p.place {
+    font-size: 20px;
+    color: #392B27;
+    width: 40px;
+    text-align: center;
+    margin: 0px 10px 0 0;
+    font-family: 'road_rageregular';
+}
+body.report-summer .report-ranking ul li figure img {
+    width: 50px;
+    height: 50px;
+}
+body.report-summer .details p.participant {
+    margin: 17px 0 0 10px;
+    padding: 0 20px 0 0;
+    font-size: 18px;
+    width: 170px;
+    position: relative;
+    color: #D25945;
+    font-family: 'road_rageregular';
+}
+body.report-summer .details p.participant:after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 22px;
+    right: 15px;
+    top: 0;
+    background: #bfb9ac;
+    z-index: 1;
+}
+body.report-summer p.reports-number {
+    color: #392B27;
+    font-family: 'road_rageregular';
+    border-bottom: 0px solid #04a1da;
+    font-size: 20px;
+    height: 24px;
+    margin-top: 12px;
+    width: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+body.report-summer .progressbar {
+    background: #C7C1AE;
+    width: 280px;
+    height: 12px;
+    border-radius: 20px;
+    margin-top: 18px;
+    margin-left: 50px;
+    position: relative;
+}
+body.report-summer .progressbar-inner {
+    background: #364E2F;
+}
+body.report-summer .progressbar:before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 22px;
+    left: -35px;
+    top: -6px;
+    background: #bfb9ac;
+    z-index: 1;
+}
+body.report-summer p.progress-percentage {
+    margin: 14px 0 0 35px;
+    color: #392B27;
+    width: 52px;
+    font-size: 18px;
+    font-family: 'road_rageregular';
+}
+body.report-summer .details:after {
+    width: 18px;
+    height: 18px;
+    right: 10px;
+    top: 20px;
+}
+/* Highlights section */
+body.report-summer ul.highlights-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body.report-summer ul.highlights-full li {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 50px 0px 50px;
+    border-radius: 50px;
+    position: relative;
+}
+body.report-summer ul.highlights-full li:before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/highlights-border.png);
+    background-repeat: repeat;
+    width: 80%;
+    height: 27px;
+    right: 13%;
+    top: 0;
+}
+body.report-summer ul.highlights-full li figure img {
+    width: 100px;
+    height: 100px;
+}
+body.report-summer .highlights-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+body.report-summer .highlights-header p {
+    font-size: 46px;
+    margin: 0 0 0 10px;
+    color: #D25945;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 250px;
+}
+.highlights-content {
+    width: 100%;
+}
+body.report-summer .highlights-items {
+    display: flex;
+    width: 100%;
+}
+body.report-summer .highlights-item-single {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 50%;
+}
+body.report-summer .highlights-item-single:first-child {
+    border-right: 1px solid grey;
+}
+body.report-summer .highlights-item-single p {
+    margin: 0;
+}
+body.report-summer .highlights-item-single p.highlights-item-text {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #392B27;
+}
+body.report-summer .highlights-item-single p.highlights-item-number {
+    font-size: 105px;
+    color: #392B27;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+body.report-summer .highlights-item-single p.highlights-item-number span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+body.report-summer .highlights-items {
+    display: flex;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+body.report-summer .highlights-bottom {
+    margin: 40px auto 0 auto;
+}
+body.report-summer .highlights-bottom p.highlights-bottom-title {
+    font-size: 28px;
+    margin: 0 0 20px 0;
+}
+body.report-summer .highlights-progressbar {
+    background: #C7C1AE;
+    height: 21px;
+    border-radius: 20px;
+    position: relative;
+    flex: 1;
+}
+body.report-summer .highlights-progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #364E2F;
+    border-radius: 20px;
+}
+body.report-summer .highlights-progress{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body.report-summer p.highlights-percentage {
+    font-size: 46px;
+    margin: 0;
+    padding: 0 45px 0 15px;
+}
+body.report-summer .highlights-progress:after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    right: 0;
+    top: 10px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+@media screen and (min-width: 1901px) {
+    /*V6 responsive css*/
+    body.report-summer .report-ranking ul li {
+        padding-right: 0px!important;
+    }
+    body.report-summer li.col-header p {
+        font-size: 28px;
+        margin: 0 85px 0 0;
+    }
+    body.report-summer p.place {
+        font-size: 35px;
+    }
+    body.report-summer .details {
+        padding: 6px 40px 6px 15px;
+    }
+    body.report-summer .details p.participant:after {
+        top: 18px;
+    }
+    body.report-summer .details p.participant {
+        max-height: inherit;
+        font-size: 35px;
+    }
+    body.report-summer p.participant span {
+        max-height: 49px;
+        line-height: .7;
+    }
+    body.report-summer p.reports-number {
+        font-size: 35px;
+        margin-top: 11px;
+        height: auto;
+    }
+    body.report-summer .progressbar {
+        margin-top: 23px;
+    }
+    body.report-summer p.progress-percentage {
+        font-size: 35px;
+        margin-top: 11px;
+    }
+    body.report-summer .details:after {
+        top: 24px;
+    }
+}
+@media screen and (max-width: 1900px) {
+    body.report-summer {
+        overflow: inherit;
+    }
+    body.report-summer .header {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    body.report-summer .report-ranking {
+        width: 900px;
+    }
+    body.report-summer h1.headline {
+        font-size: 50px;
+        padding: 25px 50px;
+        max-width: 90%;
+        min-width: auto;
+    }
+    body.report-summer .details p.participant {
+        margin: 13px 0 0 10px;
+        font-size: 20px;
+    }
+    body.report-summer p.deadline-text {
+        max-width: 90%;
+        min-width: auto;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+    /*V6 responsive css*/
+    body.report-summer .header {
+        width: 100%;
+        margin-bottom: 30px;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    body.report-summer h1.headline {
+        padding: 0;
+        font-size: 32px;
+        width: 100%;
+    }
+    body.report-summer p.deadline-text {
+        padding: 0 0px 0px 0;
+        font-size: 26px;
+        width: 100%;
+    }
+    body.report-summer .report-ranking {
+        width: 450px;
+        padding: 20px 10px;
+    }
+    body.report-summer .report-ranking ul {
+        width: 450px;
+        padding: 0px;
+    }
+    body.report-summer li.col-header p {
+        margin: 0 55px 0 0;
+    }
+    body.report-summer p.place {
+        width: 25px;
+    }
+    body.report-summer .details p.participant {
+        margin: 13px 0 0 5px;
+        padding: 0 10px 0 0;
+        width: 80px;
+    }
+    body.report-summer .details p.participant:after {
+        height: 20px;
+        right: 5px;
+        top: 0;
+    }
+    body.report-summer p.reports-number {
+        height: 24px;
+        margin-top: 14px;
+        width: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    body.report-summer .progressbar {
+        width: 70px;
+        height: 10px;
+        margin-top: 21px;
+        margin-left: 20px;
+    }
+    body.report-summer .progressbar:before {
+        left: -15px;
+        top: -6px;
+        height: 20px;
+    }
+    body.report-summer p.progress-percentage {
+        margin: 18px 0 0 10px;
+        width: 37px;
+    }
+    body.report-summer .details:after {
+        width: 10px;
+        height: 10px;
+        right: 15px;
+        top: 28px;
+    }
+    body.report-summer .report-ranking:after {
+        display: none;
+    }
+    body.report-summer .report-ranking {
+        width: 450px;
+    }
+    body.report-summer .report-ranking ul {
+        width: 450px;
+    }
+}
+@media screen and (max-width: 479px) {
+     body.report-summer h1.headline {
+        font-size: 34px;
+        padding: 0;
+    }
+    body.report-summer .report-ranking {
+        width: 300px;
+    }
+    body.report-summer .report-ranking ul {
+        width: 300px;
+        padding: 0px;
+    }
+    body.report-summer li.col-header p {
+        font-size: 10px;
+        margin: 0 45px 0 0;
+    }
+    body.report-summer p.place {
+        font-size: 11px;
+        width: 20px;
+        margin: 3px 5px 0 0;
+    }
+    body.report-summer .details {
+        padding: 6px 10px;
+        border-radius: 15px;
+    }
+    body.report-summer .report-ranking ul li figure img {
+        width: 24px;
+        height: 24px;
+        margin-top: 2px;
+    }
+    body.report-summer .details p.participant {
+        margin: 5px 0 0 5px;
+        padding: 2px 6px 0 0;
+        font-size: 11px;
+        width: 65px;
+    }
+    body.report-summer p.reports-number {
+        font-size: 11px;
+        height: 16px;
+        margin-top: 7px;
+        width: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    body.report-summer .progressbar {
+        width: 30px;
+        height: 8px;
+        margin-top: 13px;
+        margin-left: 10px;
+    }
+    body.report-summer .progressbar:before {
+        left: -8px;
+        top: -5px;
+    }
+    body.report-summer p.progress-percentage {
+        margin: 10px 0 0 5px;
+        width: 25px;
+        font-size: 11px;
+    }
+    body.report-summer .details:after {
+        top: 18px;
+    }
+    body.report-summer p.deadline-text {
+        padding: 0 0 0px 0;
+        font-size: 20px;
+    }
+}
