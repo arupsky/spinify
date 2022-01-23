@@ -1,0 +1,433 @@
+@font-face {
+    font-family: 'NiconneRegular';
+    src: url('../fonts/NiconneRegular.eot');
+    src: url('../fonts/NiconneRegular.eot') format('embedded-opentype'),
+         url('../fonts/NiconneRegular.woff2') format('woff2'),
+         url('../fonts/NiconneRegular.woff') format('woff'),
+         url('../fonts/NiconneRegular.ttf') format('truetype'),
+         url('../fonts/NiconneRegular.svg#NiconneRegular') format('svg');
+}
+@font-face {
+    font-family: 'AudreyNormal';
+    src: url('../fonts/AudreyNormal.eot');
+    src: url('../fonts/AudreyNormal.eot') format('embedded-opentype'),
+         url('../fonts/AudreyNormal.woff2') format('woff2'),
+         url('../fonts/AudreyNormal.woff') format('woff'),
+         url('../fonts/AudreyNormal.ttf') format('truetype'),
+         url('../fonts/AudreyNormal.svg#AudreyNormal') format('svg');
+}
+@font-face {
+    font-family: 'AudreyBold';
+    src: url('../fonts/AudreyBold.eot');
+    src: url('../fonts/AudreyBold.eot') format('embedded-opentype'),
+         url('../fonts/AudreyBold.woff2') format('woff2'),
+         url('../fonts/AudreyBold.woff') format('woff'),
+         url('../fonts/AudreyBold.ttf') format('truetype'),
+         url('../fonts/AudreyBold.svg#AudreyBold') format('svg');
+}
+/*paris responsive css*/
+body.report-paris {
+    background-image: url(../images/body-bg-paris.jpg);
+    font-family: 'AudreyNormal';
+    background-position: center center;
+}
+body.report-paris .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 90px 0 0 0;
+    width: 1500px;
+}
+body.report-paris .report {
+    flex-direction: row-reverse;
+    align-items: start;
+}
+body.report-paris h1.headline {
+    margin: 0;
+    font-size: 97px;
+    padding: 20px 10px;
+    background: none;
+    color: #ffffff;
+    font-family: 'NiconneRegular';
+    font-weight: 100;
+    border-radius: 0;
+    text-align: left;
+    max-height: 450px;
+    overflow: hidden;
+}
+body.report-paris p.deadline-text {
+    font-family: 'AudreyNormal';
+    margin: 0;
+    padding: 5px;
+    width: auto;
+    text-align: center;
+    display: block;
+    color: #ffffff;
+    background: none;
+    font-size: 38px;
+    max-height: 190px;
+    overflow: hidden;
+}
+body.report-paris .report-ranking {
+    display: flex;
+    width: 1330px;
+    justify-content: space-between;
+    margin: 40px 10px 0px 70px;
+}
+body.report-paris .report-ranking ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 25px;
+    background: transparent;
+    width: 665px;
+    border-radius: 10px;
+}
+body.report-paris .report-ranking ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0px solid #DBDDDD;
+    margin-bottom: 2px;
+}
+body.report-paris li.col-header {
+    background: none!important;
+}
+body.report-paris li.col-header p {
+    font-size: 11px;
+    margin: 0 50px 0 0;
+    color: #dec181;
+    font-family: 'AudreyNormal';
+    font-weight: 100;
+    text-transform: uppercase;
+}
+body.report-paris p.place {
+    color: #ffffff;
+    font-family: 'AudreyBold';
+    font-size: 18px;
+    width: 40px;
+}
+body.report-paris .report-ranking ul li figure img {
+    width: 38px;
+    height: 38px;
+}
+body.report-paris .details p.participant {
+    color: #ffffff;
+    font-family: 'AudreyNormal';
+    font-size: 16px;
+}
+body.report-paris p.reports-number {
+    color: #ffffff;
+    font-family: 'AudreyBold';
+    font-size: 16px;
+    height: 22px;
+    border-bottom-color: #ffdf98;
+}
+body.report-paris .progressbar {
+    background: #000000;
+    height: 10px;
+    margin-top: 12px;
+}
+body.report-paris .progressbar-inner {
+    background: #ffffff;
+}
+body.report-paris p.progress-percentage {
+    color: #ffffff;
+    font-family: 'AudreyBold';
+    font-size: 16px;
+    width: 30px;
+}
+body.report-paris .details:after {
+    top: 8px;
+}
+
+
+/* Highlights section */
+body.report-paris ul.highlights-full {
+    display: flex;
+    padding: 0;
+    width: 100%;
+}
+body.report-paris ul.highlights-full li {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 50px;
+}
+body.report-paris ul.highlights-full li figure img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+body.report-paris .header-top {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding-right: 150px;
+}
+body.report-paris .highlights-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+body.report-paris .highlights-header p {
+    font-size: 33px;
+    margin: 0 0 0 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 250px;
+    color: #FFF;
+}
+.highlights-content {
+    width: 100%;
+}
+body.report-paris .highlights-items {
+    display: flex;
+    width: 100%;
+}
+body.report-paris .highlights-item-single {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    align-items: center;
+}
+body.report-paris .highlights-item-single p {
+    margin: 0;
+}
+body.report-paris .highlights-item-single p.highlights-item-text {
+    font-size: 23px;
+    margin-bottom: 20px;
+    color: #fff;
+
+}
+body.report-paris .highlights-item-single p.highlights-item-number {
+    font-size: 73px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+body.report-paris .highlights-item-single p.highlights-item-number span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+body.report-paris .highlights-items {
+    display: flex;
+    border-top: 2px solid #DEC182;
+    border-bottom: 2px solid #DEC182;
+    padding: 45px 0;
+    width: 493px;
+}
+body.report-paris .highlights-bottom p.highlights-bottom-title {
+    font-size: 23px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+body.report-paris .highlights-progressbar {
+    background: #000;
+    height: 21px;
+    border-radius: 20px;
+    position: relative;
+    flex: 1;
+}
+body.report-paris .highlights-progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 20px;
+}
+body.report-paris .highlights-progress{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 40px 0;
+}
+body.report-paris p.highlights-percentage {
+    font-size: 73px;
+    margin: 0;
+    padding: 0 60px 0 15px;
+    color: #fff;
+}
+body.report-paris .highlights-progress:after {
+    position: absolute;
+    content: '';
+    width: 35px;
+    height: 35px;
+    right: 0;
+    top: 45px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+    /*paris responsive css*/
+    body.report-paris .report-ranking ul li {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    body.report-paris li.col-header p {
+        font-size: 15px;
+        margin: 0 22px 0 0;
+    }
+    body.report-paris p.place {
+        font-size: 22px;
+    }
+    body.report-paris .details p.participant {
+        width: 100px;
+        position: relative;
+        max-height: 44px;
+        font-weight: 100;
+        font-size: 23px;
+    }
+    body.report-paris .report-ranking ul li figure img {
+        width: 44px;
+        height: 44px;
+    }
+    body.report-paris li.col-header p.ch-progress {
+        margin-left: 80px;
+    }
+    body.report-paris p.participant span {
+        max-height: 44px;
+    }
+    body.report-paris p.reports-number {
+        margin: 10px 30px 0 15px;
+        font-size: 20px;
+    }
+    body.report-paris .progressbar {
+        height: 12px;
+        margin-top: 15px;
+    }
+    body.report-paris p.progress-percentage {
+        margin-top: 12px;
+        font-size: 20px;
+        width: 45px;
+    }
+    body.report-paris .details:after {
+        top: 14px;
+    }
+}
+@media screen and (max-width: 1900px) {
+    /*paris responsive css*/
+    body.report-paris .report {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    body.report-paris .header {
+        width: auto;
+        height: auto;
+        padding: 60px 35px 20px 35px;
+        border-radius: 0 0 30px 30px;
+        align-items: center;
+    }
+    body.report-paris h1.headline {
+        font-size: 52px;
+        text-align: center;
+        padding: 10px;
+    }
+    body.report-paris p.deadline-text{
+        font-size: 26px;
+        text-align: center;
+        background-size: 20px;
+        padding-left: 0px;
+    }
+    body.report-paris li.col-header p {
+        margin: 0 14px 0 0;
+        font-size: 12px;
+    }
+    body.report-paris .report-ranking {
+        width: 475px;
+        margin: 20px 0 20px 0;
+        padding: 0;
+    }
+    body.report-paris .report-ranking ul {
+        width: 475px;
+    }
+    body.report-paris .report-ranking ul li figure img {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    /*paris responsive css*/
+    body.report-paris .header {
+        padding: 50px 20px;
+    }
+    body.report-paris p.deadline-text {
+        font-size: 22px;
+        text-align: center;
+    }
+    body.report-paris h1.headline {
+        font-size: 30px;
+        text-align: center;
+    }
+    body.report-paris .report-ranking {
+        width: 300px;
+    }
+    body.report-paris .report-ranking ul {
+        width: 300px;
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+    body.report-paris .report-ranking ul li {
+        padding-right: 35px;
+    }
+    body.report-paris .details {
+        flex: 1;
+    }
+    body.report-paris p.place {
+        font-size: 12px;
+        width: 30px;
+    }
+    body.report-paris .details p.participant {
+        font-size: 14px;
+        width: 70px;
+        margin: 9px 0 0 0;
+    }
+    body.report-paris p.reports-number {
+        font-size: 12px;
+        height: 17px;
+        margin: 9px 10px 0 0;
+    }
+    body.report-paris .progressbar {
+        width: auto;
+        flex: 1;
+    }
+    body.report-paris p.progress-percentage {
+        font-size: 12px;
+        margin: 9px 10px 0 10px;
+    }
+    body.report-paris .highlights-items {
+        width: 100%;
+    }
+    body.report-paris .header-top {
+        justify-content: center;
+        padding-right: 0;
+    }
+    body.report-paris p.highlights-percentage {
+        font-size: 28px;
+        padding: 0 50px 0 15px;
+    }
+    body.report-paris ul.highlights-full li {
+        padding: 0px;
+        border-radius: 0px;
+    }
+}
+@media screen and (max-width: 479px) {
+    
+}

@@ -1,0 +1,374 @@
+/*Font*/
+@font-face {
+    font-family: 'ArchivoExtraBold';
+    src: url('../fonts/ArchivoExtraBold.eot');
+    src: url('../fonts/ArchivoExtraBold.eot') format('embedded-opentype'),
+         url('../fonts/ArchivoExtraBold.woff2') format('woff2'),
+         url('../fonts/ArchivoExtraBold.woff') format('woff'),
+         url('../fonts/ArchivoExtraBold.ttf') format('truetype'),
+         url('../fonts/ArchivoExtraBold.svg#ArchivoExtraBold') format('svg');
+}
+
+/*pinkMountain css*/
+body.report-pinkMountain {
+    background-image: url(../images/body-bg-pinkMountain.jpg);
+    font-family: 'ArchivoExtraBold';
+}
+body.report-pinkMountain h1.headline {
+    font-size: 50px;
+    padding: 0 50px 80px 0;
+    font-family: 'ArchivoExtraBold';
+    color: #ffffff;
+    text-align: center;
+    background: transparent;
+    border-radius: 0;
+    position: relative;
+    border-radius: 15px;
+    letter-spacing: 6px;
+    font-weight: 100;
+}
+body.report-pinkMountain h1.headline span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;    
+    display: block;
+    max-width: 1550px;
+}
+body.report-pinkMountain .report {
+    justify-content: start;
+}
+body.report-pinkMountain .report-ranking {
+    margin: 50px 0;
+    width: 1400px;
+    min-height: 840px;
+}
+body.report-pinkMountain .report-ranking ul {
+    background: transparent;
+    border-radius: 0px;
+    padding: 0;
+    width: 560px;
+}
+body.report-pinkMountain .report-ranking ul li {
+    background: #FFF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+body.report-pinkMountain .report-ranking ul li.col-header {
+    background: transparent;
+}
+body.report-pinkMountain li.col-header p {
+    font-size: 13px;
+    color: #ffffff;
+    font-family: 'ArchivoExtraBold';
+    font-weight: 600;
+    text-transform: capitalize;
+}
+body.report-pinkMountain p.place {
+    font-family: 'ArchivoExtraBold';
+    color: #221F23;
+}
+body.report-pinkMountain .details p.participant {
+    font-family: 'ArchivoExtraBold';
+    color: #7322C1;
+}
+body.report-pinkMountain .report-ranking ul li figure img {
+    width: 28px;
+    height: 28px;
+}
+body.report-pinkMountain p.reports-number {
+    color: #490E7F;
+    border-bottom-color: #221F23;
+}
+body.report-pinkMountain .progressbar-inner {
+    background: #F4CA4D;
+    background: -webkit-linear-gradient( 45deg, #F4CA4D, #D839CC 100%);
+}
+body.report-pinkMountain p.progress-percentage {
+    font-family: 'ArchivoExtraBold';
+    color: #490E7F;
+}
+body.report-pinkMountain p.deadline-text {
+    font-size: 50px;
+    font-family: 'ArchivoExtraBold';
+    padding: 45px 10px;
+    width: auto;
+    color: #ffffff;
+    background: transparent;
+    position: relative;
+    max-width: 1800px;
+    letter-spacing: 6px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;    
+    display: block;
+}
+
+/* Highlights section */
+body.report-pinkMountain ul.highlights-full {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 885px;
+}
+body.report-pinkMountain ul.highlights-full li {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    background: transparent;
+}
+body.report-pinkMountain .report-ranking ul.highlights-full li figure img {
+    width: 100px;
+    height: 100px;
+}
+body.report-pinkMountain .highlights-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    background: #FFF;
+    border-radius: 30px;
+    padding: 20px;
+}
+body.report-pinkMountain .highlights-header p {
+    font-size: 38px;
+    margin: 0 0 0 10px;
+    color: #7322C1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    overflow: hidden;
+    max-width: 450px;
+}
+.highlights-content {
+    width: 100%;
+}
+body.report-pinkMountain .highlights-items {
+    display: flex;
+    width: 100%;
+}
+body.report-pinkMountain .highlights-item-single {
+    display: flex;
+    flex: 1;
+    position: relative;
+    align-items: center;
+    padding: 35px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background: #FFF;
+    border-radius: 30px;
+}
+body.report-pinkMountain .highlights-item-single p {
+    margin: 0;
+}
+body.report-pinkMountain .highlights-item-single p.highlights-item-text {
+    font-size: 29px;
+    margin: 0px;
+    color: #7322C1;
+}
+body.report-pinkMountain .highlights-item-single p.highlights-item-number {
+    font-size: 34px;
+    color: #490E7F;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 250px;
+}
+body.report-pinkMountain .highlights-item-single p.highlights-item-number span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+body.report-pinkMountain .highlights-items {
+    display: flex;
+    flex-direction: column;
+}
+body.report-pinkMountain .highlights-bottom {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    background: #FFF;
+    padding: 35px;
+    border-radius: 30px;
+}
+body.report-pinkMountain .highlights-bottom p.highlights-bottom-title {
+    font-size: 29px;
+    margin: 0px 25px 0 0;
+    color: #7322C1;
+}
+body.report-pinkMountain .highlights-progressbar {
+    background: #D7DEE8;
+    height: 21px;
+    border-radius: 20px;
+    position: relative;
+    flex: 1;
+}
+body.report-pinkMountain .highlights-progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #F4CA4D;
+    background: -webkit-linear-gradient( 45deg, #F4CA4D, #D839CC 100%);
+    border-radius: 20px;
+}
+body.report-pinkMountain .highlights-progress{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+body.report-pinkMountain p.highlights-percentage {
+    font-size: 32px;
+    margin: 0;
+    padding: 0 45px 0 15px;
+    color: #490E7F;
+}
+body.report-pinkMountain .highlights-progress:after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    right: 0;
+    top: 7px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/*===================================
+Animation CSS#ffffff
+====================================*/
+p.place, p.total {
+    position: relative;
+    animation-name: totalNumber;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes totalNumber {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+    body.report-pinkMountain li.col-header p {
+        margin: 0 25px 0 0;
+    } 
+    body.report-pinkMountain li.col-header p.ch-progress {
+        margin-left: 45px;
+    }
+    body.report-pinkMountain p.place {
+        font-size: 15px;
+    }
+    body.report-pinkMountain .details p.participant {
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 0px!important;
+        width: 100px;
+        max-height: 29px;
+    }
+    body.report-pinkMountain p.participant span {
+        max-height: 29px;
+    }
+    body.report-pinkMountain p.reports-number {
+        font-size: 16px;
+        height: 22px;
+        margin-top: 4px;
+        margin-right: 25px;
+        font-weight: 600;
+    }
+    body.report-pinkMountain p.progress-percentage {
+        margin: 4px 5px 0 10px;
+        font-size: 16px;
+        font-weight: 600;
+    }  
+}
+@media screen and (max-width: 1900px) {
+    body.report-pinkMountain h1.headline {
+        font-size: 38px;
+    }
+    body.report-pinkMountain h1.headline span {
+        text-overflow: inherit;
+        white-space: inherit;
+        text-align: center;
+        overflow: inherit;
+    }
+    body.report-pinkMountain h1.headline:after {
+        display: none;
+    }
+    body.report-pinkMountain p.deadline-text {
+        font-size: 20px;
+        letter-spacing: 3px;
+        text-overflow: inherit;
+        white-space: inherit;
+        text-align: center;
+        overflow: inherit;
+    }
+    body.report-pinkMountain ul.highlights-full {
+        align-items: center;
+    }
+    body.report-pinkMountain .report-ranking {
+        width: 887px;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    body.report-pinkMountain .report-ranking {
+        width: 100%;
+    }
+    body.report-pinkMountain .report-ranking ul {
+        padding: 0;
+        width: 460px;
+    }
+    body.report-pinkMountain ul.highlights-full li {
+        padding: 0px;
+    }
+    body.report-pinkMountain .highlights-header {
+        padding: 15px;
+    }
+    body.report-pinkMountain .highlights-item-single {
+        padding: 15px;
+    }
+    body.report-pinkMountain .highlights-item-single p.highlights-item-text, body.report-pinkMountain .highlights-item-single p.highlights-item-number, body.report-pinkMountain .highlights-bottom p.highlights-bottom-title, body.report-pinkMountain p.highlights-percentage {
+        font-size: 20px;
+    }
+    body.report-pinkMountain .highlights-bottom {
+        padding: 15px;
+    }
+    body.report-pinkMountain .highlights-header p {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 479px) {
+
+    
+    body.report-pinkMountain ul.highlights-full {
+        width: 300px;
+    }
+    body.report-pinkMountain .highlights-item-single p.highlights-item-text {
+        font-size: 22px;
+    }
+    
+    body.report-pinkMountain .highlights-bottom p.highlights-bottom-title {
+        font-size: 22px;
+    }
+    body.report-pinkMountain .highlights-item-single p.highlights-item-number, body.report-pinkMountain p.highlights-percentage {
+        font-size: 26px;
+    }
+}
