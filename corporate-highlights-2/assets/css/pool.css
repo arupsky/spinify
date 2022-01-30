@@ -1,0 +1,505 @@
+@font-face {
+    font-family: 'baloo_da_2bold';
+    src: url('../fonts/balooda2-bold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'baloo_da_2medium';
+    src: url('../fonts/balooda2-medium-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-pool.jpg);
+    font-family: 'baloo_da_2bold';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+}
+.report {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+}
+.header {
+    width: 315px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1.headline {
+    margin: 0;
+    color: #ffffff;
+    font-size: 85px;
+    font-family: 'baloo_da_2bold';
+    line-height: 1.2;
+}
+.report-ranking {
+    display: flex;
+    width: 1650px;
+    justify-content: space-between;
+    margin: 70px 0 0 0;
+}
+.report-ranking ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 600px;
+    border-radius: 0px;
+    padding: 0;
+}
+.report-ranking ul li {
+    display: flex;
+    margin-bottom: 14px;
+    border-radius: 17px;
+    padding: 12px 0;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    background: #FFF;
+}
+li.col-header {
+    text-transform: uppercase;
+    border-left: 0px!important;
+    border-right: 0px!important;
+    border-top: 0px!important;
+    border-radius: 0!important;
+    margin-bottom: 12px!important;
+    background: transparent!important;
+}
+li.col-header p {
+    margin: 0 15px 0 0;
+    font-size: 12px;
+    color: #091E27;
+    font-family: 'baloo_da_2medium';
+    font-weight: 600;
+}
+li.col-header p.ch-progress {
+    margin: 0 15px 0 22px;
+}
+.report-ranking ul li:last-child {
+    margin-bottom: 0px;
+}
+p.place {
+    font-size: 12px;
+    margin: 0;
+    width: 30px;
+    padding: 0;
+    color: #1A262B;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+.report-ranking ul li figure {
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+.report-ranking ul li figure img {
+    margin: 0;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 50%;
+}
+.details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    position: relative;
+}
+.details:after {
+    position: absolute;
+    content: '';
+    width: 13px;
+    height: 13px;
+    right: -25px;
+    top: 5px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.details p.participant {
+    text-align: left;
+    margin: 5px 0 0 0;
+    width: 77px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 10px;
+    font-family: 'baloo_da_2bold';
+    color: #2A1C23;
+}
+p.reports-number {
+    margin: 5px 10px 0 0;
+    padding: 0;
+    height: 16px;
+    width: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #2A1C23;
+}
+.progressbar {
+    position: relative;
+    background: #D7DEE8;
+    width: 160px;
+    height: 8px;
+    border-radius: 20px;
+    margin-top: 9px;
+}
+.progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    background: #21bdd7;
+    background: -webkit-linear-gradient( 45deg, #21bdd7, #0a4a70 100%);
+}
+p.progress-percentage {
+    margin: 5px 0 0 10px;
+    display: flex;
+    padding: 0;
+    height: auto;
+    width: 26px;
+    font-family: 'baloo_da_2bold';
+    color: #2A1C23;
+}
+p.deadline-text {
+    margin: 0;
+    display: block;
+    font-size: 44px;
+    font-family: 'baloo_da_2bold';
+    padding: 0;
+    width: 100%;
+    color: #005E90;
+    background: transparent;
+    text-transform: uppercase;
+}
+
+/* Highlights section */
+ul.highlights-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 640px;
+}
+ul.highlights-full li {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    padding: 50px!important;
+}
+ul.highlights-full li figure {
+    margin: 0!important;
+}
+ul.highlights-full li figure img {
+    width: 268px!important;
+    height: 268px!important;
+    border: 7px solid #17607F;
+}
+.highlights-header {
+    display: flex;
+    align-items: center;
+    margin-top: -190px;
+    flex-direction: column;
+}
+.highlights-header p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 250px;
+    font-size: 45px;
+    margin: 25px 0 30px 0;
+    line-height: 1;
+}
+.highlights-content {
+    width: 100%;
+}
+.highlights-item-single {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    align-items: center;
+    width: 50%;
+}
+.highlights-item-single:first-child {
+    border-right: 1px solid #dfdfdf;
+}
+.highlights-item-single p {
+    margin: 0;
+}
+.highlights-item-single p.highlights-item-text {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.highlights-item-single p.highlights-item-number {
+    font-size: 41px;
+    width: 100%;
+}
+.highlights-item-single p.highlights-item-number span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+}
+.highlights-items {
+    display: flex;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dfdfdf;
+    width: 100%;
+}
+.highlights-bottom {
+    max-width: 465px;
+    margin: 0 auto;
+}
+.highlights-bottom p.highlights-bottom-title {
+    font-size: 23px;
+    margin: 0 0 10px 0;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'baloo_da_2medium';
+}
+.highlights-progressbar {
+    background: #D7DEE8;
+    height: 21px;
+    border-radius: 20px;
+    position: relative;
+    flex: 1;
+}
+.highlights-progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #21bdd7;
+    background: -webkit-linear-gradient( 45deg, #21bdd7, #0a4a70 100%);
+    border-radius: 20px;
+}
+.highlights-progress{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p.highlights-percentage {
+    font-size: 26px;
+    margin: 0;
+    padding: 0 45px 0 15px;
+}
+.highlights-progress:after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    right: 0;
+    top: 6px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*===================================
+Animation CSS#ffffff
+====================================*/
+p.place {
+    position: relative;
+    animation-name: totalNumber;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes totalNumber {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+    .details {
+        flex: 1!important;
+    }
+    .report-ranking ul li figure img {
+        width: 40px;
+        height: 40px;
+    }
+    .details p.participant {
+        margin: 1px 0 0 10px!important;
+        text-overflow: clip;
+        white-space: pre-wrap;
+        display: flex;
+        align-items: center;
+        max-height: 28px;
+    }
+    p.participant span {
+        max-height: 25px;
+        overflow: hidden;
+        line-height: 1;
+    }
+    p.reports-number {
+        width: auto!important;
+    }
+    .progressbar {
+        width: auto!important;
+        flex: 1;
+        height: 11px;
+        margin-top: 14px;
+    }
+    .report-ranking ul li {
+        padding-right: 35px!important;
+    }
+    li.col-header p {
+        margin: 0 20px 0 0;
+        font-size: 16px;
+    } 
+    p.place {
+        font-size: 22px;
+        width: 40px;
+    }
+    .details p.participant {
+        font-size: 22px;
+        width: 90px;
+        max-height: 37px;
+    }
+    p.participant span {
+        max-height: 39px;
+    }
+    p.reports-number {
+        color: #2A1C23;
+        font-size: 22px;
+        height: 30px;
+        margin-top: 2px;
+        margin-right: 25px;
+    }
+    p.progress-percentage {
+        margin: 3px 0 0 10px;
+        font-size: 22px;
+        width: 40px;
+    }  
+    .details:after {
+        top: 13px;
+    }
+    h1.headline {
+        max-height: 180px;
+        overflow: hidden;
+    }
+    p.deadline-text {
+        max-height: 130px;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 1900px) {
+    .header{
+        text-align: center;
+    }
+    h1.headline {
+        font-size: 42px;
+        color: #21bdd7;
+    }
+    .report-ranking {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .report-ranking ul {
+        width: 420px;
+    }
+    .report-ranking ul:nth-child(1), .report-ranking ul:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    p.deadline-text {
+        font-size: 26px;
+        color: #21bdd7;
+    }
+    ul.highlights-full {
+        justify-content: center;
+        align-items: center;
+        width: 420px;
+        margin-top: 180px;
+    }
+    ul.highlights-full li {
+        padding: 20px!important;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .report-ranking {
+        width: 460px;
+        flex-wrap: wrap;
+    }
+    .report-ranking ul:nth-child(3) {
+        margin-bottom: 20px;
+    }
+    h1.headline {
+        font-size: 48px;
+        padding: 20px 2px 0px 0px;
+    }
+    p.deadline-text {
+        font-size: 26px;
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 479px) {
+    h1.headline {
+        font-size: 40px;
+        padding: 20px 25px;
+    }
+    .report-ranking {
+        width: 320px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .report-ranking ul {
+        width: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    li.col-header p {
+        margin: 0 11px 0 0;
+    }
+    li.col-header p.ch-progress {
+        margin: 0 11px 0 0px;
+    }
+    .progressbar {
+        width: 30px;
+    }
+    p.deadline-text {
+        font-size: 30px;
+        padding: 25px 10px;
+    }
+    ul.highlights-full {
+        width: 320px;
+    }
+}

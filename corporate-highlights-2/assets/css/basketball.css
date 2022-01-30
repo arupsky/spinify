@@ -1,0 +1,520 @@
+@font-face {
+    font-family: 'digital-7_monomono';
+    src: url('../fonts/digital-7_mono-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-basketball.jpg);
+    font-family: 'digital-7_monomono';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+}
+.report {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+}
+h1.headline {
+    margin: 0;
+    font-size: 70px;
+    font-weight: 100;
+    padding: 130px 0 0 0;
+    border-radius: 0;
+    background: url(../images/header-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #EED358;
+    font-family: 'digital-7_monomono';
+    width: 700px;
+    height: 233px;
+}
+.report-ranking {
+    display: flex;
+    width: 1360px;
+    justify-content: space-between;
+    margin: 0 0 48px 0;
+    align-items: end;
+}
+.report-ranking ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    width: 660px;
+    border-radius: 20px;
+    z-index: 10;
+}
+.report-ranking ul li {
+    display: flex;
+    margin-bottom: 14px;
+    border-radius: 17px;
+    padding: 0;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background: #3b7b93;
+}
+.report-ranking ul li.col-header {
+    text-transform: uppercase;
+    border-left: 0px!important;
+    border-right: 0px!important;
+    border-top: 0px!important;
+    border-radius: 0!important;
+    margin-bottom: 12px!important;
+    border-bottom: 1px solid #478ea9;
+    background: transparent;
+}
+li.col-header p {
+    margin: 0 15px 0 0;
+    font-size: 14px;
+    color: #EED358;
+}
+li.col-header p.ch-progress {
+    margin: 0 15px 0 22px;
+}
+.report-ranking ul li:last-child {
+    margin-bottom: 0px;
+}
+p.place {
+    font-size: 12px;
+    margin: 0;
+    width: 30px;
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    color: #ffffff;
+}
+.report-ranking ul li figure {
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+.report-ranking ul li figure img {
+    margin: 0;
+    padding: 0;
+}
+.report-ranking ul li figure img {
+    margin: 0;
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 50%;
+}
+.details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    position: relative;
+}
+.details:after {
+    position: absolute;
+    content: '';
+    width: 13px;
+    height: 13px;
+    right: -25px;
+    top: 5px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.details p.participant {
+    text-align: left;
+    width: 77px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 10px;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'digital-7_monomono';
+    max-height: 33px;
+}
+.details p.participant span {
+    max-height: 34px;
+}
+p.reports-number {
+    margin: 5px 10px 0 0;
+    color: #506A78;
+    border-bottom: 1px solid #506A78;
+    padding: 0;
+    height: 16px;
+    width: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.progressbar {
+    position: relative;
+    background: #D7DEE8;
+    width: 160px;
+    height: 8px;
+    border-radius: 20px;
+    margin-top: 9px;
+}
+.progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #94AFC1;
+    border-radius: 20px;
+}
+p.progress-percentage {
+    font-family: 'InterBlack';
+    margin: 5px 0 0 10px;
+    color: #506A78;
+    display: flex;
+    padding: 0;
+    height: auto;
+    width: 26px;
+}
+p.deadline-text {
+    display: block;
+    text-transform: uppercase;
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    color: #ffffff;
+    font-family: 'digital-7_monomono';
+    border-radius: 10px;
+    font-weight: 100;
+    z-index: 10;
+    max-height: 85px;
+    overflow: hidden;
+}
+p.reports-number {
+    color: #EED358;
+    font-family: 'digital-7_monomono';
+}
+.progressbar {
+    background: #141735;
+}
+.progressbar-inner {
+    background: #F43C5B;
+}
+p.progress-percentage {
+    color: #EED358;
+    font-family: 'digital-7_monomono';
+}
+/* Highlights section */
+ul.highlights-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3b7b93;
+    padding: 0;
+    min-height: 670px;
+}
+ul.highlights-full li {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    border-radius: 50px;
+}
+ul.highlights-full li figure {
+    margin: -155px 0 0 0!important;
+}
+ul.highlights-full li figure img {
+    width: 206px!important;
+    height: 206px!important;
+    border: 8px solid #F43C5B;
+}
+.highlights-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+.highlights-header p {
+    font-size: 45px;
+    margin: 30px 0 0 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 250px;
+    color: #FFF;
+}
+.highlights-content {
+    width: 100%;
+}
+.highlights-items {
+    display: flex;
+    width: 100%;
+}
+.highlights-item-single {
+    display: flex;
+    flex: 1;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    background: #141735;
+    margin-top: 15px;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+.highlights-item-single p {
+    margin: 0;
+}
+.highlights-item-single p.highlights-item-text {
+    font-size: 38px;
+    margin: 0;
+    color: #FFF;
+}
+.highlights-item-single p.highlights-item-number {
+    font-size: 56px;
+    color: #ffbf3d;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 250px;
+}
+.highlights-item-single p.highlights-item-number span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+.highlights-items {
+    display: flex;
+    flex-direction: column;
+}
+.highlights-bottom {
+    margin: 0 auto;
+    background: #141735;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    text-align: left;
+}
+.highlights-bottom p.highlights-bottom-title {
+    font-size: 38px;
+    margin: 12px 0;
+    color: #FFF;
+}
+.highlights-progressbar {
+    background: #0A0B0F;
+    height: 21px;
+    border-radius: 20px;
+    position: relative;
+    flex: 1;
+}
+.highlights-progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #F43C5B;
+    border-radius: 20px;
+}
+.highlights-progress{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p.highlights-percentage {
+    font-size: 56px;
+    margin: 0;
+    padding: 0 0 0 15px;
+    color: #ffbf3d;
+}
+/*===================================
+Animation CSS#ffffff
+====================================*/
+p.place {
+    position: relative;
+    animation-name: totalNumber;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes totalNumber {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+    .details {
+        flex: 1!important;
+    }
+    .details p.participant {
+        margin: 0px 0 0 10px!important;
+        text-overflow: clip;
+        white-space: pre-wrap;
+        display: flex;
+        align-items: center;
+        max-height: 28px;
+        width: 150px;
+    }
+    p.participant span {
+        max-height: 25px;
+        overflow: hidden;
+        line-height: 1;
+    }
+    p.reports-number {
+        width: auto!important;
+    }
+    .progressbar {
+        width: auto!important;
+        flex: 1;
+    }
+    .report-ranking ul li {
+        padding-right: 35px!important;
+    }
+    .report-ranking ul li.col-header p {
+        margin: 0 30px 0 0;
+    }
+    .report-ranking ul li p.place {
+        font-size: 18px;
+    }
+    .details p.participant {
+        font-size: 18px;
+    }
+    .report-ranking ul li figure img {
+        width: 36px;
+        height: 36px;
+    }
+    p.reports-number {
+        font-size: 18px;
+        margin: 7px 30px 0px 7px;
+    }
+    .progressbar {
+        height: 10px;
+        margin-top: 9px;
+    }
+    p.progress-percentage {
+        margin: 6px 0 0 25px;
+        font-size: 18px;
+    }
+    h1.headline {
+        padding: 130px 80px 0 80px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 1900px) {
+    h1.headline {
+        font-size: 56px;
+        padding: 25px 50px;
+    }
+    .report-ranking {
+        width: 660px;
+        flex-wrap: wrap;
+    }
+    .report-ranking ul:nth-child(1), .report-ranking ul:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    p.deadline-text {
+        font-size: 26px;
+    }
+    body {
+        padding-bottom: 50px;
+    }
+    h1.headline {
+        padding: 130px 80px 0 80px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .report-ranking {
+        padding: 0px 0px 50px 0px;
+    }
+    .details p.participant {
+        margin-top: 7px;
+    }
+    ul.highlights-full {
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .report-ranking {
+        width: 460px;
+        flex-wrap: wrap;
+    }
+    .report-ranking ul:nth-child(3) {
+        margin-bottom: 20px;
+    }
+    h1.headline {
+        font-size: 50px;
+        width: 100%;
+        height: auto;
+        background: none;
+        padding: 50px 20px;
+        text-overflow: initial;
+        white-space: inherit;
+    }
+    p.deadline-text {
+        font-size: 33px;
+        margin: -35px 0 0 0;
+        padding: 15px 25px;
+        max-height: initial;
+    }
+    .report-ranking ul {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 479px) {
+    h1.headline {
+        font-size: 40px;
+        padding: 20px 25px;
+    }
+    .report-ranking {
+        width: 320px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .report-ranking ul {
+        width: 320px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    li.col-header p {
+        margin: 0 11px 0 0;
+    }
+    li.col-header p.ch-progress {
+        margin: 0 11px 0 0px;
+    }
+    .progressbar {
+        width: 30px;
+    }
+    p.deadline-text {
+        font-size: 30px;
+        padding: 25px 10px;
+    }
+    ul.highlights-full li {
+        padding: 20px 15px;
+    }
+}

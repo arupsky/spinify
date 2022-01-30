@@ -1,0 +1,498 @@
+@font-face {
+    font-family: "AcuminProCond-Bold";
+    src: url("../fonts/AcuminProCond-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: 'Acumin Variable Concept';
+    src: url('../fonts/AcuminVariableConcept.woff2') format('woff2');
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-winter.jpg);
+    font-family: 'Acumin Variable Concept';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+}
+.report {
+    display: flex;
+    text-align: center;
+    min-height: 1080px;
+    justify-content: center;
+    align-items: center;
+    width: 1700px;
+    margin: -50px auto 0 auto;
+}
+.header {
+    width: 443px;
+}
+h1.headline {
+    font-size: 91px;
+    padding: 20px 50px;
+    font-family: "AcuminProCond-Bold";
+    color: #ffffff;
+    text-align: left;
+    background: #0E72E3;
+    border-radius: 0;
+    position: relative;
+    border-radius: 15px;
+    margin: 0;
+    -webkit-box-shadow: 4px 4px 0px 1px #b4d7ff73;
+    box-shadow: 4px 4px 0px 1px #b4d7ff73;
+    letter-spacing: 5px;
+}
+.report-ranking {
+    display: flex;
+}
+.report-ranking ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+    width: 620px;
+    padding: 0;
+}
+.report-ranking ul li {
+    display: flex;
+    margin-bottom: 14px;
+    border-radius: 17px;
+    padding: 0;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid #DBDDDD;
+    background: #FFF;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+li.col-header {
+    text-transform: uppercase;
+    border-left: 0px!important;
+    border-right: 0px!important;
+    border-top: 0px!important;
+    border-radius: 0!important;
+    margin-bottom: 12px!important;
+    background: transparent!important;
+}
+li.col-header p {
+    margin: 0 15px 0 0; 
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'Acumin Variable Concept';
+    font-weight: 600;
+    text-transform: capitalize;
+}
+li.col-header p.ch-progress {
+    margin: 0 15px 0 22px;
+}
+.report-ranking ul li:last-child {
+    margin-bottom: 0px;
+}
+p.place {
+    font-size: 12px;
+    margin: 0;
+    width: 30px;
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Acumin Variable Concept';
+    color: #0F1319;
+}
+.report-ranking ul li figure {
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+.report-ranking ul li figure img {
+    margin: 0;
+    padding: 0;
+}
+.report-ranking ul li figure img {
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+.details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    position: relative;
+}
+.details:after {
+    position: absolute;
+    content: '';
+    width: 13px;
+    height: 13px;
+    right: -25px;
+    top: 5px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.details p.participant {
+    text-align: left;
+    margin: 5px 0 0 0;
+    width: 77px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 10px;
+    font-family: 'Acumin Variable Concept';
+    color: #0F1319;
+}
+p.reports-number {
+    margin: 5px 10px 0 0;
+    border-bottom: 1px solid #FEC542;
+    padding: 0;
+    height: 16px;
+    width: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #0F72E3;
+}
+.progressbar {
+    position: relative;
+    background: #D7DEE8;
+    width: 160px;
+    height: 8px;
+    border-radius: 20px;
+    margin-top: 9px;
+}
+.progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #024ACE;
+    border-radius: 20px;
+}
+p.progress-percentage {
+    margin: 5px 0 0 10px;
+    display: flex;
+    padding: 0;
+    height: auto;
+    width: 26px;
+    font-family: 'Acumin Variable Concept';
+    color: #0F1319;
+}
+
+p.deadline-text {
+    margin: 0;
+    display: block;
+    font-size: 38px;
+    font-family: "AcuminProCond-Bold";
+    padding: 20px 10px;
+    width: auto;
+    color: #ffffff;
+    background: transparent;
+    position: relative;
+    max-width: 400px;
+    letter-spacing: 4px;
+}
+
+/* Highlights section */
+ul.highlights-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 442px;
+    margin: 0 0 100px 0;
+}
+.report-ranking ul.highlights-full li {
+    display: flex;
+    flex-direction: column;
+    padding: 0px!important;
+    background: transparent;
+    border: 0px;
+}
+ul.highlights-full li figure {
+    margin: 0;
+}
+ul.highlights-full li figure img {
+    width: 209px!important;
+    height: 209px!important;
+    border: 5px solid #024ace;
+    margin-bottom: 20px;
+}
+.highlights-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+.highlights-header p {
+    font-size: 35px;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 250px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.highlights-content {
+    width: 100%;
+}
+.highlights-items {
+    display: flex;
+    width: 100%;
+}
+.highlights-item-single {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    align-items: center;
+    width: 50%;
+}
+.highlights-item-single:first-child {
+    border-right: 1px solid #E2E2E2;
+}
+.highlights-item-single p {
+    margin: 0;
+}
+.highlights-item-single p.highlights-item-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #024ACE;
+}
+.highlights-item-single p.highlights-item-number {
+    font-size: 32px;
+    color: #fff;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    font-weight: 600;
+}
+.highlights-item-single p.highlights-item-number span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+.highlights-items {
+    display: flex;
+    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: 20px;
+}
+.highlights-bottom {
+    text-align: left;
+    padding-top: 20px;
+}
+.highlights-bottom p.highlights-bottom-title {
+    font-size: 18px;
+    margin: 0 0 15px 0;
+    color: #024ACE;
+}
+.highlights-progressbar {
+    background: #FFF;
+    height: 21px;
+    border-radius: 20px;
+    position: relative;
+    flex: 1;
+}
+.highlights-progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #024ACE;
+    border-radius: 20px;
+}
+.highlights-progress{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p.highlights-percentage {
+    font-size: 32px;
+    margin: 0;
+    padding: 0 35px 0 15px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.highlights-progress:after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    right: 0;
+    top: 8px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+    h1.headline {
+        max-height: 270px;
+        overflow: hidden;
+    }
+    .details {
+        flex: 1!important;
+    }
+    .details p.participant {
+        margin: 0px 0 0 10px!important;
+        text-overflow: clip;
+        white-space: pre-wrap;
+        display: flex;
+        align-items: center;
+        max-height: 28px;
+    }
+    p.participant span {
+        max-height: 25px;
+        overflow: hidden;
+        line-height: 1;
+    }
+    p.reports-number {
+        width: auto!important;
+    }
+    .progressbar {
+        width: auto!important;
+        flex: 1;
+    }
+    .report-ranking ul li {
+        padding-right: 35px!important;
+    }
+    li.col-header p {
+        margin: 0 25px 0 0;
+    } 
+    p.place {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .details p.participant {
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 0px!important;
+        width: 100px;
+    }
+    p.participant span {
+        max-height: 28px;
+    }
+    p.reports-number {
+        font-size: 16px;
+        height: 22px;
+        margin-top: 4px;
+        margin-right: 25px;
+        font-weight: 600;
+    }
+    p.progress-percentage {
+        margin: 4px 0 0 10px;
+        font-size: 16px;
+        font-weight: 600;
+    } 
+    p.deadline-text {
+        max-height: 120px;
+        overflow: hidden;
+    } 
+}
+@media screen and (max-width: 1900px) {
+    h1.headline {
+        font-size: 56px;
+        padding: 25px 50px;
+    }
+    .report-ranking {
+        width: 440px;
+        flex-wrap: wrap;
+    }
+    .report-ranking ul:nth-child(1), .report-ranking ul:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    p.deadline-text {
+        font-size: 26px;
+    }
+    /*Winter responsive css*/
+    h1.headline {
+        font-size: 38px;
+        border-radius: 5px;
+        padding: 0 10px;
+    }
+    h1.headline span {
+        text-overflow: inherit;
+        white-space: inherit;
+        text-align: center;
+        overflow: inherit;
+    }
+    .report {
+        width: 440px;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .report-ranking ul {
+        margin: 0;
+        width: 440px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .report-ranking {
+        width: 460px;
+        flex-wrap: wrap;
+    }
+    .report-ranking ul:nth-child(3) {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 479px) {
+    h1.headline {
+        font-size: 40px;
+        padding: 20px 25px;
+    }
+    .report {
+        width: 320px;
+    }
+    .report-ranking {
+        width: 320px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .report-ranking ul {
+        width: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .header {
+        width: 320px;
+    }
+    li.col-header p {
+        margin: 0 11px 0 0;
+    }
+    li.col-header p.ch-progress {
+        margin: 0 11px 0 0px;
+    }
+    .progressbar {
+        width: 30px;
+    }
+    p.deadline-text {
+        font-size: 30px;
+        padding: 25px 10px;
+    }
+}

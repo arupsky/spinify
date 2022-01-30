@@ -1,0 +1,463 @@
+@font-face {
+    font-family: 'kg_broken_vessels_sketchRg';
+    src: url('../fonts/kgbrokenvesselssketch-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;    
+    background-image: url(../images/body-bg-school.jpg);
+    font-family: 'kg_broken_vessels_sketchRg', Sans-Serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+}
+.report {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+}
+h1.headline {
+    font-size: 82px;
+    padding: 90px 15px 0 15px;
+    background: transparent;
+    color: #ffffff;
+    font-family: 'kg_broken_vessels_sketchRg', Sans-Serif;
+    font-weight: 100;
+    border-radius: 0;
+    margin: 0;
+}
+.report-ranking {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    width: 1427px;
+}
+.report-ranking ul {
+    background: none;
+    width: 787px;
+    border-radius: 20px;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.report-ranking ul li {
+    display: flex;
+    border-radius: 17px;
+    padding: 0;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    border: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+li.col-header {
+    padding-bottom: 15px!important;
+    margin-bottom: 15px!important;
+    border-bottom: 1px solid #FFF!important;
+}
+li.col-header {
+    text-transform: uppercase;
+    border-left: 0px!important;
+    border-right: 0px!important;
+    border-top: 0px!important;
+    border-radius: 0!important;
+}
+li.col-header p {
+    font-size: 20px;
+    margin: 0 60px 0 0;
+    color: #ffffff;
+}
+p.place {
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 20px;
+    color: #ffffff;
+    width: 40px;
+    text-align: center;
+    margin: 3px 10px 0 0;
+}
+.details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    position: relative;
+    flex: 1;
+    padding: 6px 15px;
+    border-radius: 15px;
+}
+.report-ranking ul li figure {
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+.report-ranking ul li figure img {
+    margin: 0;
+    padding: 0;
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 50%;
+}
+.details p.participant {
+    margin: 17px 0 0 10px;
+    padding: 0 20px 0 0;
+    font-size: 18px;
+    width: 170px;
+    position: relative;
+    color: #ffffff;
+    font-family: 'kg_broken_vessels_sketchRg', Sans-Serif;
+}
+p.reports-number {
+    color: #ffffff;
+    font-family: 'kg_broken_vessels_sketchRg', Sans-Serif;
+    font-size: 18px;
+    height: 24px;
+    margin-top: 17px;
+    width: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom: 0px;
+}
+
+
+.progressbar {
+    background: transparent;
+    height: 12px;
+    border-radius: 20px;
+    margin-top: 24px;
+    margin-left: 50px;
+    position: relative;
+    border: 1px solid #afafaf;
+}
+.progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    background: url(../images/school-progress-patern-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.details:after {
+    position: absolute;
+    content: '';
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 18px;
+    height: 18px;
+    right: 20px;
+    top: 24px;
+}
+p.progress-percentage {
+    display: flex;
+    padding: 0;
+    height: auto;
+    margin: 18px 0 0 35px;
+    color: #ffffff;
+    width: 52px;
+    font-size: 18px;
+    font-family: 'kg_broken_vessels_sketchRg', Sans-Serif;
+}
+
+p.deadline-text {
+    color: #ffffff;
+    background: transparent;
+    padding: 20px 0 10px 0;
+    font-family: 'kg_broken_vessels_sketchRg', Sans-Serif;
+    font-size: 24px;
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+
+
+
+
+
+/* Highlights section */
+ul.highlights-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 640px;
+}
+ul.highlights-full li {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+}
+ul.highlights-full li figure img {
+    margin: 0;
+}
+ul.highlights-full li figure img {
+    width: 280px;
+    height: 280px;
+    border: 5px solid #FFF;
+}
+.highlights-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-direction: column;
+}
+.highlights-header p {
+    font-size: 47px;
+    margin: 30px 0 0 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 250px;
+    color: #FFF;
+}
+.highlights-content {
+    width: 100%;
+}
+.highlights-items {
+    display: flex;
+    width: 100%;
+}
+.highlights-item-single {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    border: 1px solid #FFF;
+    padding: 20px;
+    border-radius: 20px;
+    width: 280px!important;
+}
+.highlights-item-single p {
+    margin: 0;
+}
+.highlights-item-single p.highlights-item-text {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #FFF;
+    font-weight: 100!important;
+}
+.highlights-item-single p.highlights-item-number {
+    font-size: 50px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.highlights-item-single p.highlights-item-number span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+.highlights-items {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.highlights-bottom {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #FFF;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+}
+.highlights-bottom p.highlights-bottom-title {
+    font-size: 23px;
+    margin-bottom: 20px;
+    color: #FFF;
+}
+.highlights-progressbar {
+    height: 21px;
+    border-radius: 20px;
+    position: relative;
+    flex: 1;
+    background: transparent;
+    border: 1px solid #afafaf;
+}
+.highlights-progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    background: url(../images/school-progress-patern-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.highlights-progress{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p.highlights-percentage {
+    font-size: 32px;
+    margin: 0;
+    padding: 0 45px 0 15px;
+    color: #FFF;
+}
+.highlights-progress:after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    right: 0;
+    top: 3px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+    h1.headline {
+        max-width: 1200px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .report-ranking ul li {
+        padding-right: 0px!important;
+    }
+    .details {
+        padding: 4px 40px 4px 15px;
+    }
+    .progressbar {
+        width: auto!important;
+        flex: 1;
+    }
+    p.progress-percentage {
+        margin: 15px 10px 0 35px;
+        font-size: 22px;
+    }
+    p.reports-number {
+        font-size: 22px;
+        margin-top: 15px;
+        width: auto!important;
+    }
+    p.deadline-text {
+        max-width: 1200px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 1900px) {
+    body {
+        background: #366C30;
+        border: 20px solid #723F08;
+    }
+    .report-ranking {
+        width: 800px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1.headline {
+        padding: 40px 15px 40px 15px;
+    }
+    ul.highlights-full {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .report-ranking {
+        width: 300px;
+    }
+    .report-ranking ul {
+        width: 300px;
+        padding: 0;
+    }
+    li.col-header p {
+        font-size: 13px;
+        margin: 0 20px 0 0;
+    }
+    h1.headline {
+        font-size: 40px;
+    }
+    p.place {
+        font-size: 13px;
+        width: 30px;
+    }
+    .report-ranking ul li figure {
+        margin: 0 5px 0 0;
+    }
+    .report-ranking ul li figure img {
+        width: 30px;
+        height: 30px;
+    }
+    .details p.participant {
+        margin: 3px 0 0 5px;
+        padding: 0 5px 0 0;
+        font-size: 18px;
+        width: 100px;
+    }
+    p.reports-number {
+        color: #ffffff;
+        font-size: 13px;
+        margin-top: 7px;
+        width: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .progressbar {
+        margin-top: 9px;
+        margin-left: 5px;
+        width: 30px;
+    }
+    p.progress-percentage {
+        margin: 6px 0 0 5px;
+        width: 50px;
+        font-size: 13px;
+    }
+    .details:after {
+        width: 15px;
+        height: 15px;
+        right: 15px;
+        top: 11px;
+    }
+    .highlights-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .highlights-item-single {
+        width: 100%!important;
+        margin-top: 25px;
+    }
+    ul.highlights-full li figure img {
+        width: 100px!important;
+        height: 100px!important;
+    }
+}
+@media screen and (max-width: 479px) {
+
+}

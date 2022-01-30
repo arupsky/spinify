@@ -1,0 +1,641 @@
+    @font-face {
+    font-family: 'AmericanTypewriterBold';
+    src: url('../fonts/AmericanTypewriterBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'AmericanTypewriterRegular';
+    src: url('../fonts/AmericanTypewriterRegular.woff2') format('woff2');
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-image: url(../images/body-bg-newyork.jpg);
+    font-family: 'AmericanTypewriterBold';
+}
+
+.header {
+    border-radius: 0;
+    width: 280px;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0;
+    text-align: left;
+}
+
+.report {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+}
+
+h1.headline {
+    margin: 0;
+    font-size: 58px;
+    padding: 0;
+    color: #ffffff;
+    max-height: 200px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.report-ranking {
+    display: flex;
+    width: 1300px;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: end;
+}
+
+.report-ranking ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 615px;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.report-ranking ul li {
+    display: flex;
+    border-radius: 17px;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #ffffffc7;
+    margin-bottom: 2px;
+}
+
+li.col-header {
+    text-transform: uppercase;
+    border-left: 0px!important;
+    border-right: 0px!important;
+    border-top: 0px!important;
+    border-radius: 0!important;
+    margin-bottom: 12px!important;
+    background: none!important;
+    border-bottom: 1px solid #7bc2d1!important;
+}
+
+li.col-header p {
+    margin: 0 15px 0 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'AmericanTypewriterRegular';
+    font-weight: 600;
+}
+
+li.col-header p.ch-progress {
+    margin: 0 15px 0 22px;
+}
+
+.report-ranking ul li:last-child {
+    margin-bottom: 0px;
+}
+
+p.place {
+    font-size: 12px;
+    margin: 0;
+    width: 30px;
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    color: #4772AF;
+    font-family: 'AmericanTypewriterBold';
+    font-weight: 100;
+}
+
+.report-ranking ul li figure {
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+.report-ranking ul li figure img {
+    margin: 0;
+    padding: 0;
+}
+
+.report-ranking ul li figure img {
+    margin: 0;
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 50%;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    position: relative;
+}
+
+.details:after {
+    position: absolute;
+    content: '';
+    width: 13px;
+    height: 13px;
+    right: -25px;
+    top: 4px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.details p.participant {
+    text-align: left;
+    margin: 5px 0 0 0;
+    width: 77px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 10px;
+    color: #4772AF;
+    font-family: 'AmericanTypewriterRegular';
+    text-transform: uppercase;
+}
+
+p.reports-number {
+    margin: 5px 10px 0 0;
+    border-bottom: 1px solid #506A78;
+    padding: 0;
+    height: 16px;
+    width: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #4772AF;
+    font-family: 'AmericanTypewriterBold';
+}
+
+.progressbar {
+    position: relative;
+    width: 160px;
+    border-radius: 20px;
+    background: #D1CFD3;
+    height: 10px;
+    margin-top: 7px;
+}
+
+.progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    background: #4671AF;
+}
+
+p.progress-percentage {
+    margin: 5px 0 0 10px;
+    display: flex;
+    padding: 0;
+    height: auto;
+    color: #4772AF;
+    font-family: 'AmericanTypewriterBold';
+    width: 30px;
+}
+
+p.deadline-text {
+    font-weight: 600;
+    margin: 20px 0 0 0;
+    padding: 0;
+    width: auto;
+    display: block;
+    color: #ffffff;
+    background: none;
+    font-family: 'AmericanTypewriterBold';
+    font-size: 29px;
+    text-transform: inherit;
+}
+
+
+/* Highlights section */
+
+ul.highlights-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffffc7;
+    padding: 0;
+    height: 570px;
+}
+
+ul.highlights-full li {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: transparent;
+}
+
+ul.highlights-full li figure {
+    margin: -155px 0 0 0!important;
+}
+
+ul.highlights-full li figure img {
+    width: 268px!important;
+    height: 268px!important;
+    border: 8px solid #4671AF;
+}
+
+.highlights-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.highlights-header p {
+    font-size: 45px;
+    margin: 30px 0 0 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 250px;
+    color: #4671AF;
+    line-height: 1.1;
+}
+
+.highlights-content {
+    width: 100%;
+}
+
+.highlights-items {
+    display: flex;
+    width: 100%;
+}
+
+.highlights-item-single {
+    display: flex;
+    flex: 1;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    border-radius: 10px;
+}
+
+.highlights-item-single:after {
+    background: #FBD2BF;
+    background: linear-gradient( 90deg, #FBD2BF 0%, #6475DE 100%);
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+}
+
+.highlights-item-single p {
+    margin: 0;
+}
+
+.highlights-item-single p.highlights-item-text {
+    font-size: 27px;
+    margin: 0;
+    color: #4772AF;
+    font-family: 'AmericanTypewriterRegular';
+}
+
+.highlights-item-single p.highlights-item-number {
+    font-size: 27px;
+    color: #4772AF;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    max-width: 250px;
+}
+
+.highlights-item-single p.highlights-item-number span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+
+.highlights-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.highlights-bottom {
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-top: 15px;
+    text-align: left;
+    position: relative;
+}
+
+.highlights-bottom:after {
+    background: #FBD2BF;
+    background: linear-gradient( 90deg, #FBD2BF 0%, #6475DE 100%);
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+}
+
+.highlights-bottom p.highlights-bottom-title {
+    font-size: 27px;
+    margin: 0;
+    color: #4772AF;
+    font-family: 'AmericanTypewriterRegular';
+}
+
+.highlights-progressbar {
+    background: #D1CFD3;
+    height: 21px;
+    border-radius: 20px;
+    position: relative;
+    flex: 1;
+}
+
+.highlights-progressbar-inner {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #4671AF;
+    border-radius: 20px;
+}
+
+.highlights-progress {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+p.highlights-percentage {
+    margin: 0;
+    padding: 0 0 0 15px;
+    font-size: 27px;
+    color: #4772AF;
+}
+
+
+/*===================================
+Animation CSS#ffffff
+====================================*/
+
+p.place,
+p.total {
+    position: relative;
+    animation-name: totalNumber;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes totalNumber {
+    0% {
+        transform: scale(.4)
+    }
+    50% {
+        transform: scale(.6)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+    .details {
+        flex: 1!important;
+    }
+    .details p.participant {
+        margin: 0px 0 0 10px!important;
+        text-overflow: clip;
+        white-space: pre-wrap;
+        display: flex;
+        align-items: center;
+        max-height: 28px;
+    }
+    p.participant span {
+        max-height: 25px;
+        overflow: hidden;
+        line-height: 1;
+    }
+    p.reports-number {
+        width: auto!important;
+    }
+    .progressbar {
+        width: auto!important;
+        flex: 1;
+    }
+    .report-ranking ul li {
+        padding-right: 35px!important;
+    }
+    /*Newyork responsive css*/
+    li.col-header p {
+        font-size: 18px;
+        margin: 0 20px 0 0;
+    }
+    li.col-header p.ch-progress {
+        margin-left: 40px;
+    }
+    p.place {
+        font-size: 18px;
+        margin-top: 4px;
+        width: 40px;
+    }
+    .report-ranking ul li figure img {
+        width: 40px;
+        height: 40px;
+    }
+    .details p.participant {
+        width: 140px;
+        position: relative;
+        font-size: 18px;
+        max-height: initial;
+        height: auto;
+    }
+    p.participant span {
+        max-height: 32px;
+    }
+    p.reports-number {
+        margin: 5px 30px 0 15px;
+        line-height: 25px;
+        font-size: 18px;
+        height: 24px;
+    }
+    .progressbar {
+        margin-top: 14px;
+    }
+    p.progress-percentage {
+        font-size: 18px;
+        margin: 9px 10px 0 20px;
+    }
+    .details:after {
+        top: 9px;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    h1.headline {
+        font-size: 56px;
+        padding: 25px 50px;
+    }
+    .report-ranking {
+        width: 940px;
+        flex-wrap: wrap;
+    }
+    .report-ranking ul:nth-child(1),
+    .report-ranking ul:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    p.deadline-text {
+        font-size: 26px;
+    }
+    /*Newyork responsive css*/
+    .report {
+        flex-direction: column;
+        min-height: auto;
+    }
+    .header {
+        width: auto;
+        height: auto;
+        padding: 20px 35px;
+        border-radius: 0 0 30px 30px;
+        align-items: center;
+    }
+    h1.headline {
+        font-size: 52px;
+        text-align: center;
+    }
+    p.deadline-text {
+        font-size: 26px;
+        text-align: center;
+    }
+    li.col-header p {
+        margin: 0 10px 0 0;
+        font-size: 12px;
+    }
+    .report-ranking {
+        width: 900px;
+        margin: 20px 0 20px 0;
+        padding: 0;
+    }
+    .report-ranking ul {
+        width: 430px;
+        padding: 10px;
+    }
+    ul.highlights-full {
+        height: auto;
+        margin-top: 130px;
+    }
+    @media screen and (max-width: 1023px) {
+        .report-ranking {
+            width: 460px;
+            flex-wrap: wrap;
+        }
+        .report-ranking ul:nth-child(3) {
+            margin-bottom: 20px;
+        }
+        /*Newyork responsive css*/
+        .header {
+            padding: 15px 20px;
+        }
+        p.deadline-text {
+            font-size: 22px;
+            text-align: center;
+        }
+        h1.headline {
+            font-size: 30px;
+            text-align: center;
+        }
+        .report-ranking {
+            width: 300px;
+        }
+        .report-ranking ul {
+            width: 300px;
+            padding: 10px 0px 10px 0px;
+            margin-bottom: 20px;
+        }
+        .report-ranking ul li {
+            padding-right: 35px;
+        }
+        .details {
+            flex: 1;
+        }
+        .progressbar {
+            width: auto;
+            flex: 1;
+        }
+        ul.highlights-full {
+            height: auto;
+            margin-top: 120px;
+        }
+    }
+    @media screen and (max-width: 479px) {
+        h1.headline {
+            font-size: 40px;
+            padding: 20px 25px;
+        }
+        .report-ranking {
+            width: 320px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .report-ranking ul {
+            width: 300px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        li.col-header p {
+            margin: 0 11px 0 0;
+        }
+        li.col-header p.ch-progress {
+            margin: 0 11px 0 0px;
+        }
+        .progressbar {
+            width: 30px;
+        }
+        p.deadline-text {
+            font-size: 30px;
+            padding: 25px 10px;
+        }
+    }
