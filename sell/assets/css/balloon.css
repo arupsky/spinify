@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'the_bold_fontbold';
+    src: url('../fonts/theboldfont-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-balloon.jpg);
+    font-family: 'the_bold_fontbold';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+
+.sell ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.sell ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    display: none;
+}
+
+.sell ul li:nth-child(1) {
+    left: 445px;
+    top: 285px;
+}
+
+.sell ul li:nth-child(2) {
+    left: 680px;
+    top: 590px;
+}
+
+.sell ul li:nth-child(3) {
+    left: 1222px;
+    top: 429px;
+}
+
+.sell ul li img {
+    width: 183px;
+    height: 183px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+.content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content img {
+    max-width: 847px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 65px 0;
+    padding: 0 15px;
+    color: #ffffff;
+    font-size: 40px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1500px;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (device-height: 1080px) and (device-width: 1920px) {
+    .sell ul li {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .content img {
+        max-width: 100%;
+    }
+}
