@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'the_bold_fontbold';
+    src: url('../fonts/theboldfont-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-spin.jpg);
+    font-family: 'the_bold_fontbold';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+
+.sell ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.sell ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    display: none;
+}
+
+.sell ul li.text {
+    font-size: 36px;
+    line-height: 1.5;
+    color: #fed720;
+}
+
+.sell ul li.text p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.sell ul li:nth-child(1) {
+    left: 920px;
+    top: 465px;
+}
+
+.sell ul li:nth-child(2) {
+    left: 985px;
+    top: 447px;
+}
+
+.sell ul li:nth-child(3) {
+    left: 1075px;
+    top: 555px;
+}
+
+.sell ul li:nth-child(4) {
+    left: 1170px;
+    top: 620px;
+}
+
+.sell ul li:nth-child(5) {
+    left: 1080px;
+    top: 730px;
+}
+
+.sell ul li:nth-child(6) {
+    left: 1040px;
+    top: 755px;
+}
+
+.sell ul li:nth-child(7) {
+    left: 892px;
+    top: 830px;
+}
+
+.sell ul li:nth-child(8) {
+    left: 830px;
+    top: 805px;
+}
+
+.sell ul li:nth-child(9) {
+    left: 765px;
+    top: 735px;
+}
+
+.sell ul li:nth-child(10) {
+    left: 670px;
+    top: 615px;
+}
+
+.sell ul li:nth-child(11) {
+    left: 770px;
+    top: 555px;
+}
+
+.sell ul li:nth-child(12) {
+    left: 855px;
+    top: 475px;
+}
+.sell ul li:nth-child(4).text {
+    transform: rotate( 93deg );
+    top: 627px;
+    left: 1110px;
+}
+.sell ul li:nth-child(6).text {
+    transform: rotate(149deg);
+    left: 1013px;
+    top: 739px;
+}
+.sell ul li:nth-child(8).text {
+    transform: rotate( -53deg );
+    left: 822px;
+    top: 794px;
+}
+.sell ul li:nth-child(12).text {
+    transform: rotate(328deg);
+    left: 858px;
+    top: 482px;
+}
+
+.sell ul li.user img {
+    width: 113px;
+    height: 113px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+.content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content h1 {
+    color: #6A30A4;
+    font-size: 68px;
+    line-height: 1;
+    margin: 190px 0 0 -25px;
+    padding: 0 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 520px;
+}
+
+.content h1 span {
+    color: #E82B41;
+}
+
+.content p {
+    margin: 0;
+    padding: 6px 45px;
+    color: #FDEABF;
+    font-size: 36px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 560px;
+    background: #6A30A4;
+    border-radius: 50px;
+    position: relative;
+}
+
+.content p:before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/spin-bottom-dots.png);
+    background-repeat: no-repeat;
+    left: 10px;
+    top: 18px;
+}
+
+.content p::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/spin-bottom-dots.png);
+    background-repeat: no-repeat;
+    right: 10px;
+    top: 18px;
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (device-height: 1080px) and (device-width: 1920px) {
+    .sell ul li {
+        display: block;
+    }
+}
+@media screen and (max-width: 1900px) {
+    body {
+        background-position: center top;
+        background-size: auto;
+    }
+}
