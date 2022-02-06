@@ -1,9 +1,15 @@
 @font-face {
-    font-family: 'the_bold_fontbold';
-    src: url('../fonts/theboldfont-webfont.woff2') format('woff2');
+    font-family: 'Malik';
+    src: url('../fonts/Malik-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'malikextrabold';
+    src: url('../fonts/malik-extrabold-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-
 }
 *, *:before, *:after {
     box-sizing: border-box;
@@ -17,7 +23,7 @@ body {
     padding: 0;
     margin: 0;
     background-image: url(../images/body-bg-darts.jpg);
-    font-family: 'the_bold_fontbold';
+    font-family: 'Malik';
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-font-smoothing: antialiased;
@@ -80,7 +86,7 @@ body {
 
 .content h1 {
     color: #FDEABF;
-    font-size: 140px;
+    font-size: 130px;
     line-height: 1;
     margin: 110px 0;
     padding: 0 15px;
@@ -90,6 +96,7 @@ body {
     overflow: hidden;
     width: 100%;
     max-width: 1500px;
+    font-family: 'malikextrabold';
 }
 
 .content p {

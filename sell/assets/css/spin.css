@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'the_bold_fontbold';
-    src: url('../fonts/theboldfont-webfont.woff2') format('woff2');
-    font-weight: normal;
+    font-family: 'AktivGrotesk-XBold';
+    src: url('../fonts/AktivGrotesk-XBold.woff2') format('woff2');
+    font-weight: bold;
     font-style: normal;
-
+    font-display: swap;
 }
 *, *:before, *:after {
     box-sizing: border-box;
@@ -17,7 +17,7 @@ body {
     padding: 0;
     margin: 0;
     background-image: url(../images/body-bg-spin.jpg);
-    font-family: 'the_bold_fontbold';
+    font-family: 'AktivGrotesk-XBold';
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-font-smoothing: antialiased;
