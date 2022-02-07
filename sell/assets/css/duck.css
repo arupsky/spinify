@@ -72,7 +72,7 @@ body {
 
 .content h1 {
     color: #cbdbee;
-    font-size: 62px;
+    font-size: 58px;
     line-height: 1.5;
     margin: 38px 0;
     padding: 0 15px;
@@ -82,11 +82,12 @@ body {
     overflow: hidden;
     width: 100%;
     max-width: 1500px;
-    -webkit-text-stroke-width: 6px;
+    -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #FBC504;
     -webkit-text-fill-color: #ffffff;
-    text-shadow: -8px 20px 2px #000000;
-    letter-spacing: 14px;
+    text-shadow: -6px 12px 3px #000000;
+    letter-spacing: 10px;
+    font-family: sans-serif;
 }
 
 .content img {

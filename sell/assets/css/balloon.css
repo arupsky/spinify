@@ -78,6 +78,27 @@ body {
     margin-top: 80px;
 }
 
+.content h1 {
+    color: #0D3144;
+    font-size: 84px;
+    line-height: 1.5;
+    margin: 65px 0 38px 0;
+    padding: 0 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 775px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-fill-color: #0D3144;
+    text-shadow: -1px 9px 3px #a08c6e;
+    letter-spacing: 5px;
+    font-family: 'the_bold_fontbold';
+    font-weight: bold;
+}
+
 .content p {
     margin: 65px 0;
     padding: 0 15px;
