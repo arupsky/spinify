@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'sanchezboldwebfont';
+    src: url('../fonts/sanchezboldwebfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SlaberlinBold';
+    src: url('../fonts/SlaberlinBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-trekking.jpg);
+    font-family: 'sanchezboldwebfont';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+}
+h1.headline {
+    margin: 0;
+    font-size: 81px;
+    padding: 0;
+    border-radius: 0;
+    color: #52180A;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.content-right p.subheadline {
+    margin: 20px 0 0 0;
+    font-size: 43px;
+    width: 100%;
+    color: #2A1C23;
+    max-height: 105px;
+    overflow: hidden;
+    font-family: 'SlaberlinBold';
+    text-align: center;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 1700px;
+    justify-content: space-between;
+}
+.content-left {
+    width: 378px;
+    min-height: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-left figure {
+    margin: 0;
+    padding: 0;
+}
+.content-left figure img {
+    margin: 0;
+    padding: 0;
+    width: 378px;
+    height: 378px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 50%;
+    border: 6px solid #00744D;
+}
+p.figure-title {
+    margin: 20px auto 0 auto;
+    color: #2A1C23;
+    font-size: 54px;
+    max-width: 354px;
+    line-height: 1.1;
+    max-height: 120px;
+    overflow: hidden;
+}
+.content-right {
+    width: 1212px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 100px;
+}
+.header {
+    width: 100%;
+    max-width: 840px;
+}
+p.content-text {
+    margin: 0;
+    color: #2A1C23;
+    font-size: 57px;
+    line-height: 1.2;
+    max-height: 382px;
+    overflow: hidden;
+    background: #EBEFE3;
+    padding: 100px;
+    border-radius: 100px 100px 100px 0;
+    font-family: 'SlaberlinBold';
+    margin-top: 100px;
+}
+.content-right p span {
+    color: #00744D;
+}
+/*===================================
+Animation CSS#ffffff
+====================================*/
+p.place {
+    position: relative;
+    animation-name: totalNumber;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes totalNumber {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1900px) {
+    .content {
+        flex-direction: column;
+        width: 840px;
+        margin-bottom: 60px;
+        align-items: center;
+    }
+    .content-right {
+        width: 840px;
+        margin-top: 60px;
+        align-items: center;
+        text-align: center;
+    }
+    .content-left {
+        min-height: auto;
+        margin: 50px 0;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    h1.headline {
+        overflow: auto;
+        text-overflow: initial;
+        white-space: initial;
+        font-size: 52px;
+    }
+    .content {
+        width: 100%;
+    }
+    .content-left {
+        width: 100%;
+    }
+    .content-left figure img {
+        width: 265px;
+        height: 265px;
+        margin: 0 auto;
+    }
+    p.figure-title {
+        font-size: 35px;
+        max-height: inherit;
+    }
+    .content-right {
+        width: auto;
+        height: auto;
+    }
+    .content-right p.subheadline {
+        margin: 50px 0 0 0;
+        font-size: 36px;
+        width: auto;
+        max-height: initial;
+    }
+    p.content-text {
+        font-size: 36px;
+        max-height: initial;
+        padding: 35px;
+    }
+}

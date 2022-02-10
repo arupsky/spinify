@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'BADABB';
+    src: url('../fonts/BADABB.woff2') format('woff2');
+         font-weight: normal;
+         font-style: normal;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-comics.jpg);
+    font-family: 'BADABB';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+}
+h1.headline {
+    margin: 0 auto;
+    font-size: 133px;
+    font-weight: 100;
+    padding: 70px 0 0 0;
+    border-radius: 0;
+    color: #000000;
+    max-width: 710px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+p.subheadline {
+    margin: 10px 0 0 0;
+    font-size: 37px;
+    max-width: 840px;
+    color: #ffffff;
+    max-height: 80px;
+    overflow: hidden;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 1350px;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.content-left {
+    width: 465px;
+}
+.content-left figure {
+    margin: 0;
+    padding: 0;
+}
+.content-left figure img {
+    margin: 0;
+    padding: 0;
+    width: 465px;
+    height: 465px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 50%;
+    border: 20px solid #000;
+}
+p.figure-title {
+    margin: 20px auto 0 auto;
+    color: #FFF;
+    font-size: 65px;
+    max-width: 354px;
+    line-height: 1.1;
+    max-height: 143px;
+    overflow: hidden;
+}
+.content-right {
+    width: 832px;
+    height: 649px;
+    background-image: url(../images/comics-content-bg.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-right p {
+    margin: -85px 0 0 -30px;
+    color: #008B83;
+    font-size: 62px;
+    width: 524px;
+    line-height: 1.2;
+    max-height: 302px;
+    overflow: hidden;
+}
+.content-right p span {
+    color: #FF6E00;
+}
+/*===================================
+Animation CSS#ffffff
+====================================*/
+p.place {
+    position: relative;
+    animation-name: totalNumber;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes totalNumber {
+    0%   {transform: scale(.4)}
+    50%  {transform: scale(.6)}
+    100% {transform: scale(1)}
+}
+
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (min-width: 1901px) {
+
+}
+@media screen and (max-width: 1900px) {
+    .content {
+        flex-direction: column;
+        width: 840px;
+        margin-bottom: 60px;
+        align-items: center;
+    }
+    .content-right {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    h1.headline {
+        overflow: auto;
+        text-overflow: initial;
+        white-space: initial;
+        font-size: 80px;
+    }
+    .content {
+        width: 100%;
+    }
+    .content-left {
+        width: 100%;
+    }
+    .content-left figure img {
+        width: 265px;
+        height: 265px;
+        border: 10px solid #000;
+        margin: 0 auto;
+    }
+    p.figure-title {
+        font-size: 35px;
+        max-height: inherit;
+    }
+    .content-right {
+        background: #FFF;
+        width: auto;
+        height: auto;
+    }
+    .content-right p {
+        margin: 0;
+        font-size: 42px;
+        width: auto;
+        max-height: initial;
+    }
+}
+@media screen and (max-width: 479px) {
+    
+}
