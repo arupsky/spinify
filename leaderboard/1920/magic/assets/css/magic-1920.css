@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'MagicalWorld';
+    src: url('../fonts/MagicalWorld.woff2') format('woff2');
+         font-weight: normal;
+         font-style: normal;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-magic.jpg);
+    font-family: 'MagicalWorld';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    max-width: 1670px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    min-height: 1080px;
+}
+.header {
+    width: 642px;
+}
+h1.headline {
+    margin: 0 auto;
+    font-size: 137px;
+    font-weight: 100;
+    padding: 12px;
+    border-radius: 0;
+    overflow: hidden;
+    max-height: 330px;
+    color: #ff84f5;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-fill-color: #ff84f5;
+    text-shadow: -16px 16px 2px #000000;
+    text-transform: uppercase;
+}
+p.subheadline {
+    line-height: 1.1;
+    margin: 30px 0 0 0;
+    font-size: 36px;
+    max-width: 840px;
+    color: #7C77D4;
+    max-height: 118px;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 887px;
+    height: 779px;
+    justify-content: space-between;
+    background-image: url(../images/magic-content-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 25px;
+}
+.content-left {
+    display: flex;
+    max-width: 780px;
+    justify-content: space-between;
+    align-items: center;
+    margin: -50px 0 0 -50px;
+}
+.content-left figure {
+    margin: 0;
+    padding: 0;
+}
+.content-left figure img {
+    margin: 0;
+    width: 355px;
+    height: 355px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    background: #21bdd7;
+    background: -webkit-linear-gradient( 45deg, #CD62FB, #21bdd7 100%);
+    padding: 7px;
+}
+p.figure-title {
+    margin: 100px auto 0 auto;
+    color: #FFF;
+    font-size: 66px;
+    max-width: 374px;
+    line-height: 1.2;
+    max-height: 143px;
+    overflow: hidden;
+}
+.content-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 130px 70px;
+}
+.content-right p {
+    margin: 0;
+    color: #008B83;
+    font-size: 65px;
+    width: 577px;
+    line-height: 1.2;
+    max-height: 315px;
+    overflow: hidden;
+}
+.content-right p span {
+    color: #FF84F5;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1900px) {
+    .leaderboard {
+        flex-direction: column;
+        max-width: 1000px;
+    }
+    .header {
+        padding-top: 50px;
+        width: 100%;
+        text-align: center;
+    }
+    h1.headline {
+        font-size: 65px;
+        padding: 0px;
+        overflow: initial;
+        max-height: initial;
+    }
+    p.subheadline {
+        max-width: 100%;
+    }
+    .content {
+        margin: 60px 0;
+        height: auto;
+    }
+    .content-right {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    h1.headline {
+        overflow: auto;
+        text-overflow: initial;
+        white-space: initial;
+        font-size: 80px;
+    }
+    .content {
+        justify-content: start;
+        width: 100%;
+        background-image: none;
+        margin: 0;
+    }
+    .content-left {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+    .content-left figure img {
+        width: 265px;
+        height: 265px;
+        border: 10px solid #000;
+        margin: 0 auto;
+    }
+    p.figure-title {
+        font-size: 35px;
+        max-height: inherit;
+        margin: 15px 0;
+    }
+    .content-right {
+        margin: 0;
+        padding: 0 15px;
+    }
+    .content-right p {
+        margin: 0;
+        font-size: 42px;
+        width: auto;
+        max-height: initial;
+        text-align: center;
+    }
+}

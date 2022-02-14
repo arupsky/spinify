@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'CheddarGothicSlab';
+    src: url('../fonts/CheddarGothicSlab.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-cowboy.jpg);
+    font-family: 'CheddarGothicSlab';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+}
+h1.headline {
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 82px;
+    padding: 90px 30px 40px 30px;
+    color: #000;
+    text-align: center;
+    background-image: url(../images/cowboy-title-bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 -130px;
+    position: relative;
+    border-radius: 0 0 50px 50px;
+    font-weight: 100;
+    width: 1100px;
+    text-transform: uppercase;
+}
+p.subheadline {
+    max-width: 1124px;
+    margin: 40px auto 20px auto;
+    font-size: 36px;
+    color: #000000;
+    line-height: 1.5;
+    max-height: 110px;
+    overflow: hidden;
+}
+.content {
+    width: 1124px;
+    height: 571px;
+    position: relative;
+    background-image: url(../images/cowboy-content-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 60px 100px 80px 275px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content figure {
+    margin: 0;
+    padding: 0;
+}
+.content figure img {
+    margin: 0;
+    padding: 10px;
+    width: 469px;
+    height: 469px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    border: 6px solid #000000;
+    position: absolute;
+    left: -240px;
+    top: 55px;
+}
+p.figure-title {
+    margin: 20px 0 0 0;
+    color: #000;
+    font-size: 56px;
+    line-height: 1.1;
+    max-height: 60px;
+    overflow: hidden;
+}
+p.content-text {
+    font-size: 62px;
+    max-width: 660px;
+    max-height: 316px;
+    margin: 0;
+    overflow: hidden;
+    line-height: 1.6;
+    color: #7C150A;
+}
+p.content-text span {
+    font-weight: bold;
+    color: #FF5543;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1900px) {
+    h1.headline {
+        background: none;
+    }
+    .content {
+        flex-direction: column;
+        width: 840px;
+        margin-bottom: 60px;
+        align-items: center;
+        padding: 30px;
+        height: auto;
+        background-image: none;
+    }
+    .content figure img {
+        position: relative;
+        left: inherit;
+        top: inherit;
+        margin: 0 auto;
+    }
+    p.content-text {
+        font-size: 36px;
+        max-width: 100%;
+        max-height: inherit;
+        margin: 30px 0 0 0;
+    }
+    p.figure-title {
+        margin: 30px 0 0 0;
+        font-size: 36px;
+        max-height: inherit;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    h1.headline {
+        overflow: auto;
+        text-overflow: initial;
+        white-space: initial;
+        font-size: 52px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .content {
+        width: 100%;
+    }
+    .content figure img {
+        width: 265px;
+        height: 265px;
+        margin: 0 auto;
+    }
+    p.subheadline {
+        max-width: 95%;
+        margin: 40px auto 40px auto;
+        max-height: inherit;
+        overflow: hidden;
+    }
+}

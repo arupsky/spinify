@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/RobotoBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'road_rageregular';
+    src: url('../fonts/roadrage-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-summer.jpg);
+    font-family: 'RobotoBold';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+}
+.header {
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+h1.headline {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 56px;
+    padding: 11px 30px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    font-weight: 100;
+    max-width: 535px;
+    text-transform: uppercase;
+    background: #698D43;
+    margin: 0 auto;
+}
+p.subheadline {
+    max-width: 1124px;
+    margin: 20px auto 20px auto;
+    font-size: 36px;
+    color: #364D2F;
+    line-height: 1.5;
+    max-height: 110px;
+    overflow: hidden;
+}
+.content {
+    width: 1236px;
+    height: 608px;
+    position: relative;
+    background-image: url(../images/summer-content-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+.content-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -180px;
+}
+.content figure {
+    padding: 6px;
+    width: 356px;
+    height: 356px;
+    background: #e2dfce;
+    border-radius: 50%;
+    margin: 0;
+}
+.content figure img {
+    margin: 5px;
+    padding: 0;
+    width: 334px;
+    height: 334px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+}
+p.figure-title {
+    margin: 0 0 0 50px;
+    color: #E3DECD;
+    font-size: 99px;
+    line-height: .9;
+    max-height: 178px;
+    max-width: 470px;
+    overflow: hidden;
+    font-family: 'road_rageregular';
+}
+p.content-text {
+    font-size: 83px;
+    max-width: 100%;
+    max-height: 198px;
+    margin: 20px 0 0 0;
+    overflow: hidden;
+    line-height: 1.2;
+    color: #392B27;
+    text-align: center;
+    font-family: 'road_rageregular';
+    text-transform: uppercase;
+}
+p.content-text span {
+    color: #364E2F;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1900px) {
+    .header {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+    h1.headline {
+        background: none;
+    }
+    .content-top {
+        flex-direction: column;
+        margin: 0;
+    }
+    .content {
+        flex-direction: column;
+        width: 840px;
+        margin-bottom: 60px;
+        align-items: center;
+        padding: 30px;
+        height: auto;
+        background-image: none;
+    }
+    .content figure {
+        width: auto;
+        height: auto;
+    }
+    .content figure img {
+        position: relative;
+        left: inherit;
+        top: inherit;
+        margin: 0 auto;
+    }
+    p.content-text {
+        font-size: 36px;
+        max-width: 100%;
+        max-height: inherit;
+        margin: 30px 0 0 0;
+    }
+    p.figure-title {
+        margin: 30px 0 0 0;
+        font-size: 36px;
+        max-height: inherit;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    h1.headline {
+        overflow: auto;
+        text-overflow: initial;
+        white-space: initial;
+        font-size: 52px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .content {
+        width: 100%;
+    }
+    .content figure img {
+        width: 265px;
+        height: 265px;
+        margin: 0 auto;
+    }
+    p.subheadline {
+        max-width: 95%;
+        margin: 40px auto 40px auto;
+        max-height: inherit;
+        overflow: hidden;
+    }
+}

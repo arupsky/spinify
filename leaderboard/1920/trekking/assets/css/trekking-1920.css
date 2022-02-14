@@ -122,22 +122,6 @@ p.content-text {
 .content-right p span {
     color: #00744D;
 }
-/*===================================
-Animation CSS#ffffff
-====================================*/
-p.place {
-    position: relative;
-    animation-name: totalNumber;
-    animation-duration: .5s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-}
-@keyframes totalNumber {
-    0%   {transform: scale(.4)}
-    50%  {transform: scale(.6)}
-    100% {transform: scale(1)}
-}
-
 /*=================================
 Responsive CSS
 ==================================*/
