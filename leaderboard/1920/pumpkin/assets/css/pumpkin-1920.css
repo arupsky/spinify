@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'HammersmithOneRegular';
+    src: url('../fonts/HammersmithOneRegular.woff2') format('woff2');
+         font-weight: normal;
+         font-style: normal;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-pumpkin.jpg);
+    font-family: 'HammersmithOneRegular';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+}
+.header {
+    padding: 60px 0;
+}
+h1.headline {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 85px;
+    padding: 0 0 30px 0;
+    color: #6B3114;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    font-weight: 100;
+    max-width: 740px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    letter-spacing: 3px;
+    background-image: url(../images/pumpkin-header-bg.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+p.subheadline {
+    max-width: 1124px;
+    margin: 30px auto 10px auto;
+    font-size: 36px;
+    color: #D46827;
+    line-height: 1.5;
+    max-height: 110px;
+    overflow: hidden;
+}
+.content {
+    width: 1225px;
+    position: relative;
+    padding: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+.content-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF4E4;
+    border-radius: 20px;    
+    padding: 80px 200px;
+}
+.content-top:before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/pumpkin-quote.png);
+    left: 50px;
+    top: 90px;
+    width: 95px;
+    height: 65px;
+}
+.content-top::after {
+    position: absolute;
+    content: '';
+    background-image: url(../images/pumpkin-arrow.png);
+    background-repeat: no-repeat;
+    right: 350px;
+    bottom: 90px;
+    width: 86px;
+    height: 92px;
+}
+.content-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    justify-content: space-between;
+    margin: -181px -50px 0 0;
+}
+.content figure {
+    padding: 0;
+    margin: 0;
+}
+.content figure img {
+    padding: 10px;
+    width: 334px;
+    height: 334px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    background: #ed9236;
+}
+p.figure-title {
+    margin: 0 0 50px 0;
+    color: #FFF4E4;
+    font-size: 71px;
+    line-height: .9;
+    max-height: 60px;
+    max-width: 850px;
+    overflow: hidden;
+}
+p.content-text {
+    font-size: 65px;
+    max-width: 825px;
+    max-height: 312px;
+    margin: 0;
+    overflow: hidden;
+    line-height: 1.2;
+    color: #6B3114;
+    position: relative;
+}
+p.content-text span {
+    color: #D56827;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1900px) {
+    .header {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+    h1.headline {
+        background: none;
+    }
+    .content-top {
+        flex-direction: column;
+        margin: 0;
+        padding: 30px;
+    }
+    .content-top::after, .content-top::before {
+        display: none;
+    }
+    .content {
+        flex-direction: column;
+        width: 840px;
+        margin-bottom: 60px;
+        align-items: center;
+        padding: 30px;
+        height: auto;
+        background-image: none;
+    }
+    .content figure {
+        width: auto;
+        height: auto;
+    }
+    .content figure img {
+        position: relative;
+        left: inherit;
+        top: inherit;
+        margin: 0 auto;
+    }
+    p.content-text {
+        font-size: 36px;
+        max-width: 100%;
+        max-height: inherit;
+        margin: 0;
+    }
+    p.figure-title {
+        margin: 30px 0 0 0;
+        font-size: 36px;
+        max-height: inherit;
+        text-align: center;
+    }
+    .content-bottom {
+        flex-direction: column;
+        margin: 50px 0;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    h1.headline {
+        overflow: auto;
+        text-overflow: initial;
+        white-space: initial;
+        font-size: 52px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .content {
+        width: 100%;
+    }
+    .content figure img {
+        width: 265px;
+        height: 265px;
+        margin: 0 auto;
+    }
+    p.subheadline {
+        max-width: 95%;
+        margin: 40px auto 40px auto;
+        max-height: inherit;
+        overflow: hidden;
+    }
+}

@@ -1,8 +1,9 @@
 @font-face {
-    font-family: 'MagicalWorld';
-    src: url('../fonts/MagicalWorld.woff2') format('woff2');
-         font-weight: normal;
-         font-style: normal;
+    font-family: 'georgiaregular';
+    src: url('../fonts/georgia-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
 }
 *, *:before, *:after {
     box-sizing: border-box;
@@ -15,108 +16,119 @@ html {
 body {
     padding: 0;
     margin: 0;
-    background-image: url(../images/body-bg-magic.jpg);
-    font-family: 'MagicalWorld';
+    background-image: url(../images/body-bg-gatsby.jpg);
+    font-family: 'georgiaregular';
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-font-smoothing: antialiased;
     background-position: center;
 }
 .leaderboard {
-    max-width: 1670px;
+    max-width: 1420px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    align-items: start;
     min-height: 1080px;
+    justify-content: space-between;
 }
 .header {
-    width: 642px;
+    width: 426px;
+    margin-top: 200px;
 }
 h1.headline {
     margin: 0 auto;
-    font-size: 137px;
+    font-size: 82px;
     font-weight: 100;
-    padding: 12px;
-    border-radius: 0;
+    line-height: 1.2;
+    padding: 0;
     overflow: hidden;
-    max-height: 330px;
-    color: #ff84f5;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #000000;
-    -webkit-text-fill-color: #ff84f5;
-    text-shadow: -16px 16px 2px #000000;
-    text-transform: uppercase;
+    max-height: 198px;
+    color: #ffffff;
+    font-style: italic;
 }
 p.subheadline {
-    line-height: 1.1;
-    margin: 30px 0 0 0;
-    font-size: 36px;
+    line-height: 1.5;
+    margin: 40px 0 0 0;
+    font-size: 27px;
     max-width: 840px;
-    color: #7C77D4;
-    max-height: 118px;
+    color: #e9a902;
+    max-height: 125px;
     overflow: hidden;
-    text-transform: uppercase;
 }
-.content {
+.content {    
     display: flex;
     flex-direction: column;
-    width: 887px;
-    height: 779px;
-    justify-content: space-between;
-    background-image: url(../images/magic-content-bg.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    width: 954px;
+    height: 550px;
+    justify-content: start;
     margin-left: 25px;
+    position: relative;
+    border: 1px solid #E9A900;
+    background-color: #181a28;
+    margin-top: 350px;
 }
-.content-left {
+.content::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 133px;
+    background-image: url(../images/gatsby-content-bg.png);
+    bottom: 550px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+.content-top {
     display: flex;
-    max-width: 780px;
     justify-content: space-between;
     align-items: center;
-    margin: -50px 0 0 -50px;
+    flex-direction: column;
+    margin-top: -170px;
 }
-.content-left figure {
+.content-top figure {
     margin: 0;
     padding: 0;
 }
-.content-left figure img {
+.content-top figure img {
     margin: 0;
-    width: 355px;
-    height: 355px;
+    width: 293px;
+    height: 293px;
     object-fit: cover;
     object-position: top;
     display: block;
-    border-radius: 50%;
-    background: #21bdd7;
-    background: -webkit-linear-gradient( 45deg, #CD62FB, #21bdd7 100%);
-    padding: 7px;
+    background: #E9A900;
+    padding: 2px;
 }
 p.figure-title {
-    margin: 100px auto 0 auto;
-    color: #FFF;
-    font-size: 66px;
-    max-width: 374px;
-    line-height: 1.2;
-    max-height: 143px;
+    margin: 30px auto;
+    color: #D68C00;
+    font-size: 48px;
+    line-height: 1.5;
+    max-height: 70px;
     overflow: hidden;
+    text-align: center;
+    max-width: 920px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
 }
-.content-right {
+.content-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 130px 70px;
 }
-.content-right p {
+.content-bottom p {
     margin: 0;
-    color: #008B83;
-    font-size: 65px;
-    width: 577px;
-    line-height: 1.2;
-    max-height: 315px;
+    color: #ffffff;
+    font-size: 55px;
+    width: 850px;
+    line-height: 1.4;
+    max-height: 240px;
     overflow: hidden;
+    text-align: center;
 }
-.content-right p span {
-    color: #FF84F5;
+.content-bottom p span {
+    font-weight: bold;
 }
 /*=================================
 Responsive CSS
@@ -126,9 +138,10 @@ Responsive CSS
     .leaderboard {
         flex-direction: column;
         max-width: 1000px;
+        min-height: auto;
     }
     .header {
-        padding-top: 50px;
+        padding: 50px 0;
         width: 100%;
         text-align: center;
     }
@@ -144,8 +157,19 @@ Responsive CSS
     .content {
         margin: 60px 0;
         height: auto;
+        background-image: none;
+        border: 0px;
     }
-    .content-right {
+    .content::before {
+        display: none;
+    }
+    .content:after {
+        display: none;
+    }
+    .content-top {
+        margin-top: 0;
+    }
+    .content-bottom {
         margin-top: 60px;
     }
 }
@@ -155,22 +179,21 @@ Responsive CSS
         overflow: auto;
         text-overflow: initial;
         white-space: initial;
-        font-size: 80px;
     }
     .content {
         justify-content: start;
         width: 100%;
         background-image: none;
+        margin: 0;
     }
-    .content-left {
+    .content-top {
         width: 100%;
         margin: 0;
         flex-direction: column;
     }
-    .content-left figure img {
+    .content-top figure img {
         width: 265px;
         height: 265px;
-        border: 10px solid #000;
         margin: 0 auto;
     }
     p.figure-title {
@@ -178,11 +201,11 @@ Responsive CSS
         max-height: inherit;
         margin: 15px 0;
     }
-    .content-right {
+    .content-bottom {
         margin: 0;
         padding: 0 15px;
     }
-    .content-right p {
+    .content-bottom p {
         margin: 0;
         font-size: 42px;
         width: auto;

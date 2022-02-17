@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "AcuminProCond-Bold";
+    src: url('../fonts/AcuminProCond-Bold.woff2') format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Acumin Variable Concept';
+    src: url('../fonts/AcuminVariableConcept.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-winter.jpg);
+    font-family: 'Acumin Variable Concept';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+}
+h1.headline {
+    margin: 100px auto 50px auto;
+    font-size: 86px;
+    font-weight: 100;
+    padding: 0px 10px;
+    border-radius: 15px;
+    color: #ffffff;
+    max-width: 687px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    font-family: "AcuminProCond-Bold";
+    box-shadow: 4px 4px 0px 1px #b4d7ff73;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    background: #0E72E3;
+}
+p.subheadline {
+    margin: 0;
+    font-size: 37px;
+    max-width: 1040px;
+    color: #ffffff;
+    max-height: 85px;
+    overflow: hidden;
+    font-weight: 600;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 1350px;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+}
+.content-left figure {
+    margin: 0;
+    padding: 0;
+}
+.content-left figure img {
+    margin: 0;
+    padding: 0;
+    width: 390px;
+    height: 390px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    margin-right: 50px;
+}
+p.figure-title {
+    margin: 30px auto 0 auto;
+    color: #5BACF9;
+    font-size: 62px;
+    font-weight: 700;
+    max-width: 580px;
+    line-height: 1.1;
+    max-height: 135px;
+    overflow: hidden;
+}
+.content-right {
+    width: 852px;
+    height: 596px;
+    background-image: url(../images/winter-content-bg.png);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p.content-text {
+    margin: 30px 0 0 0;
+    color: #2A2077;
+    font-size: 54px;
+    font-weight: 700;
+    width: 580px;
+    line-height: 1.2;
+    max-height: 260px;
+    overflow: hidden;
+}
+/*=================================
+Responsive CSS
+==================================*/
+@media screen and (max-width: 1900px) {
+    .content {
+        flex-direction: column;
+        width: 840px;
+        margin-bottom: 60px;
+        align-items: center;
+    }
+    .content-right {
+        margin-top: 60px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    h1.headline {
+        overflow: auto;
+        text-overflow: initial;
+        white-space: initial;
+        font-size: 52px;
+    }
+    .content {
+        width: 100%;
+    }
+    .content-left {
+        width: 100%;
+    }
+    .content-left figure img {
+        width: 265px;
+        height: 265px;
+        border: 10px solid #000;
+        margin: 0 auto;
+    }
+    p.figure-title {
+        font-size: 35px;
+        max-height: inherit;
+    }
+    .content-right {
+        width: auto;
+        height: auto;
+        background-image: none;
+    }
+    .content-right p {
+        font-size: 42px;
+        width: auto;
+        max-height: initial;
+        color: #2A2077;
+    }
+}
