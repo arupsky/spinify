@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'oswaldbold';
+    src: url('../fonts/oswald-bold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'oswald_regularregular';
+    src: url('../fonts/oswald-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-golf.jpg);
+    font-family: 'oswald_regularregular';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+}
+h1.headline {
+    margin: 0;
+    font-size: 145px;
+    padding: 0;
+    border-radius: 0;
+    color: #568232;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'oswaldbold';
+}
+.content-right p.subheadline {
+    margin: 20px 0 0 0;
+    font-size: 36px;
+    width: 100%;
+    color: #734531;
+    max-height: 105px;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 1700px;
+    justify-content: space-between;
+}
+.content-left {
+    width: 378px;
+    min-height: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-left figure {
+    margin: 0;
+    padding: 0;
+}
+.content-left figure img {
+    margin: 0;
+    padding: 0;
+    width: 378px;
+    height: 378px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 50%;
+    border: 6px solid #fff;
+}
+p.figure-title {
+    margin: 20px auto 0 auto;
+    color: #fff;
+    font-size: 54px;
+    max-width: 354px;
+    line-height: 1.1;
+    max-height: 120px;
+    overflow: hidden;
+    font-family: 'oswaldbold';
+}
+.content-right {
+    width: 1212px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 100px;
+}
+.header {
+    width: 100%;
+    max-width: 1040px;
+}
+p.content-text {
+    margin: 0;
+    color: #2A1C23;
+    font-size: 61px;
+    line-height: 1.3;
+    background: #EBEFE3;
+    padding: 100px 160px;
+    border-radius: 100px 100px 100px 0;
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+}
+p.content-text::before {
+    position: absolute;
+    content: '';
+    width: 48px;
+    height: 33px;
+    left: 60px;
+    top: 105px;
+    background-image: url(../images/golf-quote.png);
+}
+.content-right p span {
+    max-height: 220px;
+    overflow: hidden;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1900px) {
+    .content {
+        flex-direction: column;
+        width: 840px;
+        margin-bottom: 60px;
+        align-items: center;
+    }
+    .content-right {
+        width: 840px;
+        margin-top: 60px;
+        align-items: center;
+        text-align: center;
+    }
+    .content-left {
+        min-height: auto;
+        margin: 50px 0;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    h1.headline {
+        overflow: auto;
+        text-overflow: initial;
+        white-space: initial;
+        font-size: 52px;
+    }
+    .content {
+        width: 100%;
+    }
+    .content-left {
+        width: 100%;
+    }
+    .content-left figure img {
+        width: 265px;
+        height: 265px;
+        margin: 0 auto;
+    }
+    p.figure-title {
+        font-size: 35px;
+        max-height: inherit;
+    }
+    .content-right {
+        width: auto;
+        height: auto;
+    }
+    .content-right p.subheadline {
+        margin: 50px 0 0 0;
+        font-size: 36px;
+        width: auto;
+        max-height: initial;
+    }
+    p.content-text {
+        font-size: 36px;
+        max-height: initial;
+        padding: 35px;
+    }
+    p.content-text::before {
+        display: none;
+    }
+}

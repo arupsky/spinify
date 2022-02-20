@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'kg_broken_vessels_sketchRg';
+    src: url('../fonts/kgbrokenvesselssketch-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-school.jpg);
+    font-family: 'kg_broken_vessels_sketchRg';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+}
+h1.headline {
+    margin: 130px 0 0 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 95px;
+    padding: 0;
+    color: #ffffff;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 1;
+    max-width: 1200px;
+}
+p.subheadline {
+    max-width: 1038px;
+    margin: 40px auto 40px auto;
+    font-size: 40px;
+    color: #F3DC78;
+    line-height: 1.2;
+    max-height: 100px;
+    overflow: hidden;
+}
+.content {
+    width: 1400px;
+}
+.content-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content figure {
+    margin: 0;
+    padding: 0;
+}
+.content figure img {
+    margin: 0;
+    padding: 0;
+    width: 268px;
+    height: 268px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    border: 10px solid #000;
+}
+p.figure-title {
+    margin: 0 0 0 35px;
+    color: #fff;
+    font-size: 80px;
+    line-height: 1.1;
+    max-height: 170px;
+    overflow: hidden;
+    max-width: 730px;
+    text-align: left;
+}
+.content-bottom {
+    margin-top: 70px;
+}
+p.content-text {
+    font-size: 60px;
+    max-height: 230px;
+    margin: 0;
+    overflow: hidden;
+    letter-spacing: 1px;
+    padding: 0 135px;
+    color: #FFF;
+    position: relative;
+}
+p.content-text::before {
+    position: absolute;
+    content: '';
+    width: 41px;
+    height: 29px;
+    left: 40px;
+    top: 60px;
+    background-image: url(../images/school-quote.png);
+}
+p.content-text::after {
+    position: absolute;
+    content: '';
+    width: 41px;
+    height: 29px;
+    right: 40px;
+    top: 60px;
+    background-image: url(../images/school-quote.png);
+    transform: rotate(180deg);
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1900px) {
+    .content {
+        flex-direction: column;
+        width: 840px;
+        height: auto;
+        background-image: none;
+    }
+    .content figure img {
+        position: relative;
+        left: inherit;
+        top: inherit;
+        margin: 0 auto;
+    }
+    p.content-text {
+        font-size: 36px;
+        max-width: 100%;
+        max-height: inherit;
+        margin: 30px 0 0 0;
+    }
+    p.figure-title {
+        margin: 30px 0 0 0;
+        font-size: 36px;
+        max-height: inherit;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    h1.headline {
+        overflow: auto;
+        text-overflow: initial;
+        white-space: initial;
+        font-size: 52px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .content {
+        width: 100%;
+    }
+    .content figure img {
+        width: 265px;
+        height: 265px;
+        margin: 0 auto;
+    }
+    p.subheadline {
+        max-width: 95%;
+        margin: 40px auto 40px auto;
+        max-height: inherit;
+        overflow: hidden;
+    }
+    .content-top {
+        flex-direction: column;
+        align-items: center;
+    }
+}

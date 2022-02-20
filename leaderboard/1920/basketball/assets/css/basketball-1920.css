@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'digital-7_monomono';
+    src: url('../fonts/digital-7_mono-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-basketball.jpg);
+    font-family: 'digital-7_monomono';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+}
+h1.headline {
+    margin: 0 auto;
+    max-width: 781px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    font-size: 70px;
+    font-weight: 100;
+    padding: 150px 60px 0 90px;
+    background: url(../images/basketball-header-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #EED358;
+    font-family: 'digital-7_monomono';
+    height: 257px;
+}
+p.subheadline {
+    margin: 35px 0;
+    font-size: 24px;
+    max-width: 970px;
+    color: #ffffff;
+    max-height: 63px;
+    overflow: hidden;
+    line-height: 1.3;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 1308px;
+    justify-content: space-between;
+    background: #1C7C94;
+    border-radius: 20px;
+    padding: 20px;
+}
+.content-left {
+    width: 463px;
+    background: #141735;
+    border-radius: 20px;
+    padding: 10px;
+}
+.content-left figure {
+    margin: 0;
+    padding: 0;
+}
+.content-left figure img {
+    margin: 0;
+    padding: 0;
+    width: 443px;
+    height: 478px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 20px;
+}
+p.figure-title {
+    margin: 20px auto 0 auto;
+    color: #FFF;
+    font-size: 58px;
+    max-width: 443px;
+    line-height: 1.1;
+    max-height: 64px;
+    overflow: hidden;
+}
+.content-right {
+    width: 785px;
+    height: 582px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #141735;
+    border-radius: 20px;
+}
+.content-right p {
+    margin: 0;
+    color: #EED358;
+    font-size: 68px;
+    width: 625px;
+    line-height: 1.2;
+    max-height: 320px;
+    overflow: hidden;
+    text-align: left;
+}
+.content-right p span {
+    color: #F23C5B;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1900px) {
+    .content {
+        flex-direction: column;
+        width: 840px;
+        margin-bottom: 60px;
+        align-items: center;
+    }
+    .content-right {
+        margin-top: 60px;
+    }
+    h1.headline{
+        background: none;
+        padding: 30px 0;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    h1.headline {
+        overflow: auto;
+        text-overflow: initial;
+        white-space: initial;
+        font-size: 80px;
+    }
+    .content {
+        width: 100%;
+    }
+    .content-left {
+        width: 100%;
+    }
+    .content-left figure img {
+        width: 265px;
+        height: 265px;
+        border: 10px solid #000;
+        margin: 0 auto;
+    }
+    p.figure-title {
+        font-size: 35px;
+        max-height: inherit;
+    }
+    .content-right {
+        background: #FFF;
+        width: auto;
+        height: auto;
+    }
+    .content-right p {
+        margin: 0;
+        font-size: 42px;
+        width: auto;
+        max-height: initial;
+    }
+}
+@media screen and (max-width: 479px) {
+    
+}

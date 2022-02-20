@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'baloo_da_2bold';
+    src: url('../fonts/balooda2-bold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'baloo_da_2medium';
+    src: url('../fonts/balooda2-medium-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-pool.jpg);
+    font-family: 'baloo_da_2medium';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+}
+h1.headline {
+    margin: 80px auto 15px auto;
+    font-size: 86px;
+    padding: 0px 10px;
+    border-radius: 15px;
+    color: #ffffff;
+    max-width: 687px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'baloo_da_2bold';
+    background: -webkit-linear-gradient(45deg, #21bdd7, #0a4a70 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    line-height: 1;
+}
+p.subheadline {
+    margin: 0;
+    font-size: 37px;
+    max-width: 1000px;
+    color: #ffffff;
+    max-height: 94px;
+    overflow: hidden;
+    font-weight: 700;
+    background: -webkit-linear-gradient(45deg, #21bdd7, #0a4a70 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.3;
+    font-family: 'baloo_da_2bold';
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 1350px;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+}
+.content-left figure {
+    margin: 0;
+    padding: 0;
+}
+.content-left figure img {
+    margin: 0;
+    width: 491px;
+    height: 491px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    padding: 21px;
+    margin-right: 50px;
+    background: #21bdd7;
+    background: -webkit-linear-gradient( 45deg, #21bdd7, #1b83c1 100%);
+}
+p.figure-title {
+    margin: 20px auto 0 auto;
+    color: #2A1C23;
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 310px;
+    line-height: 1.1;
+    max-height: 135px;
+    overflow: hidden;
+}
+.content-right {
+    width: 852px;
+    height: 596px;
+    background-image: url(../images/pool-content-bg.png);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p.content-text {
+    margin: 30px 0 0 0;
+    color: #2A1C23;
+    font-size: 54px;
+    font-weight: 700;
+    width: 580px;
+    line-height: 1.2;
+    max-height: 260px;
+    overflow: hidden;
+}
+p.content-text span {
+    color: #00728E;
+}
+/*=================================
+Responsive CSS
+==================================*/
+@media screen and (max-width: 1900px) {
+    .content {
+        flex-direction: column;
+        width: 840px;
+        margin-bottom: 60px;
+        align-items: center;
+    }
+    .content-right {
+        margin-top: 60px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    h1.headline {
+        overflow: auto;
+        text-overflow: initial;
+        white-space: initial;
+        font-size: 52px;
+    }
+    .content {
+        width: 100%;
+    }
+    .content-left {
+        width: 100%;
+    }
+    .content-left figure img {
+        width: 265px;
+        height: 265px;
+        margin: 0 auto;
+    }
+    p.figure-title {
+        font-size: 35px;
+        max-height: inherit;
+    }
+    .content-right {
+        width: auto;
+        height: auto;
+        background-image: none;
+    }
+    .content-right p {
+        font-size: 42px;
+        width: auto;
+        max-height: initial;
+        color: #2A2077;
+    }
+}
