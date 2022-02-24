@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'LilitaOneRegular';
+    src: url('../fonts/LilitaOneRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-desert.jpg);
+    font-family: 'LilitaOneRegular';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+}
+h1.headline {
+    margin: 0 auto;
+    font-size: 68px;
+    padding: 95px 15px 0 15px;
+    background: transparent;
+    color: #503204;
+    font-family: 'LilitaOneRegular';
+    font-weight: 100;
+    width: 675px;
+    height: 224px;
+    background-image: url(../images/desert-headline-bg.png);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+p.subheadline {
+    max-width: 900px;
+    margin: 50px auto 50px auto;
+    font-size: 36px;
+    color: #F6E17A;
+    line-height: 1.2;
+    max-height: 88px;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.content {
+    width: 1434px;
+    padding: 70px;
+    background-image: url(../images/desert-content-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.content-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content figure {
+    margin: 0;
+    padding: 0;
+}
+.content figure img {
+    margin: 0;
+    padding: 0;
+    width: 262px;
+    height: 262px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    border: 10px solid #E25F23;
+    box-shadow: 0px 0px 17px 5px rgb(0 0 0 / 30%);
+}
+p.figure-title {
+    margin: 0 0 0 70px;
+    color: #2A1C23;
+    font-size: 93px;
+    line-height: 1.1;
+    max-height: 210px;
+    overflow: hidden;
+    max-width: 500px;
+    text-align: left;
+}
+.content-bottom {
+    margin-top: 50px;
+}
+p.content-text {
+    font-size: 65px;
+    max-height: 148px;
+    margin: 0;
+    overflow: hidden;
+    letter-spacing: 1px;
+    padding: 0 50px;
+    color: #5C7202;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1900px) {
+    .content {
+        flex-direction: column;
+        width: 840px;
+        height: auto;
+        background-image: none;
+    }
+    .content figure img {
+        position: relative;
+        left: inherit;
+        top: inherit;
+        margin: 0 auto;
+    }
+    p.content-text {
+        font-size: 36px;
+        max-width: 100%;
+        max-height: inherit;
+        margin: 30px 0 0 0;
+        padding: 0;
+    }
+    p.figure-title {
+        margin: 30px 0 0 0;
+        font-size: 36px;
+        max-height: inherit;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    h1.headline {
+        overflow: auto;
+        text-overflow: initial;
+        white-space: initial;
+        font-size: 52px;
+        width: 95%;
+        margin: 0 auto;
+        background: none;
+    }
+    .content {
+        width: 100%;
+        padding: 20px;
+    }
+    .content figure img {
+        width: 265px;
+        height: 265px;
+        margin: 0 auto;
+    }
+    p.subheadline {
+        max-width: 95%;
+        margin: 40px auto 40px auto;
+        max-height: inherit;
+        overflow: hidden;
+    }
+    .content-top {
+        flex-direction: column;
+        align-items: center;
+    }
+}

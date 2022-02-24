@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'aktivgrotesk-hairuploadedfile';
+    src: url('../fonts/aktivgrotesk-hairline-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aktivgrotesk-mediuploadedfile';
+    src: url('../fonts/aktivgrotesk-medium-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aktivgrotesk-reguuploadedfile';
+    src: url('../fonts/aktivgrotesk-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aktivgrotesk-thinuploadedfile';
+    src: url('../fonts/aktivgrotesk-thin-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-mv2.jpg);
+    font-family: 'aktivgrotesk-reguuploadedfile';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+    position: relative;
+}
+.overlay {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: -webkit-linear-gradient( 45deg, rgb(0 0 0 / 30%), rgba(0, 0, 0) 100%);
+    background-image: url('../images/mv2-content-bg.png');
+}
+.leaderboard {
+    margin: 0 auto 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 1080px;
+    z-index: 100000;
+    max-width: 765px;
+    position: relative;
+}
+h1.headline {
+    margin: 100px 0 0 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 91px;
+    padding: 0;
+    color: #ffffff;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 1;
+    max-width: 900px;
+    font-family: 'aktivgrotesk-hairuploadedfile';
+}
+p.subheadline {
+    max-width: 900px;
+    margin: 60px auto 80px auto;
+    font-size: 36px;
+    color: #ffffff;
+    line-height: 1.5;
+    max-height: 100px;
+    overflow: hidden;
+    font-family: 'aktivgrotesk-thinuploadedfile';
+}
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.content-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content figure {
+    margin: 0;
+    padding: 0;
+}
+.content figure img {
+    margin: 0;
+    padding: 0;
+    width: 167px;
+    height: 167px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+}
+p.figure-title {
+    margin: 0 0 0 30px;
+    font-size: 56px;
+    line-height: 1.1;
+    max-height: 124px;
+    overflow: hidden;
+    max-width: 377px;
+    color: #ffffff;
+    font-family: 'aktivgrotesk-mediuploadedfile';
+}
+.content-bottom {
+    margin-top: 70px;
+}
+p.content-text {
+    font-size: 56px;
+    max-height: 252px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    color: #FFF;
+    position: relative;
+    font-family: 'aktivgrotesk-thinuploadedfile';
+    font-weight: 600;
+    line-height: 1.5;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1900px) {
+    .leaderboard {
+        margin: 50px auto;
+    }
+    .overlay {
+        background-image: none;
+        background-color: rgba(0,0,0,.6);
+    }
+    .content {
+        flex-direction: column;
+        width: 840px;
+        height: auto;
+        background-image: none;
+        align-items: center;
+    }
+    .content figure img {
+        position: relative;
+        left: inherit;
+        top: inherit;
+        margin: 0 auto;
+    }
+    p.content-text {
+        font-size: 36px;
+        max-width: 100%;
+        max-height: inherit;
+        margin: 30px 0 0 0;
+    }
+    p.figure-title {
+        margin: 30px 0 0 0;
+        font-size: 36px;
+        max-height: inherit;
+        max-width: initial;
+    }
+    .content-top {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    h1.headline {
+        overflow: auto;
+        text-overflow: initial;
+        white-space: initial;
+        font-size: 52px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .content {
+        width: 100%;
+    }
+    .content figure img {
+        width: 265px;
+        height: 265px;
+        margin: 0 auto;
+    }
+    p.subheadline {
+        max-width: 95%;
+        margin: 40px auto 40px auto;
+        max-height: inherit;
+        overflow: hidden;
+    }
+    .content-top {
+        flex-direction: column;
+        align-items: center;
+    }
+}

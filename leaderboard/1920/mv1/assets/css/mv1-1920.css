@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/RobotoBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-mv1.jpg);
+    font-family: 'RobotoBold';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+    position: relative;
+}
+.overlay {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: -webkit-linear-gradient( 45deg, rgb(0 0 0 / 30%), rgba(0, 0, 0) 100%);
+}
+.leaderboard {
+    margin: 0 60px 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 1080px;
+    z-index: 100000;
+    max-width: 1000px;
+    position: relative;
+}
+h1.headline {
+    margin: 100px 0 0 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 91px;
+    padding: 0;
+    color: #ffffff;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 1;
+    max-width: 900px;
+}
+p.subheadline {
+    max-width: 900px;
+    margin: 60px auto 80px auto;
+    font-size: 35px;
+    color: #ffffff;
+    line-height: 1.5;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.content-top {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.content figure {
+    margin: 0;
+    padding: 0;
+}
+.content figure img {
+    margin: 0;
+    padding: 0;
+    width: 262px;
+    height: 262px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    border: 10px solid #fff;
+}
+p.figure-title {
+    margin: 0 0 30px 50px;
+    font-size: 54px;
+    line-height: 1.1;
+    max-height: 175px;
+    overflow: hidden;
+    max-width: 350px;
+    text-align: left;
+    color: #44A7EA;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.content-bottom {
+    margin-top: 70px;
+}
+p.content-text {
+    font-size: 52px;
+    max-height: 186px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 90px;
+    color: #FFF;
+    position: relative;
+}
+
+p.content-text::before {
+    position: absolute;
+    content: '';
+    width: 46px;
+    height: 32px;
+    background-image: url(../images/mv1-quote.png);
+    background-size: 100%;
+    left: 10px;
+    top: 12px;
+}
+p.content-text::after {
+    position: absolute;
+    content: '';
+    width: 46px;
+    height: 32px;
+    background-image: url(../images/mv1-quote.png);
+    background-size: 100%;
+    right: 20px;
+    top: 12px;
+    transform: rotate(180deg);
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1900px) {
+    .leaderboard {
+        margin: 50px auto;
+    }
+    .content {
+        flex-direction: column;
+        width: 840px;
+        height: auto;
+        background-image: none;
+    }
+    .content figure img {
+        position: relative;
+        left: inherit;
+        top: inherit;
+        margin: 0 auto;
+    }
+    p.content-text {
+        font-size: 36px;
+        max-width: 100%;
+        max-height: inherit;
+        margin: 30px 0 0 0;
+    }
+    p.figure-title {
+        margin: 30px 0 0 0;
+        font-size: 36px;
+        max-height: inherit;
+        max-width: initial;
+    }
+    .content-top {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    h1.headline {
+        overflow: auto;
+        text-overflow: initial;
+        white-space: initial;
+        font-size: 52px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .content {
+        width: 100%;
+    }
+    .content figure img {
+        width: 265px;
+        height: 265px;
+        margin: 0 auto;
+    }
+    p.subheadline {
+        max-width: 95%;
+        margin: 40px auto 40px auto;
+        max-height: inherit;
+        overflow: hidden;
+    }
+    .content-top {
+        flex-direction: column;
+        align-items: center;
+    }
+}
