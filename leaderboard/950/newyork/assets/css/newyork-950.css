@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'AmericanTypewriterBold';
+    src: url('../fonts/AmericanTypewriterBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AmericanTypewriterRegular';
+    src: url('../fonts/AmericanTypewriterRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-newyork.jpg);
+    font-family: 'AmericanTypewriterRegular';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    margin: 0 60px 0 auto;
+    display: flex;
+    align-items: center;
+    min-height: 316px;
+    max-width: 725px;
+    justify-content: space-between;
+}
+.header {
+    margin-top: -75px;
+}
+h1.headline {
+    margin: 0 0 15px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 26px;
+    padding: 0;
+    color: #fff;
+    position: relative;
+    font-weight: 100;
+    width: 254px;
+    text-transform: uppercase;
+    font-family: 'AmericanTypewriterBold';
+}
+p.subheadline {
+    max-width: 254px;
+    margin: 0;
+    font-size: 15px;
+    color: #efeeee;
+    line-height: 1.3;
+    max-height: 78px;
+    overflow: hidden;
+}
+.content {
+    width: 397px;
+    height: 201px;
+    position: relative;
+    text-align: center;
+    padding: 0 0 0 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #f7f7f7d1;
+    border-radius: 20px;
+}
+.content figure {
+    margin: 0;
+    padding: 0;
+}
+.content figure img {
+    margin: 0;
+    padding: 0;
+    width: 152px;
+    height: 152px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    border: 7px solid #4672AD;
+    position: absolute;
+    left: -75px;
+    top: 25px;
+}
+p.figure-title {
+    margin: 15px 0 0 0;
+    color: #4672AD;
+    font-size: 26px;
+    line-height: 1.1;
+    max-height: 30px;
+    overflow: hidden;
+    font-family: 'AmericanTypewriterBold';
+    text-align: center;
+}
+p.content-text {
+    font-size: 20px;
+    max-width: 237px;
+    max-height: 98px;
+    margin: 0 auto;
+    overflow: hidden;
+    line-height: 1.2;
+    color: #4672AD;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 949px) {
+    .leaderboard {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .header {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .content {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 0;
+        justify-content: center;
+        width: 100%;
+        max-width: 320px;
+    }
+    .content figure img {
+        position: relative;
+        left: inherit;
+        top: inherit;
+        margin: 15px 0;
+    }
+}

@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'AntonRegular';
+    src: url('../fonts/AntonRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-retro.jpg);
+    font-family: 'AntonRegular';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: 316px;
+    max-width: 730px;
+    justify-content: space-between;
+}
+.header {
+    width: 225px;
+    margin-left: 30px;
+}
+h1.headline {
+    margin: 0;
+    overflow: hidden;
+    font-size: 45px;
+    padding: 0;
+    color: #000000;
+    text-align: left;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 1.4;
+    max-width: 224px;
+    max-height: 126px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: #ffffff;
+    text-shadow: 2px 2px 1px #000000;
+    letter-spacing: 4px;
+}
+p.subheadline {
+    max-width: 224px;
+    margin: 5px auto;
+    font-size: 11px;
+    color: #F3D3A9;
+    line-height: 1.2;
+    max-height: 41px;
+    overflow: hidden;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: left;
+}
+.content {
+    width: 400px;
+}
+.content-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content figure {
+    margin: 0;
+    padding: 0;
+}
+.content figure img {
+    margin: 0;
+    padding: 3px;
+    width: 93px;
+    height: 93px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    background: #F0371E;
+    border: 1px solid #6b170b;
+}
+p.figure-title {
+    margin: 0 0 0 10px;
+    padding: 0 5px;
+    color: #000000;
+    font-size: 28px;
+    line-height: 1.3;
+    max-height: 69px;
+    overflow: hidden;
+    max-width: 208px;
+    text-align: left;
+    -webkit-text-stroke-width: 1.3px;
+    -webkit-text-fill-color: #FBA900;
+    letter-spacing: 2px;
+}
+.content-bottom {
+    margin-top: 40px;
+}
+p.content-text {
+    font-size: 17px;
+    max-width: 400px;
+    max-height: 62px;
+    line-height: 1.2;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 40px;
+    -webkit-text-stroke-width: .6px;
+    -webkit-text-fill-color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+p.content-text::before {
+    position: absolute;
+    content: ' ';
+    width: 36px;
+    height: 25px;
+    left: 0px;
+    top: 15px;
+    background-image: url(../images/retro-quote.png);
+}
+p.content-text::after {
+    position: absolute;
+    content: ' ';
+    width: 36px;
+    height: 25px;
+    right: 0px;
+    top: 15px;
+    background-image: url(../images/retro-quote.png);
+}
+/*=================================
+Responsive CSS
+==================================*/
+@media screen and (max-width: 479px) {
+    .leaderboard {
+        margin: 60px auto 0 auto;
+        flex-direction: column;
+    }
+    .content {
+        width: 100%;
+    }
+}

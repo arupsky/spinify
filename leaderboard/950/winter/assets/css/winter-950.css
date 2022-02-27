@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "AcuminProCond-Bold";
+    src: url('../fonts/AcuminProCond-Bold.woff2') format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Acumin Variable Concept';
+    src: url('../fonts/AcuminVariableConcept.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-winter.jpg);
+    font-family: 'Acumin Variable Concept';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    max-width: 383px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 316px;
+}
+h1.headline {
+    margin: 20px auto 15px auto;
+    font-size: 33px;
+    font-weight: 100;
+    padding: 0px 10px;
+    border-radius: 8px;
+    color: #ffffff;
+    max-width: 250px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    font-family: "AcuminProCond-Bold";
+    box-shadow: 4px 4px 0px 1px #b4d7ff73;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #0E72E3;
+    line-height: 1.1;
+}
+p.subheadline {
+    margin: 0;
+    font-size: 13px;
+    max-width: 307px;
+    color: #ffffff;
+    max-height: 32px;
+    overflow: hidden;
+    font-weight: 600;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 383px;
+    justify-content: center;
+    margin-top: 15px;
+    align-items: center;
+}
+.content-left figure {
+    margin: 0;
+    padding: 0;
+}
+.content-left figure img {
+    margin: 0;
+    padding: 0;
+    width: 118px;
+    height: 118px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    margin-right: 10px;
+}
+p.figure-title {
+    margin: 10px auto 0 auto;
+    color: #5BACF9;
+    font-size: 16px;
+    font-weight: 700;
+    max-width: 192px;
+    line-height: 1.1;
+    max-height: 17px;
+    overflow: hidden;
+}
+.content-right {
+    width: 253px;
+    height: 177px;
+    background-image: url(../images/winter-content-bg.png);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p.content-text {
+    margin: 15px 0 0 0;
+    color: #2A2077;
+    font-size: 16px;
+    font-weight: 700;
+    width: 180px;
+    line-height: 1.2;
+    max-height: 75px;
+    overflow: hidden;
+}
+/*=================================
+Responsive CSS
+==================================*/
+@media screen and (max-width: 479px) {
+    .content {
+        flex-direction: column;
+        width: 100%;
+    }
+}

@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'digital-7_monomono';
+    src: url('../fonts/digital-7_mono-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-basketball.jpg);
+    font-family: 'digital-7_monomono';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    max-width: 950px;
+    min-height: 316px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+h1.headline {
+    margin: 0 auto;
+    max-width: 229px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    font-size: 26px;
+    font-weight: 100;
+    padding: 43px 20px 0 20px;
+    background: url(../images/basketball-header-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #EED358;
+    font-family: 'digital-7_monomono';
+    height: 77px;
+}
+p.subheadline {
+    margin: 8px 0;
+    font-size: 10px;
+    max-width: 285px;
+    color: #ffffff;
+    max-height: 22px;
+    overflow: hidden;
+    line-height: 1.1;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 384px;
+    justify-content: space-evenly;
+    background: #1C7C94;
+    border-radius: 20px;
+    padding: 5px;
+}
+.content-left {
+    width: 136px;
+    background: #141735;
+    border-radius: 20px;
+    padding: 3px;
+}
+.content-left figure {
+    margin: 0;
+    padding: 0;
+}
+.content-left figure img {
+    margin: 0;
+    padding: 0;
+    width: 130px;
+    height: 140px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 20px;
+}
+p.figure-title {
+    margin: 4px auto 4px auto;
+    color: #FFF;
+    font-size: 18px;
+    max-width: 136px;
+    line-height: 1.1;
+    max-height: 18px;
+    overflow: hidden;
+}
+.content-right {
+    width: 220px;
+    height: 172px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #141735;
+    border-radius: 20px;
+}
+.content-right p {
+    margin: 0;
+    color: #EED358;
+    font-size: 20px;
+    width: 183px;
+    line-height: 1.4;
+    max-height: 112px;
+    overflow: hidden;
+    text-align: left;
+}
+.content-right p span {
+    color: #F23C5B;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 479px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}

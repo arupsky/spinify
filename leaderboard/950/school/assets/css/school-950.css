@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'kg_broken_vessels_sketchRg';
+    src: url('../fonts/kgbrokenvesselssketch-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-school.jpg);
+    font-family: 'kg_broken_vessels_sketchRg';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 316px;
+}
+h1.headline {
+    margin: 30px auto 0 auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 28px;
+    padding: 0;
+    color: #ffffff;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 1;
+    max-width: 320px;
+}
+p.subheadline {
+    max-width: 320px;
+    margin: 10px auto;
+    font-size: 13px;
+    color: #F3DC78;
+    line-height: 1.2;
+    max-height: 32px;
+    overflow: hidden;
+}
+.content {
+    width: 376px;
+}
+.content-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content figure {
+    margin: 0;
+    padding: 0;
+}
+.content figure img {
+    margin: 0;
+    padding: 0;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    border: 4px solid #000;
+}
+p.figure-title {
+    margin: 0 0 0 15px;
+    color: #fff;
+    font-size: 26px;
+    line-height: 1.2;
+    max-height: 60px;
+    overflow: hidden;
+    max-width: 194px;
+    text-align: left;
+}
+.content-bottom {
+    margin-top: 10px;
+}
+p.content-text {
+    font-size: 18px;
+    max-height: 68px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 30px;
+    color: #FFF;
+    position: relative;
+}
+p.content-text::before {
+    position: absolute;
+    content: '';
+    width: 11px;
+    height: 8px;
+    left: 10px;
+    top: 15px;
+    background-image: url(../images/school-quote.png);
+}
+p.content-text::after {
+    position: absolute;
+    content: '';
+    width: 11px;
+    height: 8px;
+    right: 10px;
+    top: 15px;
+    background-image: url(../images/school-quote.png);
+    transform: rotatey(180deg);
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 479px) {
+    .content {
+        width: 376px;
+    }
+    .content-top {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .content-bottom {
+        margin-bottom: 20px;
+    }
+}
