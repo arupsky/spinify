@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'NunitoBlack';
+    src: url('../fonts/NunitoBlack.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PacificoRegular';
+    src: url('../fonts/PacificoRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-tropical.jpg);
+    font-family: 'NunitoBlack';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    max-width: 730px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    min-height: 316px;
+    justify-content: space-between;
+}
+.header {
+    width: 281px;
+}
+h1.headline {
+    margin: 0 auto;
+    font-size: 52px;
+    font-weight: 100;
+    line-height: 1.2;
+    padding: 4px;
+    border-radius: 0;
+    overflow: hidden;
+    max-width: 265px;
+    max-height: 128px;
+    color: #ffffff;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-fill-color: #ffffff;
+    text-shadow: -4px -2px 2px #000000;
+    font-family: 'PacificoRegular';
+}
+p.subheadline {
+    line-height: 1.1;
+    margin: 15px 0 0 0;
+    font-size: 13px;
+    max-width: 281px;
+    color: #e9a902;
+    max-height: 57.19px;
+    overflow: hidden;
+}
+.content {    
+    display: flex;
+    flex-direction: column;
+    width: 396px;
+    height: 232px;
+    justify-content: start;
+    background-image: url(../images/tropical-content-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    position: relative;
+}
+.content:after {
+    position: absolute;
+    content: '';
+    width: 59px;
+    height: 59px;
+    right: -24px;
+    top: -26px;
+    background-image: url(../images/tropical-star.png);
+}
+.content-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -35px;
+}
+.content-top figure {
+    margin: 0;
+    padding: 0;
+}
+.content-top figure img {
+    margin: 0;
+    width: 102px;
+    height: 102px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    background: #E9A900;
+    padding: 6px;
+}
+p.figure-title {
+    margin: 5px auto;
+    color: #FFF;
+    font-size: 30px;
+    line-height: 1.4;
+    max-height: 45px;
+    overflow: hidden;
+    text-align: center;
+    max-width: 350px;
+}
+.content-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-bottom p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 20px;
+    width: 312px;
+    line-height: 1.4;
+    max-height: 84px;
+    overflow: hidden;
+    text-align: center;
+}
+.content-bottom p span {
+    color: #e9a902;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 949px) {
+    .leaderboard {
+        max-width: 100%;
+        flex-direction: column;
+        margin: 20px auto;
+    }
+    .content {
+        margin-top: 60px;
+        background: none;
+        width: 100%;
+    }
+    .content:after {
+        display: none;
+    }
+}

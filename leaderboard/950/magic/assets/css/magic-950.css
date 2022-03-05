@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'MagicalWorld';
+    src: url('../fonts/MagicalWorld.woff2') format('woff2');
+         font-weight: normal;
+         font-style: normal;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-magic.jpg);
+    font-family: 'MagicalWorld';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.leaderboard {
+    max-width: 686px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    min-height: 316px;
+}
+.header {
+    width: 240px;
+}
+h1.headline {
+    margin: 0 auto;
+    font-size: 51px;
+    font-weight: 100;
+    padding: 5px;
+    border-radius: 0;
+    overflow: hidden;
+    max-height: 120px;
+    color: #ff84f5;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-fill-color: #ff84f5;
+    text-shadow: -5px 5px 2px #000000;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+p.subheadline {
+    line-height: 1.1;
+    margin: 10px 0 0 0;
+    font-size: 15px;
+    max-width: 240px;
+    color: #7C77D4;
+    max-height: 48px;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 446px;
+    height: 278px;
+    justify-content: space-between;
+    background-image: url(../images/magic-content-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.content-left {
+    display: flex;
+    max-width: 280px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0 0 70px;
+}
+.content-left figure {
+    margin: 0;
+    padding: 0;
+}
+.content-left figure img {
+    margin: 0;
+    width: 109px;
+    height: 109px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    background: #21bdd7;
+    background: -webkit-linear-gradient( 45deg, #CD62FB, #21bdd7 100%);
+    padding: 7px;
+}
+p.figure-title {
+    margin: 50px auto 5px auto;
+    color: #FFF;
+    font-size: 22px;
+    max-width: 130px;
+    line-height: 1.2;
+    max-height: 52px;
+    overflow: hidden;
+}
+.content-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 45px 80px;
+}
+.content-right p {
+    margin: 0;
+    color: #008B83;
+    font-size: 25px;
+    width: 240px;
+    line-height: 1.2;
+    max-height: 120px;
+    overflow: hidden;
+}
+.content-right p span {
+    color: #FF84F5;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 949px) {
+    .leaderboard {
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .content {
+        width: 100%;
+        background: none;
+        align-items: center;
+    }
+    .content-left {
+        flex-direction: column;
+        margin: 15px 0;
+        text-align: center;
+    }
+    p.figure-title {
+        margin: 10px auto 5px auto;
+    }
+    .content-right {
+        margin: 0;
+        text-align: center;
+    }
+}
