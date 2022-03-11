@@ -15,42 +15,39 @@ html {
 body {
     padding: 0;
     margin: 0;
-    background-image: url(../images/body-bg-study1.jpg);
+    background-image: url(../images/body-bg-study5.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-font-smoothing: antialiased;
     background-position: center;
     font-family: 'HelveticaNeueLTPro55Roman';
 }
-.content {
-    width: 667px;
+.study5 {
     min-height: 315px;
+    display: flex;
+    align-items: center;
+}
+.content {
+    width: 600px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 25px 45px;
+    border-radius: 15px;
 }
 .content-left {
     background: #FFF;
     width: 240px;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 15px;
     position: relative;
-    padding: 15px;    
-    margin-top: -20px;
+    padding: 15px;
+    border: 4px solid #9A9EB0;
+    outline: 4px solid #9a9eb04d;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.content-left::after {
-    position: absolute;
-    content: '';
-    right: 25px;
-    bottom: -23px;
-    width: 49px;
-    height: 26px;
-    background-image: url(../images/study1-arrow.png);
-    background-repeat: no-repeat;
 }
 .twitter-header {
     display: flex;
@@ -132,21 +129,11 @@ p.twitter-handle {
     border-radius: 10px;
     position: relative;
     padding: 15px;
-    margin-top: 50px;
+    border: 4px solid #9A9EB0;
+    outline: 4px solid #9a9eb04d;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.content-right::after {
-    position: absolute;
-    content: '';
-    left: 25px;
-    bottom: -23px;
-    width: 49px;
-    height: 26px;
-    background-image: url(../images/study1-arrow.png);
-    background-repeat: no-repeat;
-    transform: rotateY(-180deg);
 }
 /*=================================
 Responsive CSS
@@ -158,5 +145,8 @@ Responsive CSS
         flex-direction: column;
         min-height: 100vh;
         justify-content: center;
+    }
+    .content-left {
+        margin-bottom: 30px;
     }
 }

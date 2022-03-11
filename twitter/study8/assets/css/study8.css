@@ -15,42 +15,37 @@ html {
 body {
     padding: 0;
     margin: 0;
-    background-image: url(../images/body-bg-study1.jpg);
+    background-image: url(../images/body-bg-study8.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-font-smoothing: antialiased;
     background-position: center;
     font-family: 'HelveticaNeueLTPro55Roman';
 }
-.content {
-    width: 667px;
+.study8 {
     min-height: 315px;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.content {
+    width: 600px;
+    margin: 0 auto 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 25px 15px;
+    border-radius: 15px;
 }
 .content-left {
     background: #FFF;
     width: 240px;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 15px;
     position: relative;
-    padding: 15px;    
-    margin-top: -20px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.content-left::after {
-    position: absolute;
-    content: '';
-    right: 25px;
-    bottom: -23px;
-    width: 49px;
-    height: 26px;
-    background-image: url(../images/study1-arrow.png);
-    background-repeat: no-repeat;
 }
 .twitter-header {
     display: flex;
@@ -132,21 +127,21 @@ p.twitter-handle {
     border-radius: 10px;
     position: relative;
     padding: 15px;
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.content-right::after {
-    position: absolute;
-    content: '';
-    left: 25px;
-    bottom: -23px;
-    width: 49px;
-    height: 26px;
-    background-image: url(../images/study1-arrow.png);
-    background-repeat: no-repeat;
-    transform: rotateY(-180deg);
+.content-outer1 {
+    border: 1px solid #ffffff2e;
+    border-radius: 15px;
+    padding: 5px;
+}
+.content-outer2 {
+    border: 1px solid #ffffff2e;
+    border-radius: 15px;
+    padding: 10px;
+    background: #A54E48;
+    background: -webkit-linear-gradient( 0deg, #A54E48, #6833A1 100%);
 }
 /*=================================
 Responsive CSS
@@ -158,5 +153,10 @@ Responsive CSS
         flex-direction: column;
         min-height: 100vh;
         justify-content: center;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .content-outer1 {
+        margin-bottom: 15px;
     }
 }
