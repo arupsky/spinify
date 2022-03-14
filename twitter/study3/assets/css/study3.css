@@ -154,9 +154,13 @@ Responsive CSS
 
 @media screen and (max-width: 944px) {
     .content {
-        width: 100%;
-        flex-direction: column;
+        width: 90%;
+        /* flex-direction: column; */
         min-height: 100vh;
-        justify-content: center;
+        justify-content: space-between;
+        padding: 50px 0;
+    }
+    .content-left, .content-right {
+        width: 40%;
     }
 }
