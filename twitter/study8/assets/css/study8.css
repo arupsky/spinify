@@ -23,7 +23,7 @@ body {
     font-family: 'HelveticaNeueLTPro55Roman';
 }
 .study8 {
-    min-height: 315px;
+    min-height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -149,14 +149,16 @@ Responsive CSS
 
 @media screen and (max-width: 944px) {
     .content {
-        width: 100%;
-        flex-direction: column;
-        min-height: 100vh;
-        justify-content: center;
-        padding: 0;
-        margin: 0 auto;
+        width: auto;
+        justify-content: space-between;
+        padding: 50px 20px;
+        max-width: 600px;
+        margin: 0;
     }
     .content-outer1 {
-        margin-bottom: 15px;
+        width: 49%;
+    }
+    .content-left, .content-right {
+        width: 100%;
     }
 }
