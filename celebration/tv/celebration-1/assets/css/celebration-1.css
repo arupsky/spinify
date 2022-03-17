@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/CircularStd-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Dala Moa';
+    src: url('../fonts/DalaMoaRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-celebration-1.jpg);
+    font-family: 'Circular Std';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.celebration {
+    max-width: 950px;
+    min-height: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    background: #21bdd7;
+    background: -webkit-linear-gradient( 0deg, #CD62FB, #21bdd7 100%);
+    display: flex;
+    width: 1710px;
+    padding: 70px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 80px 80px;
+}
+h1.headline {
+    margin: 0 40px 0 0;
+    max-width: 850px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 125px;
+    font-weight: 100;
+    padding: 0;
+    color: #ECF6F8;
+    font-family: 'Dala Moa';
+    text-transform: uppercase;
+}
+p.subheadline {
+    margin: 0;
+    font-size: 36px;
+    max-width: 651px;
+    color: #ECF6F8;
+    max-height: 156px;
+    overflow: hidden;
+    line-height: 1.1;
+}
+.content {
+    display: flex;
+    width: 1413px;
+    justify-content: center;
+    border-radius: 60px;
+    background: #5600D4;
+    background: -webkit-linear-gradient( 0deg, #5600D4, #000D94 100%);
+    flex-direction: column;
+    position: relative;
+    padding: 15px 170px 15px 250px;
+    min-height: 548px;
+    margin-top: 130px;
+    margin-right: -155px;
+}
+.content figure {
+    margin: 0;
+    padding: 0;
+}
+.content figure img {
+    margin: 0;
+    padding: 0;
+    width: 349px;
+    height: 349px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: -170px;
+}
+p.name {
+    margin: 0;
+    color: #ECF6F8;
+    font-size: 110px;
+    line-height: 1.1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 600;
+    max-width: 100%;
+}
+.content-right {
+    width: 220px;
+    height: 172px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #141735;
+    border-radius: 20px;
+}
+p.content-text {
+    margin: 25px 0 0 0;
+    padding: 40px 0 0 0;
+    border-top: 2px solid #7185ea85;
+    color: #ECF6F8;
+    font-size: 58px;
+    line-height: 1.2;
+    max-height: 250px;
+    overflow: hidden;
+    text-align: left;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1900px) {
+    .header {
+        width: 95%;
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    h1.headline {
+        margin: 0;
+        max-width: 100%;
+        font-size: 60px;
+    }
+    p.subheadline {
+        max-width: 100%;
+        font-size: 26px;
+        text-align: center;
+        max-height: inherit;
+    }
+    .content {
+        flex-direction: column;
+        width: 100%;
+    }
+    p.name {
+        font-size: 50px;
+    }
+    p.content-text {
+        font-size: 30px;
+        margin: 15px 0 0 0;
+        padding: 25px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .celebration {
+        min-height: 100vh;
+    }
+    .content {
+        width: 90%;
+        padding: 15px;
+        margin: 15px 0 0 0;
+        min-height: auto;
+    }
+    .content figure img {
+        margin: 0 auto;
+        position: relative;
+        top: inherit;
+        left: inherit;
+        width: 250px;
+        height: 250px;
+    }
+    p.name {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    p.content-text {
+        text-align: center;
+    }
+}

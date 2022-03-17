@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/CircularStd-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Bratsy Script Demo';
+    src: url('../fonts/BratsyScriptDemo-Reguler.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/body-bg-celebration-4.jpg);
+    font-family: 'Circular Std';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+}
+.celebration {
+    min-height: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 880px;
+    text-align: center;
+}
+h1.headline {
+    margin: 50px 0 30px 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 118px;
+    font-weight: 100;
+    padding: 0;
+    line-height: 1;
+    color: #FFBD00;
+    font-family: 'Bratsy Script Demo';
+}
+p.subheadline {
+    margin: 0;
+    font-size: 37px;
+    max-width: 100%;
+    color: #B32FD3;
+    max-height: 122px;
+    overflow: hidden;
+    line-height: 1.1;
+}
+.content {
+    display: flex;
+    width: 1054px;
+    justify-content: center;
+    border-radius: 25px;
+    flex-direction: column;
+    position: relative;
+    padding: 12px 70px 12px 220px;
+    min-height: 476px;
+    margin-top: 90px;
+    margin-right: -130px;
+    border: 1.5px solid #FFBD00;
+}
+.content figure {
+    margin: 0;
+    padding: 0;
+}
+.content figure img {
+    margin: 0;
+    padding: 0;
+    width: 322px;
+    height: 322px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 78px;
+    left: -155px;
+}
+p.name {
+    margin: 0;
+    color: #B32FD3;
+    font-size: 80px;
+    line-height: 1.1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 600;
+    max-width: 100%;
+}
+.content-right {
+    width: 220px;
+    height: 172px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #141735;
+    border-radius: 20px;
+}
+p.content-text {
+    margin: 20px 0 0 0;
+    padding: 52px 0 0 0;
+    border-top: 1.5px solid #FFBD00;
+    color: #ECF6F8;
+    font-size: 50px;
+    line-height: 1.2;
+    max-height: 232px;
+    overflow: hidden;
+    text-align: left;
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1800px) {
+    .header {
+        width: 95%;
+        max-width: 880px;
+        flex-direction: column;
+        height: auto;
+    }
+    h1.headline {
+        max-width: 100%;
+    }
+    p.subheadline {
+        max-width: 100%;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .celebration {
+        padding: 30px 0;
+        min-height: 100vh;
+    }
+    h1.headline {
+        font-size: 50px;
+    }
+    p.subheadline {
+        font-size: 28px;
+        max-height: inherit;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .content {
+        width: 95%;
+        padding: 15px;
+        margin: 15px 0 0 0;
+    }
+    .content figure img {
+        margin: 0 0 12px 0;
+        position: relative;
+        top: inherit;
+        left: inherit;
+        width: 250px;
+        height: 250px;
+    }
+    p.name {
+        font-size: 30px;
+    }
+    p.content-text {
+        text-align: center;
+        font-size: 26px;
+    }
+}
