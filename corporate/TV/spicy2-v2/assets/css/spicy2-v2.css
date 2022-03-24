@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/RobotoRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/RobotoBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'RobotoBlack';
+    src: url('../fonts/RobotoBlack.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/spicy2-v2-body-bg.jpg);
+    font-family: 'RobotoRegular';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.header {
+    background: rgba(3,21,31,.8);
+    display: flex;
+    width: 1770px;
+    height: 174px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 30px 30px;
+}
+h1.headline {
+    margin: 0;
+    width: 800px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 73px;
+    font-weight: 100;
+    padding: 0;
+    color: #6DE6FC;
+    font-family: 'RobotoBold';
+}
+p.subheadline {
+    margin: 0;
+    padding-left: 30px;
+    font-size: 20px;
+    max-width: 575px;
+    color: #D1D2D3;
+    max-height: 78px;
+    overflow: hidden;
+    line-height: 1.3;
+    border-left: 3px solid #FFFFFF;
+}
+.content {
+    display: flex;
+    width: 1175px;
+    justify-content: end;
+    border-radius: 30px;
+    background: rgba(3,21,31,.8);
+    position: relative;
+    padding: 50px 120px 50px 30px;
+    min-height: 464px;
+    margin: 184px auto 0 auto;
+}
+.content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -120px;
+    top: -80px;
+    border: 8px solid #6DE6FC;
+    border-radius: 50%;
+    padding: 6px;
+}
+.content-left figure {
+    margin: 0;
+    padding: 0;
+}
+.content-left figure img {
+    margin: 0;
+    padding: 0;
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+}
+p.name {
+    margin: 40px 0 0 0;
+    color: #6DE6FC;
+    font-size: 54px;
+    line-height: 1.1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 600;
+    font-family: 'RobotoBlack';
+    max-width: 448px;
+}
+.content-right {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+p.content-text {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    font-size: 50px;
+    line-height: 1.2;
+    overflow: hidden;
+    text-align: left;
+    max-width: 690px;
+    max-height: 180px;
+}
+p.content-text span {
+    font-family: 'RobotoBlack';
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 1800px) {
+    .header {
+        width: 98%;
+        margin: 0 auto;
+    }
+    h1.headline {
+        width: 50%;
+        max-width: 500px;
+        font-size: 50px;
+        text-align: center;
+    }
+    p.subheadline {
+        max-width: 50%;
+    }
+    .content {
+        width: 760px;
+        padding: 50px 40px 50px 30px;
+    }
+    p.name {
+        font-size: 35px;
+        max-width: 350px;
+    }
+    p.content-text {
+        font-size: 35px;
+        max-width: 450px;
+        max-height: 168px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+    }
+    h1.headline {
+        width: 95%;
+        max-width: 310px;
+        font-size: 36px;
+    }
+    p.subheadline {
+        max-width: 95%;
+        border-left: none;
+        text-align: center;
+        padding-left: 0;
+    }
+    .content {
+        width: 98%;
+        flex-direction: column;
+        margin-top: 30px;
+        min-height: auto;
+    }
+    .content-left {
+        margin: 0 auto;
+        padding: 0;
+        border: 0;
+        position: relative;
+        left: inherit;
+        top: inherit;
+    }
+    .content-left figure img {
+        width: 200px;
+        height: 200px;
+    }
+    p.content-text {
+        max-width: 100%;
+        text-align: center;
+        font-size: 22px;
+        margin: 30px auto;
+        max-height: initial;
+    }
+    p.name {
+        font-size: 28px;
+        max-width: 240px;
+        margin: 0 auto;
+    }
+}
