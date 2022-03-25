@@ -35,7 +35,7 @@ body {
 .header {
     background: rgba(12,66,107,.68);
     display: flex;
-    width: 860px;
+    width: 765px;
     height: 84px;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,7 @@ body {
 }
 h1.headline {
     margin: 0;
-    width: 375px;
+    width: 335px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;

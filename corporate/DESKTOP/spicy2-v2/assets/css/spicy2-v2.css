@@ -42,15 +42,15 @@ body {
 .header {
     background: rgba(3,21,31,.8);
     display: flex;
-    width: 860px;
-    height: 84px;
+    width: 692px;
+    height: 80px;
     justify-content: center;
     align-items: center;
     border-radius: 0 0 20px 20px;
 }
 h1.headline {
     margin: 0;
-    width: 375px;
+    width: 300px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
