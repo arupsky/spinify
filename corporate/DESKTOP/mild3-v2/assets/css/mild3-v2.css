@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'FuturaPTBold';
+    src: url('../fonts/FuturaPTBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FuturaPTLight';
+    src: url('../fonts/FuturaPTLight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/mild3-v2-body-bg.jpg);
+    font-family: 'FuturaPTLight';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.mild3-v2 {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 232px;
+    justify-content: center;
+    background: rgba(120,153,176,.8);
+    border-radius: 0 15px 15px 0;
+    padding: 27px;
+}
+h1.headline {
+    margin: 0 0 15px 0;
+    width: 265px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 29px;
+    padding: 0;
+    color: #233740;
+    font-family: 'FuturaPTBold';
+}
+p.subheadline {
+    margin: 0;
+    font-size: 11px;
+    max-width: 265px;
+    color: #2A3D45;
+    overflow: hidden;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+p.subheadline span {
+    max-height: 43px;
+    overflow: hidden;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 438px;
+    justify-content: start;
+    border-radius: 15px;
+    background: rgba(120,153,176,.8);
+    position: relative;
+    padding: 20px;
+    min-height: 208px;
+    margin: 35px auto 0 auto;
+}
+.content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 20px;
+    width: 200px;
+    margin: -70px auto 25px auto;
+}
+.content-left figure {
+    margin: 0;
+    padding: 0;
+}
+.content-left figure img {
+    margin: 0;
+    padding: 0;
+    width: 106px;
+    height: 106px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+    border: 7px solid rgb(55 89 109 / 50%);
+    box-shadow: 0px 0px 15px -1px #596771;
+}
+p.name {
+    margin: 10px 0 0 0;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 1.1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 600;
+    font-family: 'FuturaPTBold';
+    max-width: 186px;
+}
+.content-right {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+p.content-text {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.4;
+    overflow: hidden;
+    text-align: center;
+    max-width: 310px;
+    max-height: 45px;
+    font-weight: 600;
+}
+p.content-text span {    
+    font-family: 'FuturaPTBold';
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 900px) {
+    .header {
+        width: 98%;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+    h1.headline {
+        max-width: 225px;
+        font-size: 27px;
+        text-align: center;
+        text-align: center;
+    }
+    p.subheadline {
+        max-width: 48%;
+        max-width: 225px;
+    }
+    .content {
+        width: 98%;
+        margin: 15px auto;
+    }
+    .content-left {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .mild3-v2 {
+        flex-direction: column;
+        justify-content: start;
+    }
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+        height: auto;
+        border-radius: 15px;
+    }
+    h1.headline {
+        width: 98%;
+        margin: 0 auto;
+    }
+    p.subheadline {
+        width: 98%;
+        padding: 5px 0 0 0;
+        border: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content-left {
+        width: 100%;
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .content-right {
+        width: 100%;
+        text-align: center;
+    }
+    p.content-text {
+        max-width: 310px;
+        max-height: inherit;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

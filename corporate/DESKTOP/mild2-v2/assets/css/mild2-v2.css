@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/RobotoRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/RobotoBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'RobotoBlack';
+    src: url('../fonts/RobotoBlack.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/mild2-v2-body-bg.jpg);
+    font-family: 'RobotoRegular';
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.header {
+    background: #DDDEDF;
+    background: -webkit-linear-gradient( 0deg, #FFFFFF, #DDDEDF 100%);
+    display: flex;
+    width: 860px;
+    height: 84px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+}
+h1.headline {
+    margin: 0;
+    width: 375px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 35px;
+    font-weight: 100;
+    padding: 0;
+    color: #506A78;
+    font-family: 'RobotoBold';
+}
+p.subheadline {
+    margin: 0;
+    padding-left: 15px;
+    font-size: 10px;
+    max-width: 270px;
+    color: #2A3D45;
+    max-height: 39px;
+    overflow: hidden;
+    line-height: 1.3;
+    border-left: 3px solid #779AB1;
+    font-weight: 600;
+}
+.content {
+    display: flex;
+    width: 410px;
+    justify-content: end;
+    border-radius: 15px;
+    background: #E6E7E8;
+    background: -webkit-linear-gradient( 0deg, #FFFFFF, #DDDEDF 100%);
+    position: relative;
+    padding: 20px;
+    min-height: 158px;
+    margin: 40px auto 0 auto;
+}
+.content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -40px;
+    top: -30px;
+}
+.content-left figure {
+    margin: 0;
+    border: 2px solid #81A0B6;
+    border-radius: 50%;
+    padding: 3px;
+}
+.content-left figure img {
+    margin: 0;
+    padding: 0;
+    width: 114px;
+    height: 114px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 50%;
+}
+p.name {
+    margin: 15px 0 0 0;
+    color: #506A78;
+    font-size: 18px;
+    line-height: 1.1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 600;
+    font-family: 'RobotoBlack';
+    max-width: 186px;
+}
+.content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+p.content-text {
+    margin: 0;
+    padding: 0;
+    color: #2A3D45;
+    font-size: 17px;
+    line-height: 1.2;
+    overflow: hidden;
+    text-align: left;
+    max-width: 254px;
+    max-height: 62px;
+}
+p.content-text span {
+    font-family: 'RobotoBlack';
+}
+/*=================================
+Responsive CSS
+==================================*/
+
+@media screen and (max-width: 900px) {
+    .header {
+        width: 98%;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+    h1.headline {
+        width: 48%;
+        max-width: 225px;
+        font-size: 27px;
+        text-align: center;
+        text-align: center;
+    }
+    p.subheadline {
+        max-width: 48%;
+        max-width: 225px;
+    }
+    .content {
+        width: 98%;
+        margin: 55px auto 15px auto;
+    }
+    .content-left {
+        width: 48%;
+    }
+    .content-right {
+        width: 48%;
+    }
+    p.content-text {
+        font-size: 18px;
+        max-height: 87px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+        height: auto;
+    }
+    h1.headline {
+        width: 98%;
+    }
+    p.subheadline {
+        width: 98%;
+        padding: 0;
+        border: 0;
+        text-align: center;
+        margin: 5px auto 0 auto;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content-left {
+        width: 100%;
+        border: 0;
+        padding: 0;
+        margin: 0 0 10px 0;
+        position: relative;
+        left: inherit;
+        top: inherit;
+    }
+    .content-right {
+        width: 100%;
+        text-align: center;
+    }
+    p.name {
+        margin: 15px auto 0 auto;
+    }
+    p.content-text {
+        max-width: 310px;
+        max-height: inherit;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
